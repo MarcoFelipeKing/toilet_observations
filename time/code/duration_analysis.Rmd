@@ -1,0 +1,206 @@
+---
+title: "Untitled"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+pacman::p_load(dplyr,ggplot2,janitor,tidyr,stringr,stringi,hrbrthemes)
+```
+
+## Import data
+
+This is an R Markdown format used for publishing markdown documents to GitHub. When you click the **Knit** button all R code chunks are run and a markdown file (.md) suitable for publishing to GitHub is generated.
+
+## Including Code
+
+You can include R code in the document as follows:
+
+```{r participant data}
+df <- read.csv(file = "../data/toilet_duration.csv") %>% janitor::clean_names()
+df
+df <- df  %>% 
+  mutate(experimentID=row_number()) %>% 
+  mutate(id=paste(experimentID,participant_id)) %>% 
+  group_by(id) %>% 
+  mutate(experimentID = paste0(stri_rand_strings(1, 5, "[A-Z]"), stri_rand_strings(1, 4, "[0-9]"), stri_rand_strings(1, 1, "[A-Z]")))
+  
+ head(df) 
+``` 
+# 1.1 Summary table
+# Hyptheses
+### Hypothesis 1: Women spend longer than men in public toilets
+
+```{r hypothesis 1}
+
+
+#cleaning data
+df %>% 
+mutate ()
+
+df %>% ungroup() %>% 
+  group_by(gender)%>% 
+  summarise(Mean=mean(total_duration),
+            SD=sd(total_duration,na.rm = TRUE))
+```
+```{r Mean by toilet type & activity}
+df %>% ungroup() %>% 
+  group_by(gender,toilet_type,activity)%>% 
+  summarise(Mean=mean(total_duration, na.rm=TRUE),
+            SD=sd(total_duration,na.rm = TRUE)) %>% arrange(Mean)
+```
+### Hypothesis 1.2 Women spend longer carrying out each toilet activity 
+```{r}
+df %>% ungroup() %>% 
+  group_by(gender,activity)%>% 
+  summarise(Mean=mean(total_duration),
+            SD=sd(total_duration,na.rm = TRUE)) %>% arrange(Mean) %>% ungroup() %>% add_row(gender="M",activity= "M", Mean=0, SD=0)
+
+
+# 1.3 Plot summary data by gender and toilet type
+
+df %>% 
+ 
+  # geom_jitter(aes(x=toilet_type,y=total_duration,fill=gender),width = 0.2)+
+  facet_grid(~activity)+
+  hrbrthemes::theme_ipsum()
+
+```
+
+```
+#T-Test: Time difference for each activity 
+### Urination: Testing the time difference between women and men 
+```{r}
+t.test(data=df %>% filter(activity=="U"),log10(total_duration)~gender)
+```
+```
+#Defecation: Testing the time difference between women and men
+```{r}
+t.test(data=df %>%
+         filter(activity=="D"), log10(total_duration)~gender)
+```
+#Gender neutral toilets: Different in urination 
+```{r}
+df %>% ungroup() %>% 
+  group_by(gender) %>%
+  filter(toilet_type=="GN")
+  t.test(data=df %>% 
+           filter(activity=="U"), log10(total_duration)~gender)
+
+```
+
+# Average durations in different toilet types 
+```{r}
+df%>% ungroup () %>%
+  group_by(gender, toilet_type)%>%
+  summarise(Mean=mean(total_duration), SD=sd(total_duration, na.rm = TRUE))
+```
+
+#Learning to clean a  dataframe 
+```{r}
+df1<-df %>% 
+  ungroup() %>% 
+  select(total_duration:experimentID) %>% 
+  relocate(experimentID, .before = total_duration) %>%
+  mutate(gender=case_when(gender=="F"~"Female", gender=="M"~"Male")) %>%
+  mutate(toilet_type=case_when(toilet_type=="W"~"Women's", toilet_type=="M"~"Men's", toilet_type=="GN"~ "Gender neutral")) %>%
+  mutate(activity=case_when(activity=="U"~"Urination", activity=="D"~"Defecation", activity=="M"~"Menstruation"))
+
+df1
+  
+
+  
+
+  
+```
+
+# Finding the average time spent in each toilet setting by gender
+```{r}
+library("dplyr")
+df %>% ungroup() %>% 
+  group_by(gender, toilet_type) %>% 
+  summarise(Mean=mean(total_duration, na.rm=TRUE), Sd=sd(total_duration),na.rm=TRUE)
+
+ 
+```
+
+#Finding the average time spent doing each activity by gender 
+```{r}
+df1 %>% ungroup() %>% 
+  group_by(gender, activity) %>% 
+  summarise(Mean=mean(total_duration,na.rm=TRUE), SD=sd(total_duration)) 
+  
+  
+```
+
+
+# Average time spent in each toilet type by activity 
+```{r}
+df%>% ungroup() %>% 
+  group_by(toilet_type, activity, gender) %>%
+  summarise(
+    Mean=round(mean(total_duration,na.rm=TRUE),2),
+    sd=round(sd(total_duration),2)
+  )
+  
+```
+# Data visualisation 
+
+```{r}
+library("tidyverse")
+df %>%
+  ggplot(data = df, mapping =aes(x=toilet_type, y=total_duration))+ geom_boxplot()
+  
+  
+  
+
+  
+```
+Test  #2 
+```{r}
+df %>%
+  ggplot(data = df, mapping = aes(x=activity, y=total_duration))+ boxplot(
+    
+  )
+```
+# Hypothesis 2: Women spend longer in gender neutral toilets than men  
+```{r}
+df %>%
+  ungroup() %>% 
+  select(total_duration:experimentID) %>% 
+  relocate(experimentID, .before = total_duration) %>%
+  mutate(gender=case_when(gender=="F"~"Women", gender=="M"~"Men")) %>%
+  mutate(toilet_type=case_when(toilet_type=="W"~"Women's", toilet_type=="M"~"Men's", toilet_type=="GN"~ "Gender neutral")) %>%
+  mutate(activity=case_when(activity=="U"~"Urination", activity=="D"~"Defecation", activity=="M"~"Menstruation")) %>%
+  
+  # Plot summary data by gender and activity in gender neutral toilets  
+filter(toilet_type=="Gender neutral") %>% 
+  ggplot() +
+  geom_violin(aes(x=activity,y=total_duration,fill=gender),draw_quantiles = c(0.25,0.5,0.75))+
+  #geom_jitter(aes(x=toilet_type,y=total_duration,fill=gender),width = 0.2)+
+  facet_grid(~activity,scales="free_x")+
+  hrbrthemes::theme_ipsum(axis_text_size = 14, axis_title_size = 18)+
+  labs(title = "Time spent in gender neutral toilets for each activity", caption= "Comparing time duration between men and women", subtitle = "Time duration for each activity in gender neutral toilets")+ 
+  xlab("Toilet activity")+
+  ylab("Time in seconds")
+  theme(legend.title = "Gender")
+ggsave(path = "../outputs/images/",filename="average_times_in_gender_neutral_toilets.png",device = "png",width = 15,height=10,units = "in",bg = "white")
+  
+  
+  
+  
+
+```
+#Hypothesis 3: Women carry out more activities and behaviours than men in public toilets 
+```{r}
+df2 <- read.csv('', header = TRUE, sep = ",")
+getwd()
+```
+
+```{r}
+install.packages("XLConnect", "tidyverse") %>% 
+  library("XLConnect","tidyverse") %>% 
+  df2<- file.path("c:desktop/clean_contact_data.xlsx")
+```
+

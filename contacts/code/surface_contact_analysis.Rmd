@@ -1,0 +1,188 @@
+---
+title: "Untitled"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+pacman::p_load(dplyr,tidyr,ggplot2,janitor,vroom,stringr)
+knitr::opts_chunk$set(echo = FALSE, warning= FALSE)
+```
+
+## GitHub Documents
+
+This is an R Markdown format used for publishing markdown documents to GitHub. When you click the **Knit** button all R code chunks are run and a markdown file (.md) suitable for publishing to GitHub is generated.
+
+## 1.1 Reading the data
+
+You can include R code in the document as follows:
+
+```{r cars}
+df2<-vroom(file = "../data/clean_contact_data.csv") %>% 
+  janitor::clean_names()
+
+df2
+```
+
+#Frequency of surface contacts
+
+###Hypothesis 1: There are more surface contacts carried out in women only toilets than men only toilets 
+
+Purpose of this is to analyse whether there is a difference in the frequency of surface contacts made in the different toilet settings. Does the different layouts and number of surfaces available (i.e. urinals vs toilet seats, cubicles etc.) in the toilets influence the frequency of contacts made by individuals? If there are more surfaces to be encountered when using a toilet, is the individual then touching more surfaces than they would in a different toilet layout- 
+what is the difference in a man unirating in a men-only toilet and in a gender neutral toilet with regards to surface contact?
+
+```{r}
+df2 %>% 
+  ungroup() %>% 
+  group_by(experiment_id,activity,sex,toilet_type) %>%
+  tally() %>% 
+  ggplot(aes(x=toilet_type, y=n, fill=toilet_type))+
+  geom_violin(draw_quantiles = c(0.25, 0.5, 0.75))+
+  geom_jitter(width = 0.2, alpha=0.8)+
+  xlab("Toilet type")+
+  ylab ("Frequency of contact")+
+  hrbrthemes::theme_ipsum()+
+ labs(title = "Frequency of touches in each toilet setting")
+#ggsave(path = "../outputs/images",filename="frequency_of_surface_contacts_in_each_toilet_type.png",width = 10,height=15,units = "in",bg = "white")
+  
+df2
+
+
+```
+
+#Frequency of surface contacts of each surface in different toilet types 
+
+Here, I want to find out which surfaces the most frequently touched by participants. Are there specific surfaces that are exclusive to certain toilet settings? i.e Sanitary bins not available in men-only toilets
+```{r 1.3 Frequency of contacts of each surfaces in different toilet types,fig.width=12}
+df2 %>% 
+  ungroup() %>% 
+  group_by(experiment_id,activity,surface) %>%
+  tally() %>% 
+  ggplot(aes(x=surface, y=n, fill=surface))+
+  geom_violin(draw_quantiles = c(0.25, 0.5, 0.75))+
+  #geom_jitter(width = 0.2, height= 0.1, alpha=0.8)+
+  xlab("Toilet surface")+
+  ylab ("Frequency of contact")+
+  hrbrthemes::theme_ipsum(axis_title_size = 14)+
+  coord_flip()+
+  theme(legend.position = " ")+
+  labs(title = "Frequency of touches at each toilet surface")
+
+#ggsave(path = "../outputs/images",filename="frequency_of_surface_contacts.png",width = 10,height=15,units = "in",bg = "white")
+  
+
+```
+
+###Hypothesis 2: There is a significant difference in frequency of surface contacts made during urination in women-only toilets and men-only. 
+
+
+###Hypothesis 3: There is no significant difference in the frequency of contacts made during defecation in men-only and women-only toilets
+
+###Hypothesis 4: There is no difference in the frequency of contacts made during urination and defecation in gender neutral toilets between men and women 
+
+Here I'm looking to see whether the layout of the toilet settings and the surfaces available influences the surface contacts made during each activity. 
+NOTE ON MHM: Analysis can only be made between women-only and gender neutral toilets. This is analysed further when looking at the data on the different surfaces. 
+
+```{r, fig.width=12}
+df2 %>% 
+  ungroup() %>% 
+  group_by(experiment_id,activity,sex,toilet_type) %>%
+  tally() %>% 
+  ggplot(aes(x=activity, y=n, fill=toilet_type))+
+  geom_violin(draw_quantiles = c(0.25, 0.5, 0.75))+
+  #geom_jitter(width = 0.2, alpha=0.8)+
+  xlab("Toilet type")+
+  ylab ("Frequency of contact")+
+  hrbrthemes::theme_ipsum()+
+   labs(title = "Frequency of surface contacts during each toilet activity") 
+  
+#ggsave(path = "../outputs/images",filename="frequency_of_surface_contacts_at_each_activity.png",width = 10,height=15,units = "in",bg = "white")
+
+  
+df2
+
+
+
+``` 
+#Surfaces: Which were the most frequetly touched surfaces? 
+
+### Surface contact in men only toilets 
+NOTE: Urinals are not listed: although they are significant component of the men's toilets. Does this make the toilet design with urinals a "less contacted" space?  
+
+```{r, fig.width=12} 
+df2 %>% 
+  ungroup() %>% 
+  group_by(experiment_id,toilet_type,surface) %>%
+  tally() %>% 
+  ggplot(aes(x=surface, y=n, fill=toilet_type=="Men"))+
+  geom_violin(draw_quantiles = c(0.25, 0.5, 0.75))+
+  #geom_jitter(width = 0.2, height= 0.1, alpha=0.8)+
+  hrbrthemes::theme_ipsum(axis_title_size = 14)+
+  coord_flip()+
+  theme(legend.position = " ")+
+   labs(title = "Frequency of surface contacts in men only toilet")+ 
+  xlab("Toilet surfaces")+
+  ylab("Frequency")
+  
+#ggsave(path = "../outputs/images",filename="frequency_of_surface_contacts_men.png",width = 10,height=15,units = "in",bg = "white")
+  
+
+```
+### Surface contacts in women only toilet
+```{r, fig.width=12} 
+df2 %>% 
+  ungroup() %>% 
+  group_by(experiment_id,toilet_type,surface) %>%
+  tally() %>% 
+  ggplot(aes(x=surface, y=n, fill=toilet_type=="Women"))+
+  geom_violin(draw_quantiles = c(0.25, 0.5, 0.75))+
+  #geom_jitter(width = 0.2, height= 0.1, alpha=0.8)+
+  hrbrthemes::theme_ipsum(axis_title_size = 14)+
+  coord_flip()+
+  theme(legend.position = " ")+
+   labs(title = "Frequency of surface contacts in women only toilet")+ 
+  xlab("Toilet surfaces")+
+  ylab("Frequency")
+  
+#ggsave(path = "../outputs/images",filename="frequency_of_surface_contacts_women.png",width = 10,height=15,units = "in",bg = "white")
+  
+
+```
+### surface contacts in gender neutral toilet
+```{r, fig.width=12} 
+df2 %>% 
+  ungroup() %>% 
+  group_by(experiment_id,toilet_type,surface) %>%
+  tally() %>% 
+  ggplot(aes(x=surface, y=n, fill=toilet_type=="Gender neutral"))+
+  geom_violin(draw_quantiles = c(0.25, 0.5, 0.75))+
+  #geom_jitter(width = 0.2, height= 0.1, alpha=0.8)+
+  hrbrthemes::theme_ipsum(axis_title_size = 14)+
+  coord_flip()+
+  theme(legend.position = " ")+
+   labs(title = "Frequency of surface contacts in gender neutral toilet")+ 
+  xlab("Toilet surfaces")+
+  ylab("Frequency")
+  
+#ggsave(path = "../outputs/images",filename="frequency_of_surface_contacts_GN.png",width = 10,height=15,units = "in",bg = "white")
+
+```
+# Comparing surface contacts with right and left hand
+```{r, fig.width=12}
+df2 %>% 
+  ungroup() %>% 
+  group_by(experiment_id,toilet_type,surface, hand) %>%
+  tally() %>% 
+  ggplot(aes(x=hand, y=n, fill=hand))+
+  geom_violin(draw_quantiles = c(0.25, 0.5, 0.75))+
+  #geom_jitter(width = 0.2, height= 0.1, alpha=0.8)+
+  hrbrthemes::theme_ipsum(axis_title_size = 14)+
+  theme(legend.position = " ")+
+   labs(title = "Frequency of surface contacts by left and right hand")+ 
+  xlab("hand")+
+  ylab("Frequency")
+
+#ggsave(path = "../outputs/images",filename="frequency_of_surface_contacts_each_hand.png",width = 10,height=15,units = "in",bg = "white")
+```
+
+
+
