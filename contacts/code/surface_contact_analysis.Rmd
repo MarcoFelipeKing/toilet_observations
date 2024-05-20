@@ -103,6 +103,9 @@ df2
 
 
 ``` 
+
+#ANALYSIS OF 
+
 #Surfaces: Which were the most frequetly touched surfaces? 
 
 ### Surface contact in men only toilets 
@@ -183,6 +186,112 @@ df2 %>%
 
 #ggsave(path = "../outputs/images",filename="frequency_of_surface_contacts_each_hand.png",width = 10,height=15,units = "in",bg = "white")
 ```
+# Violin diagram for number of contacts by sex 
+```{r mf_violin_plots, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 3, fig.cap="\\label{fig:mf_violin_plots}Violin plots showing distribution of surface contacts in between men and women \\label{fig:mf_violin_plots}"}
+
+df2 %>% 
+  group_by(sex, experiment_id) %>% 
+  tally() %>% 
+  ggplot(aes(x=sex, y=n, fill=sex))+
+  geom_violin(draw_quantiles = c(0.25, 0.5, 0.75))+
+  theme_bw()+
+  scale_fill_brewer(palette="Pastel1")+
+  xlab("Sex")+
+  ylab("Number of surface contacts")+
+  guides(fill=guide_legend(title="Sex"))+  
+  theme(legend.position = "bottom") +
+  coord_flip()
+
+#ggsave(path = "../outputs/images",filename="frequency_of_surface_contacts_by_sex.png",width = 10,height=15,units = "in",bg = "white")
+
+```
+# Touch touches per toilet
+```{r objects_touched, echo=FALSE, warning=FALSE, message=FALSE, fig.width=10, fig.height=7, fig.cap="Touch frequency for each object in different toilet types \\label{fig:objects_touched}"}
+
+df2 %>% 
+  group_by(toilet_type, surface) %>% 
+  summarise(n=n()) %>% 
+  mutate(proportion = prop.table(n)) %>%
+  #arrange(toilet_type, desc(n)) %>% 
+  #df2[order(df$toilet_type, df$surface), ] %>% 
+  ggplot(aes(x=reorder_within(surface, proportion, toilet_type), y=proportion, fill=surface))+
+  geom_bar(stat = "identity", position="dodge")+
+  theme_bw()+
+  facet_wrap(~toilet_type, scales = "free")+
+  scale_fill_viridis(discrete=TRUE, option="turbo")+
+  scale_fill_paletteer_d(`"ggsci::default_igv"`)+
+  scale_fill_paletteer_c(`"grDevices::rainbow"`, discrete=TRUE)+
+  scale_fill_brewer(palette = "Pastel1")
+  scale_fill_gradientn(colours = c("#223843", "#D77A61", "#DBD3D8", "#D8B4A0"), breaks = surface, guide = "legend")+
+  coord_flip()+
+  scale_x_reordered()+
+  xlab("Surface")+
+  ylab("Proportion of contacts per toilet type")+
+  theme(legend.position = "bottom", legend.justification = "right")+
+  guides(fill=guide_legend(title="Surface")) -> bar_chart_freq
+bar_chart_freq
+  xlab("Toilet Type")+
+  ylab("Number of contacts")+
+  scale_y_continuous(limits = c(0,1))+
+  hrbrthemes::theme_ipsum()
+
+# plot(objects_touched)
+
+# ggplotly(bar_chart_freq) # Duplicates caption and does not present in pdf format. always_allow_html: true needed in YAML
+```
+```
+
+# Proportion of contacts per toilet 
+```{r bidirectional_bar_chart_left_right_surface_contacts, echo=FALSE, warning=FALSE, message=FALSE, fig.width=10, fig.height=7.5, fig.cap = "\\label{fig:left_right_surfaces}Touch frequency for each object in different toilet types grouped by hand"}
+
+# Install the viridis package if not already installed
+if (!requireNamespace("viridis", quietly = TRUE)) {
+  install.packages("viridis")
+}
+
+# Load the viridis package
+library(viridis)
+
+# Install the ggsci package if not already installed
+if (!requireNamespace("ggsci", quietly = TRUE)) {
+  install.packages("ggsci")
+}
+
+# Load the ggsci package
+library(ggsci)
+
+df2 %>% 
+  filter(hand!="N/A" & hand!="both") %>% 
+  group_by(toilet_type, surface, hand) %>% 
+  tally() %>%
+  #mutate(proportion=prop.table(n)) %>% 
+  ggplot(aes(x=surface, y=ifelse(hand=="right", proportion, -proportion), fill=hand))+
+  geom_bar(stat = "identity", position = "identity")+
+  facet_wrap(~toilet_type,scale = "free_x")+
+  coord_flip()+
+  theme_bw()+
+  scale_fill_viridis(discrete=TRUE, option="viridis")+
+  #scale_fill_paletteer_d(`"ggsci::default_igv"`)+
+  xlab("Surfaces")+
+  ylab("Proportion of contacts per toilet type")+
+  guides(fill=guide_legend(title="Hand"))
+  
+#ggsave(path = "../outputs/images",filename="proportions_of_contacts_per_toilet.png",width = 10,height=15,units = "in",bg = "white")
+
+```
+
+
+#Two-way ANOVA test: Comparing the average frequency of surface contacts between sex, activity and toilet type
+
+``` {r}
+install.packages(c("ggplot2", "ggpubr", "tidyverse", "broom", "AICcmodavg"))
+df2<-vroom(file = "../data/clean_contact_data.csv") %>% 
+  janitor::clean_names()
+
+df2
+  
+
+
 
 
 

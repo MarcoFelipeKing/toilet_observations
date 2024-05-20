@@ -1,0 +1,44 @@
+"Toilet_type","Surface","Hand","n","proportion"
+"Men","Bottle","Left",1,0.5
+"Men","Bottle","Right",1,0.5
+"Men","Face","Left",1,1
+"Men","Inside door handle","Left",11,0.916666666666667
+"Men","Inside door handle","Right",1,0.0833333333333333
+"Men","Outside door handle","Left",3,0.3
+"Men","Outside door handle","Right",7,0.7
+"Men","Phone","Right",1,1
+"Men","Soap dispenser","Left",6,0.6
+"Men","Soap dispenser","Right",4,0.4
+"Men","Tap","Left",21,0.488372093023256
+"Men","Tap","Right",22,0.511627906976744
+"Men","Toilet paper","Right",2,1
+"Women","Bag","Left",6,0.666666666666667
+"Women","Bag","Right",3,0.333333333333333
+"Women","Bin outside the cubicle","Left",5,0.555555555555556
+"Women","Bin outside the cubicle","Right",4,0.444444444444444
+"Women","Clothing","Left",2,0.285714285714286
+"Women","Clothing","Right",5,0.714285714285714
+"Women","Cubicle door handle inside","Left",12,0.444444444444444
+"Women","Cubicle door handle inside","Right",15,0.555555555555556
+"Women","Cubicle door handle outside","Left",7,1
+"Women","Face","Left",1,0.333333333333333
+"Women","Face","Right",2,0.666666666666667
+"Women","Flush button","Left",4,0.363636363636364
+"Women","Flush button","Right",7,0.636363636363636
+"Women","Inside door handle","Left",7,0.636363636363636
+"Women","Inside door handle","Right",4,0.363636363636364
+"Women","Outside door handle","Right",8,1
+"Women","Paper towel","Left",4,0.285714285714286
+"Women","Paper towel","Right",10,0.714285714285714
+"Women","Phone","Left",4,0.5
+"Women","Phone","Right",4,0.5
+"Women","Skin","Left",1,0.2
+"Women","Skin","Right",4,0.8
+"Women","Soap dispenser","Left",5,0.5
+"Women","Soap dispenser","Right",5,0.5
+"Women","Tap","Left",7,0.233333333333333
+"Women","Tap","Right",23,0.766666666666667
+"Women","Toilet paper","Left",5,0.416666666666667
+"Women","Toilet paper","Right",7,0.583333333333333
+"Women","Toilet surface","Left",3,0.6
+"Women","Toilet surface","Right",2,0.4

@@ -3,10 +3,21 @@ title: "Untitled"
 output: github_document
 ---
 
-```{r setup, include=FALSE}
+# 1. Load contact files
+```{r setup, include=FALSE, warning=FALSE, message=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+pacman::p_load(dplyr,vroom,tidyr,tidytext,ggplot2,stringr,stringi,ggpubr,RColorBrewer,paletteer,plotly,kableExtra,ggpval,viridis,plotrix,rstatix,car,htmltools,pwr,pwr2,tibble,clickstream,devtools,TraMineR,markovchain)
 
-pacman::p_load(dplyr,ggplot2,janitor,tidyr,stringr,stringi,hrbrthemes)
+#setwd("C:/Users/CNBH/Documents/GitHub/toilet_observations/contacts")
+
+# Check the new working directory
+getwd()
+
+df1<-vroom::vroom(file="../data/toilet_duration.csv") 
+  janitor::clean_names()
+
+df1
+```
 ```
 
 ## Import data
@@ -18,11 +29,9 @@ This is an R Markdown format used for publishing markdown documents to GitHub. W
 You can include R code in the document as follows:
 
 ```{r participant data}
-df <- read.csv(file = "../data/toilet_duration.csv") %>% janitor::clean_names()
-df
-df <- df  %>% 
+df1 %>%
   mutate(experimentID=row_number()) %>% 
-  mutate(id=paste(experimentID,participant_id)) %>% 
+  mutate(id=paste(experimentID,participantID)) %>% 
   group_by(id) %>% 
   mutate(experimentID = paste0(stri_rand_strings(1, 5, "[A-Z]"), stri_rand_strings(1, 4, "[0-9]"), stri_rand_strings(1, 1, "[A-Z]")))
   
@@ -70,25 +79,44 @@ df %>%
 
 ```
 #T-Test: Time difference for each activity 
-### Urination: Testing the time difference between women and men 
+### Urination: Comparing duration in time spent in sex segregated toilets
+
 ```{r}
-t.test(data=df %>% filter(activity=="U"),log10(total_duration)~gender)
+
+  t.test(log10(total_duration) ~ toilet_type, data = df %>%
+  ungroup() %>%
+  group_by(gender) %>%
+  filter(toilet_type %in% c("M", "W")) %>% filter(activity=="U") %>% 
+  ungroup())
+  
 ```
-```
-#Defecation: Testing the time difference between women and men
+
+#Defecation: Comparing duration in time spent in sex segregated toilets
 ```{r}
+
 t.test(data=df %>%
          filter(activity=="D"), log10(total_duration)~gender)
 ```
-#Gender neutral toilets: Different in urination 
+
+#Comparing duration in time spent in gender neutral for urination 
+```{r}
+df %>% ungroup() %>% 
+  group_by(gender) %>%
+  filter(toilet_type=="GN") 
+  t.test(data=df %>% 
+           filter(activity=="U", toilet_type=="GN"), log10(total_duration)~gender)
+
+```
+#Comparing duration in time spent in gender neutral for defecation
 ```{r}
 df %>% ungroup() %>% 
   group_by(gender) %>%
   filter(toilet_type=="GN")
   t.test(data=df %>% 
-           filter(activity=="U"), log10(total_duration)~gender)
+           filter(activity=="D", toilet_type=="GN"), log10(total_duration)~gender)
 
 ```
+
 
 # Average durations in different toilet types 
 ```{r}
@@ -130,6 +158,7 @@ df %>% ungroup() %>%
 df1 %>% ungroup() %>% 
   group_by(gender, activity) %>% 
   summarise(Mean=mean(total_duration,na.rm=TRUE), SD=sd(total_duration)) 
+
   
   
 ```
@@ -145,6 +174,16 @@ df%>% ungroup() %>%
   )
   
 ```
+# Conduct ANOVA
+```{r}
+df%>% ungroup() %>% 
+  group_by(toilet_type, activity, gender) %>%
+  summarise(
+    Mean=round(mean(total_duration,na.rm=TRUE),2)
+               
+```
+
+
 # Data visualisation 
 
 ```{r}

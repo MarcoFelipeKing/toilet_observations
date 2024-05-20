@@ -1,0 +1,470 @@
+---
+title: "Surface contacts statistical analysis"
+author: "Bushra"
+date: "15/03/2024"
+output: html_document
+---
+# 1. Load contact files
+```{r setup, include=FALSE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+pacman::p_load(dplyr,vroom,tidyr,tidytext,ggplot2,stringr,stringi,ggpubr,RColorBrewer,paletteer,plotly,kableExtra,ggpval,viridis,plotrix,rstatix,car,htmltools,pwr,pwr2,tibble,clickstream,devtools,TraMineR,markovchain)
+
+#setwd("C:/Users/CNBH/Documents/GitHub/toilet_observations/contacts")
+
+# Check the new working directory
+getwd()
+
+df<-vroom::vroom(file="../data/clean_contact_data.csv") 
+```
+##2. Summary statistics 
+
+### The first part computes the interquartile range (IQR) of the counts for male participants in each experiment, while the second part calculates the third quartile (Q3) of the counts for male participants in each experiment. These calculations provide insights into the distribution of observations within each experiment for male participants.
+```{r IQR, echo=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+# IQR of the counts
+
+IQR_male <- df %>% 
+  group_by(Sex, ExperimentID) %>% 
+  filter(Sex=="Male") %>% 
+  tally() %>% 
+  .$n %>% 
+  IQR()
+
+# calculating 75th percentile (Q3) of the counts
+Q3_male <- df %>% 
+  group_by(Sex, ExperimentID) %>% 
+  filter(Sex=="Male") %>% 
+  tally() %>% 
+  .$n %>% 
+  quantile(0.75, na.rm = TRUE)
+```
+
+```{r IQR, echo=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+# IQR of the counts
+
+IQR_female <- df %>% 
+  group_by(Sex, ExperimentID) %>% 
+  filter(Sex=="Female") %>% 
+  tally() %>% 
+  .$n %>% 
+  IQR()
+
+# calculating 75th percentile (Q3) of the counts
+Q3_female <- df %>% 
+  group_by(Sex, ExperimentID) %>% 
+  filter(Sex=="Female") %>% 
+  tally() %>% 
+  .$n %>% 
+  quantile(0.75, na.rm = TRUE)
+```
+
+``` {r mf_sumstats_pvalue, echo=FALSE, warning=FALSE, message=FALSE}
+# performing t tests on the counts based on sex 
+mf_sumstats <- df %>% 
+  group_by(Sex, ExperimentID) %>% 
+  tally() 
+
+mf_sumstats_p <- formatC(as.numeric(t.test(n ~ Sex, mf_sumstats)$p.value), digits = 2)
+```
+
+```{r mf_violin_plots, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 3, fig.cap="\\label{fig:mf_violin_plots}Violin plots showing distribution of surface contacts in between men and women \\label{fig:mf_violin_plots}"}
+
+df %>% 
+  group_by(Sex, ExperimentID) %>% 
+  tally() %>% 
+  ggplot(aes(x=Sex, y=n, fill=Sex))+
+  geom_violin(draw_quantiles = c(0.25, 0.5, 0.75))+
+  theme_bw()+
+  scale_fill_brewer(palette="Pastel2")+
+  xlab("Sex")+
+  ylab("Number of surface contacts")+
+  guides(fill=guide_legend(title="Sex"))+  
+  theme(legend.position = "bottom") +
+  coord_flip()
+
+#ggsave(path = "../outputs/images",filename="frequency_of_surface_contacts_by_sex.png",width = 15,height=10,units = "in",bg = "white")
+```
+
+```{r mf_sum_stats, echo=FALSE, warning=FALSE, message=FALSE}
+df %>% 
+  group_by(Sex, ExperimentID) %>% 
+  tally() %>% 
+  summarise(Average = round(mean(n), 0), 
+            "Standard Deviation" = round(sd(n), 2), 
+            "Variance" = round(var(n), 2), 
+            "Standard Error" = round(std.error(n),2), 
+            Median = format(round(median(n), 2), nsmall = 2)) %>%
+  rename_with(str_to_title) %>% 
+  kable(caption = "Summary statistics for surface contacts based on sex") %>% 
+  kable_styling(latex_options = "HOLD_position")
+
+```
+
+```{r mf_violin_plots, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 3, fig.cap="\\label{fig:mf_violin_plots}Violin plots showing distribution of surface contacts in between men and women \\label{fig:mf_violin_plots}"}
+
+df %>% 
+  group_by(Activity, ExperimentID) %>% 
+  tally() %>% 
+  ggplot(aes(x=Activity, y=n, fill=Activity))+
+  geom_violin(draw_quantiles = c(0.25, 0.5, 0.75))+
+  theme_bw()+
+  scale_fill_brewer(palette="Pastel2")+
+  xlab("Activity")+
+  ylab("Number of surface contacts")+
+  guides(fill=guide_legend(title="Activity"))+  
+  theme(legend.position = "bottom") +
+  coord_flip()
+
+ggsave(path = "../outputs/images",filename="frequency_of_surface_contacts_by_activity.png",width = 15,height=10,units = "in",bg = "white")
+```
+
+```{r mf_sum_stats, echo=FALSE, warning=FALSE, message=FALSE}
+df %>% 
+  group_by(Activity, ExperimentID) %>% 
+  tally() %>% 
+  summarise(Average = round(mean(n), 0), 
+            "Standard Deviation" = round(sd(n), 2), 
+            "Variance" = round(var(n), 2), 
+            "Standard Error" = round(std.error(n),2), 
+            Median = format(round(median(n), 2), nsmall = 2)) %>%
+  rename_with(str_to_title) %>% 
+  kable(caption = "Summary statistics for surface contacts based on activity") %>% 
+  kable_styling(latex_options = "HOLD_position")
+
+```
+
+```{r contacts_by_activity_sex_and_toilet_type, echo=FALSE, warning=FALSE, messages=FALSE, fig.height=6,fig.cap="Spread of data for frequency of surface contacts based on activity, sex and setting \\label{fig:contacts_by_activity_sex_and_toilet_type}", fig.align='center'}
+df %>% 
+  ungroup() %>% 
+  # filter(activity!="MHM") %>%
+  group_by(ExperimentID,Toilet_type,Activity,Sex) %>% 
+  tally() %>% 
+  # filter(n<50) %>%
+  ggplot(aes(x=Sex,y=n,fill=Activity))+
+  # geom_boxplot()+
+  geom_violin(draw_quantiles = c(0.25,0.5,0.75), scale = "area")+
+  # scale_y_continuous(trans="log10")+
+  # geom_jitter(aes(x=activity,y=n,colour=sex),position=position_jitterdodge(jitter.width = 0.1))+
+  theme_bw()+
+  scale_fill_brewer(palette="Pastel2")+
+  xlab("Sex")+
+  ylab("Number of surface contacts")+
+  guides(fill=guide_legend(title="Activity"))+
+  facet_grid(Toilet_type ~. , scale = "free", space = "free")+
+  theme(legend.position = "bottom") +
+  # theme(strip.text.y.right = element_text(angle = 0))+
+  coord_flip()
+  # hrbrthemes::theme_ipsum()
+# ggpval::add_pval(p, test='kruskal.test')
+
+#ggsave(path = "../outputs/images",filename="frequency_of_surface_contacts_by_sex.png",width = 15,height=15,units = "in",bg = "white")
+
+```
+
+```{r summary_statistics, echo=FALSE, warning=FALSE, message=FALSE}
+
+df %>% 
+  group_by(ExperimentID, Activity, Toilet_type, Sex) %>% 
+  tally() %>% 
+  group_by(Activity, Toilet_type, Sex) %>%  
+  summarise(Average = round(mean(n), 0), 
+            "Standard Deviation" = round(sd(n), 2), 
+            "Variance" = round(var(n), 2), 
+            "Standard Error" = round(std.error(n),2), 
+            Median = format(round(median(n), 2), nsmall = 2)) %>% 
+  arrange(Activity, desc(Average)) %>% 
+  rename("toilet type" = Toilet_type) %>% 
+  rename_with(str_to_title) %>% 
+  kable(caption = "Summary statistics for surface contacts based on activity, sex and toilet type") %>% 
+  kable_styling(latex_options = "HOLD_position")
+
+```
+
+```{r sumstats_activity_p, echo = FALSE, warning = FALSE, message = FALSE}
+
+activity_sumstats <- df %>% 
+  filter(Activity != "MHM") %>% 
+  group_by(ExperimentID, Activity, Toilet_type) %>% 
+  tally() %>% 
+  group_by(Activity)
+
+activity_sumstats_p <- formatC(as.numeric(format(t.test(n ~ Activity, activity_sumstats)$p.value, scientific = FALSE)), digits = 2)
+
+```
+
+```{r summary_statistics_activity, echo = FALSE, warning = FALSE, message = FALSE}
+
+df %>% 
+  group_by(ExperimentID, Activity, Toilet_type) %>% 
+  tally() %>% 
+  group_by(Activity) %>%  
+  summarise(Average = round(mean(n), 0), 
+            "Standard Deviation" = round(sd(n), 2), 
+            "Variance" = round(var(n), 2), 
+            "Standard Error" = round(std.error(n),2), 
+            Median = format(round(median(n), 2), nsmall = 2)) %>% 
+  arrange(Activity, desc(Average)) %>% 
+  # rename("toilet type" = toilet_type) %>% 
+  rename_with(str_to_title) %>% 
+  kable(caption = "Summary statistics for surface contacts based on activity alone") %>% 
+  kable_styling(latex_options = "HOLD_position")
+
+```
+
+## Frequency of objects touched
+
+### Total touches {#total-touches-objects-touched}
+
+```{r objects_touched, echo=FALSE, warning=FALSE, message=FALSE, fig.width=10, fig.height=7, fig.cap="Touch frequency for each object in different toilet types \\label{fig:objects_touched}"}
+
+  df %>% 
+  mutate(Surface = str_trim(Surface)) %>%
+  mutate(Surface = if_else(str_detect(Surface, "Flush botton"), str_replace(Surface, "Flush botton", "Flush button"), Surface)) %>% 
+  mutate(Surface = if_else(str_detect(Surface, "Flush Flush button"), str_replace(Surface, "Flush Flush button", "Flush button"), Surface)) %>% 
+  mutate(Surface = if_else(str_detect(Surface, "Tampons"), str_replace(Surface, "Tampons", "Tampon"), Surface)) %>%
+  mutate(Surface = ifelse(str_detect(Surface, "Toilets surface"), str_replace(Surface, "Toilets surface", "Toilet surface"), Surface)) %>% 
+  group_by(Toilet_type, Surface) %>% 
+  summarise(n=n(), .groups="drop") %>% 
+  mutate(proportion = prop.table(n)) %>%
+  # arrange(toilet_type, desc(n)) %>% 
+  # df[order(df$toilet_type, df$surface), ] %>% 
+  ggplot(aes(x=reorder_within(Surface, proportion, Toilet_type), y=proportion, fill=Surface))+
+  geom_bar(stat = "identity", position="dodge")+
+  theme_bw()+
+  facet_wrap(~Toilet_type, scales = "free")+
+  scale_fill_viridis(discrete=TRUE, option="turbo")+
+  #scale_fill_paletteer_d(`"ggsci::default_igv"`)+
+  #scale_fill_paletteer_c(`"grDevices::rainbow"`, discrete=TRUE)+
+ #scale_fill_brewer(palette = "Pastel2")
+  #scale_fill_gradientn(colours = c("#223843", "#D77A61", "#DBD3D8", "#D8B4A0"), breaks = Surface, guide = "legend")+
+  coord_flip()+
+  scale_x_reordered()+
+  xlab("Surface")+
+  ylab("Proportion of contacts per toilet type")+
+  theme(legend.position = "bottom", legend.justification = "right")+
+   guides(fill=guide_legend(title="Surface")) -> bar_chart_freq
+bar_chart_freq
+  # xlab("Toilet Type")+
+  # ylab("Number of contacts")+
+  # # scale_y_continuous(limits = c(0,1))+
+  # hrbrthemes::theme_ipsum()
+
+# plot(objects_touched)
+
+# ggplotly(bar_chart_freq) # Duplicates caption and does not present in pdf format. always_allow_html: true needed in YAML
+
+ggsave(path = "../outputs/images",filename="proportion_of_contacts_per_toilet.png",width = 10,height=10,units = "in",bg = "white")
+
+```
+
+###top surfaces touched by order of proportional frequency 
+```{r objects_touched_summary, echo=FALSE, warning=FALSE, message=FALSE}
+df %>% 
+  mutate(surface = str_trim(Surface)) %>%
+  mutate(surface = if_else(str_detect(Surface, "Flush botton"), 
+                           str_replace(Surface, "Flush botton", "Flush button"), Surface)) %>% 
+  mutate(surface = if_else(str_detect(Surface, "Flush Flush button"), 
+                           str_replace(Surface, "Flush Flush button", "Flush button"), Surface)) %>% 
+  mutate(surface = if_else(str_detect(Surface, "Tampons"), 
+                           str_replace(Surface, "Tampons", "Tampon"), Surface)) %>%
+  mutate(surface = if_else(str_detect(Surface, "Toilets surface"), 
+                          str_replace(Surface, "Toilets surface", "Toilet surface"), Surface)) %>% 
+  group_by(Toilet_type, Surface) %>% 
+  summarise(n=n()) %>% 
+  ungroup() %>% 
+  mutate(proportion = prop.table(n)) %>%
+  arrange(desc(proportion), Toilet_type, desc(n), Surface) %>% 
+  rename("Toilet Type" = Toilet_type, Surface = Surface, Contacts = n, Proportion = proportion) %>% 
+  head(12) %>% 
+  knitr::kable(caption = "Top 12 surfaces touched by order of proportional frequency") %>% 
+  kable_styling(latex_options="HOLD_position")
+```
+
+```{r total_touched_by_toilet_type, include=FALSE, warning=FALSE, message=FALSE}
+
+df %>% 
+  mutate(Surface = str_trim(Surface)) %>%
+  mutate(Surface = if_else(str_detect(Surface, "Flush botton"), str_replace(Surface, "Flush botton", "Flush button"), Surface)) %>% 
+  mutate(Surface = if_else(str_detect(Surface, "Flush Flush button"), str_replace(Surface, "Flush Flush button", "Flush button"), Surface)) %>% 
+  mutate(Surface = if_else(str_detect(Surface, "Tampons"), str_replace(Surface, "Tampons", "Tampon"), Surface)) %>%
+  mutate(Surface = ifelse(str_detect(Surface, "Toilets surface"), str_replace(Surface, "Toilets surface", "Toilet surface"), Surface)) %>% 
+  count(Toilet_type)
+```
+
+```{r bidirectional_bar_chart_left_right_surface_contacts, echo=FALSE, warning=FALSE, message=FALSE, fig.width=10, fig.height=7.5, fig.cap = "\\label{fig:left_right_surfaces}Touch frequency for each object in different toilet types grouped by hand"}
+
+df %>% 
+  filter(Hand!="N/A" & Hand!="Both") %>% 
+  group_by(Toilet_type, Surface, Hand) %>% 
+  tally() %>%
+  mutate(proportion=prop.table(n)) %>% 
+  #mutate(proportion=case_when(Hand=="Right"~proportion,
+   #                           TRUE~-proportion))
+  ggplot(aes(x=Surface, y=ifelse(Hand=="Right", proportion, -proportion), fill=Hand))+
+  geom_bar(stat = "identity", position = "identity")+
+  facet_wrap(~Toilet_type,scale = "free_x")+
+  coord_flip()+
+  theme_bw()+
+  scale_fill_viridis(discrete=TRUE, option="cividis")+
+  #scale_fill_paletteer_d(`"ggsci::default_igv"`)+
+  #scale_fill_manual(values = c("blue", "green")) 
+  xlab("Surfaces")+
+  ylab("Proportion of contacts per toilet type")+
+  guides(fill=guide_legend(title="Hand"))
+  
+ggsave(path = "../outputs/images",filename="proportion_of_contacts_per_toilet_per_hand.png",width = 10,height=7.5,units = "in",bg = "white")
+
+
+
+```
+
+```{r }
+df %>% 
+  ungroup() %>% 
+  group_by(ExperimentID,Toilet_type,Surface, Hand) %>%
+  tally()%>%
+  #mutate(proportion=prop.table(n))%>%
+  ggplot(aes(x=Hand, y=n, fill=Hand))+
+  geom_violin(draw_quantiles = c(0.25, 0.5, 0.75))+
+  scale_fill_brewer(palette = "Set1")+
+  #geom_jitter(width = 0.2, height= 0.1, alpha=0.8)+
+  hrbrthemes::theme_ipsum(axis_title_size = 14)+
+  theme(legend.position = " ")+
+  coord_flip()
+   #labs(title = "Frequency of surface contacts by left and right hand",caption = "some caption")+ 
+  xlab("Hand")+
+  ylab("Frequency")
+
+ggsave(path = "../outputs/images",filename="frequency_of_surface_contacts_each_hand.png",width = 10,height=10,units = "in",bg = "white")
+```
+
+
+```{r summary_statistics_activity, echo = FALSE, warning = FALSE, message = FALSE}
+
+# 3.1 Right vs left hand contacts -----
+  df %>% 
+    group_by(ExperimentID,Hand,Sex,Toilet_type,Activity) %>%
+    tally() %>% 
+    filter(Hand!="Both") %>% 
+    ggplot()+
+    geom_violin(aes(x=Hand,y=n,fill=Sex),draw_quantiles = c(0.25,0.5,0.75))+
+    # geom_jitter(aes(x=sex,n),width = 0.1,alpha=0.4)+
+    scale_fill_brewer(palette = "Pastel2")+
+    xlab("")+
+    ylab("Number of contacts")+
+    # geom_density(aes(x=n,fill=activity),alpha=0.2)+
+    # geom_bar(stat = "identity")
+    # scale_y_discrete(guide = guide_axis(angle = 90))+
+    coord_flip()+
+    hrbrthemes::theme_ipsum()
+  #ggpval::add_pval(p, test='kruskal.test')
+
+#ggsave(path = "../outputs/images",filename="freq_surface_contacts_per_hand_by_sex.png",width = 10,height=5,units = "in",bg = "white")
+  
+```
+
+Using markov chains to predict sequence of surface contacts 
+``` {r}
+# installing markov chain package 
+
+#library(markovchain)
+#library (dplyr)
+#df
+
+
+#df$SurfaceCategories[df$Surface=="Cubicle door handle inside" |
+#                                       df$Surface=="Cubicle door handle outside"]<-"Entry/Exit"
+
+#sequencedata_women_urin_cubicle <- df %>% 
+ # group_by(Sex, ExperimentID, Surface, SurfaceCategories, Activity, Toilet_type)%>% 
+#  filter(Sex=="Female" & Activity=="Urination" & Toilet_type=="Women" & (SurfaceCategories=="Personal" |       SurfaceCategories=="Cubicle"))%>%
+ # arrange(ExperimentID, Surface)
+
+#sequencedata_women_urin_hygiene <- df %>% 
+ group_by(Sex, ExperimentID, Surface, SurfaceCategories, Activity, Toilet_type)%>% 
+#  filter(Sex=="Female" & Activity=="Urination" & Toilet_type=="Women" & SurfaceCategories=="Hygiene")%>%
+#  arrange(ExperimentID, Surface)
+ 
+# Code to prepare data and create subsets
+
+# Call the function for different groups and activities
+
+mc_female_ss_urination_cubicle <- create_markov_chain(df, "Female", "Urination", "Women", c("Personal", "Cubicle"))
+mc_female_ss_urination_hygiene <- create_markov_chain(df, "Female", "Urination", "Women", "Hygiene")
+mc_female_ss_defecation_cubicle <- create_markov_chain(df, "Female", "Defecation", "Women", c("Personal", "Cubicle"))
+mc_female_ss_defecation_hygiene <- create_markov_chain(df, "Female", "Defecation", "Women", "Hygiene")
+mc_female_ss_mhm_cubicle <- create_markov_chain(df, "Female", "MHM", "Women", c("Personal", "Cubicle"))
+mc_female_ss_mhm_hygiene <- create_markov_chain(df, "Female", "MHM", "Women", "Hygiene")
+mc_male_ss_defecation_cubicle <- create_markov_chain(df, "Male", "Defecation", "Men", c("Personal", "Cubicle"))
+mc_male_ss_defecation_hygiene <- create_markov_chain(df, "Male", "Defecation", "Men", "Hygiene")
+mc_female_gn_urination_cubicle <- create_markov_chain(df, "Female", "Urination", "Gender neutral", c("Personal", "Cubicle"))
+mc_female_gn_urination_hygiene <- create_markov_chain(df, "Female", "Urination", "Gender neutral", "Hygiene")
+mc_female_gn_defecation_cubicle <- create_markov_chain(df, "Female", "Defecation", "Gender neutral", c("Personal", "Cubicle"))
+mc_female_gn_defecation_hygiene <- create_markov_chain(df, "Female", "Defecation", "Gender neutral", "Hygiene")
+mc_female_gn_mhm_cubicle <- create_markov_chain(df, "Female", "MHM", "Gender neutral", c("Personal", "Cubicle"))
+mc_female_gn_mhm_hygiene <- create_markov_chain(df, "Female", "MHM", "Gender neutral", "Hygiene")
+mc_male_gn_urination_cubicle <- create_markov_chain(df, "Male", "Urination", "Gender neutral", c("Personal", "Cubicle"))
+mc_male_gn_urination_hygiene <- create_markov_chain(df, "Male", "Urintation", "Gender neutral", "Hygiene")
+mc_male_gn_defecation_cubicle <- create_markov_chain(df, "Male", "Defecation", "Gender neutral", c("Personal", "Cubicle"))
+mc_male_gn_defecation_hygiene <- create_markov_chain(df, "Male", "Defecation", "Gender neutral", "Hygiene")
+mc_male_ss_urination_hygiene <- create_markov_chain(df, "Male", "Urination", "Men", c("Personal", "Hygiene"))
+
+
+# Access the transition matrix and save to object
+#transition_matrix_personal_cubicle <- mc$estimate@transitionMatrix
+#transition_matrix_hygiene <- mc_hygiene$estimate@transitionMatrix
+
+# Extract states from the transition matrix
+states <- rownames(transition_matrix_personal_cubicle)
+states_hygiene<- rownames(transition_matrix_hygiene)
+
+#Generate sequences for all my people
+num.people<-1000
+all.my.events<-list()
+ 
+for (p in 1:num.people){
+
+ # Predict the next surface contact
+events<-c("Door handle outside", "Cubicle door handle outside")
+
+i<-3
+while(events[i-1]!="Flush button"){
+  if (i==3){
+    nextevent<-sample(states,1)
+  }else{
+    nextevent<-sample(states,1,replace=TRUE,prob=transition_matrix_personal_cubicle[events[i-1],])
+  }
+  events<-c(events,nextevent)
+  i<-i+1
+}
+
+events<-c(events,"Cubicle door handle inside")
+
+i.final<-i+1
+i=i.final
+while(events[i-1]!="Hand dryer" & events[i-1]!="Paper towel"){
+   if (i==i.final){
+    nextevent<-sample(states_hygiene,1)
+  }else{
+    nextevent<-sample(states_hygiene,1,replace=TRUE,prob=transition_matrix_hygiene[events[i-1],])
+  }
+  events<-c(events,nextevent)
+  i<-i+1
+}
+
+events<-c(events,"Door handle inside")
+
+all.my.events[[p]]<-events
+}                    
+
+event.length<-rep(NA,num.people)
+for(k in 1:num.people){
+  event.length[k]<-length(all.my.events[[k]])
+} 
+
+summary(event.length)
+view(all.my.events[500])
+                  
+
+```
+
+
