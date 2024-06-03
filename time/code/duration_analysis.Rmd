@@ -20,39 +20,51 @@ df1
 ```
 ```
 
-## Import data
-
-This is an R Markdown format used for publishing markdown documents to GitHub. When you click the **Knit** button all R code chunks are run and a markdown file (.md) suitable for publishing to GitHub is generated.
-
-## Including Code
-
-You can include R code in the document as follows:
-
 ```{r participant data}
-df1 %>%
+
+df1 <- df1 %>%
   mutate(experimentID=row_number()) %>% 
   mutate(id=paste(experimentID,participantID)) %>% 
   group_by(id) %>% 
-  mutate(experimentID = paste0(stri_rand_strings(1, 5, "[A-Z]"), stri_rand_strings(1, 4, "[0-9]"), stri_rand_strings(1, 1, "[A-Z]")))
+  mutate(experimentID = paste0(stri_rand_strings(1, 5, "[A-Z]"), stri_rand_strings(1, 4, "[0-9]"), stri_rand_strings(1, 1, "[A-Z]"))) %>% 
+  ungroup()
   
- head(df) 
+  
+ head(df1)
+
 ``` 
+
+
+
+```{r}
+# Ensuring total duration is numeric 
+df1 <- df1 %>%
+  mutate(`Total duration` = as.numeric(`Total duration`)) %>%  
+  
+  #Calculate summary statistics 
+  summary_stats <- df1 %>%
+  group_by(Gender, activity, toilet_type) %>%
+  summarise(
+    Average = round(mean(`Total duration`, na.rm = TRUE), 2),
+    `Standard Deviation` = round(sd(`Total duration`, na.rm = TRUE), 2),
+    Variance = round(var(`Total duration`, na.rm = TRUE), 2),
+    `Standard Error` = round(sd(`Total duration`, na.rm = TRUE) / sqrt(n()), 2),
+    Median = round(median(`Total duration`, na.rm = TRUE), 2)
+  ) %>%
+  ungroup() %>%
+  rename_with(str_to_title) %>% 
+  kable(caption = "Summary statistics for duration based on activity, toilet type and sex") %>% 
+  kable_styling(latex_options = "HOLD_position")
+  
+```
+
+
 # 1.1 Summary table
 # Hyptheses
 ### Hypothesis 1: Women spend longer than men in public toilets
 
 ```{r hypothesis 1}
 
-
-#cleaning data
-df %>% 
-mutate ()
-
-df %>% ungroup() %>% 
-  group_by(gender)%>% 
-  summarise(Mean=mean(total_duration),
-            SD=sd(total_duration,na.rm = TRUE))
-```
 ```{r Mean by toilet type & activity}
 df %>% ungroup() %>% 
   group_by(gender,toilet_type,activity)%>% 
@@ -123,6 +135,22 @@ df %>% ungroup() %>%
 df%>% ungroup () %>%
   group_by(gender, toilet_type)%>%
   summarise(Mean=mean(total_duration), SD=sd(total_duration, na.rm = TRUE))
+```
+
+#Comparing MHM in sex-segregated and gender neutral toilets
+```{r}
+
+m_activity_data <- df1 %>%
+  filter(activity == "M") %>%
+  group_by(toilet_type) %>%
+  mutate(log_total_duration = log10(Total duration))  
+
+# Conduct t-test comparing the log total durations between the two toilet types
+t_test_results <- t.test(log_total_duration ~ toilet_type, data = m_activity_data)
+
+# Print the results of the t-test
+print(t_test_results)
+
 ```
 
 #Learning to clean a  dataframe 

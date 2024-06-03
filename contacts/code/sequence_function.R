@@ -48,7 +48,7 @@ generate_my_sequences <- function(df, Sex, Activity, Toilet_type, num.people) {
   # Access the transition matrix and save to object
   transition_matrix_personal_cubicle <- mc_personal_cubicle$estimate@transitionMatrix
   states <- rownames(transition_matrix_personal_cubicle)
-  
+  write.csv(transition_matrix_personal_cubicle,"tell it where/nameoffile.csv",row.names = FALSE)
   transition_matrix_hygiene<-mc_hygiene$estimate@transitionMatrix
   states_hygiene<- rownames(transition_matrix_hygiene)
   

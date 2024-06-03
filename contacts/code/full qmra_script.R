@@ -5,7 +5,7 @@ pacman::p_load(dplyr,vroom,tidyr,tidytext,ggplot2,stringr,stringi,ggpubr,RColorB
 require(dplyr)
 require(markovchain)
 require(vroom)
-df<-vroom::vroom(file="../data/clean_contact_data.csv")
+df<-vroom::vroom(file="contacts/data/clean_contact_data.csv")
 
 df <- df %>%
   mutate(Surface = str_trim(Surface)) %>%
@@ -31,10 +31,10 @@ write.csv(hands_proportions, "hands_proportions_v2.csv", row.names = FALSE)
 df$SurfaceCategories[df$Surface=="Cubicle door handle inside" |
                        df$Surface=="Cubicle door handle outside"]<-"Entry/Exit"
 
-setwd("C:/Users/CNBH/Documents/GitHub/toilet_observations/contacts/code")
+#setwd("C:/Users/CNBH/Documents/GitHub/toilet_observations/contacts/code")
 
 #STEP 2 = SET UP MY SEQUENCE GENERATOR FUNCTION
-source("sequence_function.R")
+source("contacts/code/sequence_function.R")
 
 #---------------------THIS WILL ALL BE REPEATED.... 
 
