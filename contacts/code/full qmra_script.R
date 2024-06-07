@@ -39,7 +39,7 @@ source("contacts/code/sequence_function.R")
 #---------------------THIS WILL ALL BE REPEATED.... 
 
 #STEP 3 = GENERATE MY SEQUENCES FOR THE EXPOSURE MODEL FOR CASE _________ 
-generate_my_sequences(df, "Female", "Urination", "Women", num.people=10)
+create_markov_chain(df, "Female", "Urination", "Women", num.people=10)
 
 #STEP 4 = SETTING UP MY PARAMETERS FOR THE EXPOSURE MODEL
 

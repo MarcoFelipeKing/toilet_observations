@@ -1,6 +1,6 @@
 # Define the create_markov_chain function
 
-generate_my_sequences <- function(df, Sex, Activity, Toilet_type, num.people) {
+create_markov_chain <- function(df, Sex, Activity, Toilet_type, num.people,file_name) {
   
   
   # Filter the data based on sex, activity, toilet type & surface category
@@ -48,7 +48,7 @@ generate_my_sequences <- function(df, Sex, Activity, Toilet_type, num.people) {
   # Access the transition matrix and save to object
   transition_matrix_personal_cubicle <- mc_personal_cubicle$estimate@transitionMatrix
   states <- rownames(transition_matrix_personal_cubicle)
-  write.csv(transition_matrix_personal_cubicle,"tell it where/nameoffile.csv",row.names = FALSE)
+  write.csv(transition_matrix_personal_cubicle,file = paste0("'",file_name,"'",".csv"),row.names = FALSE)
   transition_matrix_hygiene<-mc_hygiene$estimate@transitionMatrix
   states_hygiene<- rownames(transition_matrix_hygiene)
   
@@ -112,7 +112,7 @@ generate_my_sequences <- function(df, Sex, Activity, Toilet_type, num.people) {
   
   #saving all of my event sequences globally (i.e., I can access it outside the function!)
   #all.my.events<<-all.my.events
-  
+  return(all.my.events)
 } #end of my function bracket
 
 

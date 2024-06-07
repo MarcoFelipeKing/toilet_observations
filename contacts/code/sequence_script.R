@@ -5,9 +5,9 @@ df$SurfaceCategories[df$Surface=="Cubicle door handle inside" |
 
 #sets up my custom function in R so that R knows what to do if I
 #reference the function
-source("sequence_function.R")
+source("contacts/code/sequence_function.R")
 
-generate_my_sequences <- create_markov_chain(df, "Female", "Urination", "Women", num.people=10)
+mc_female_ss_urination_cubicle  <- create_markov_chain(df, "Female", "Urination", "Women", num.people=10,file_name='mc_female_ss_urination_cubicle')# add num.people for each subset
 mc_female_ss_urination_hygiene <- create_markov_chain(df, "Female", "Urination", "Women", "Hygiene")
 mc_female_ss_defecation_cubicle <- create_markov_chain(df, "Female", "Defecation", "Women", c("Personal", "Cubicle"))
 mc_female_ss_defecation_hygiene <- create_markov_chain(df, "Female", "Defecation", "Women", "Hygiene")
