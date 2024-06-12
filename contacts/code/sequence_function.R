@@ -5,7 +5,7 @@ create_markov_chain <- function(df, Sex, Activity, Toilet_type, num.people,file_
   
   # Filter the data based on sex, activity, toilet type & surface category
   
-  if (Sex=="Male" & Activity=="Urination"){
+  if (Sex=="Male" & Activity=="Urination" & Toilet_type=="Men"){
     
     subset_data_cubicle <- df %>%
       filter(Sex==Sex & Activity == Activity & SurfaceCategories == c("Personal"))%>%
@@ -45,19 +45,23 @@ create_markov_chain <- function(df, Sex, Activity, Toilet_type, num.people,file_
   mc_hygiene <- markovchainFit(data = list.hygiene)
   
 
-  # Access the transition matrix and save to object
+  # Access the transition matrix and save to object 
+  #Save each transition matrix with a unique name based on the subset
   transition_matrix_personal_cubicle <- mc_personal_cubicle$estimate@transitionMatrix
-  states <- rownames(transition_matrix_personal_cubicle)
-  write.csv(transition_matrix_personal_cubicle,file = paste0("'",file_name,"'",".csv"),row.names = FALSE)
+  states <- rownames(transition_matrix_personal_cubicle) # This line might not be needed unless used later
+  print(transition_matrix_personal_cubicle)
+  write.csv(transition_matrix_personal_cubicle, file = paste0(file_name, "_personal_cubicle.csv"), row.names = TRUE)
+  
   transition_matrix_hygiene<-mc_hygiene$estimate@transitionMatrix
-  states_hygiene<- rownames(transition_matrix_hygiene)
+  states_hygiene<- rownames(transition_matrix_hygiene) # This line might not be needed unless used later
+  write.csv(transition_matrix_hygiene, file = paste0(file_name, "_hygiene.csv"), row.names = TRUE)
   
   #Generate sequences for all my people
   all.my.events<<-list()
   
   
   for (p in 1:num.people){
-    print(p)
+    #print(p)
     
     # Predict the next surface contact
     if(Sex=="Male" & Activity=="Urination"){
