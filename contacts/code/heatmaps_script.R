@@ -9,7 +9,7 @@ library(tidyr)
 library(reshape2)
 
 # Load the transition matrix data
-transition_matrix <- read_csv("C:/Users/CNBH/Documents/GitHub/toilet_observations/mc_male_ss_defecation_cubicle_10000_hygiene.csv")
+transition_matrix <- read_csv("C:/Users/CNBH/Documents/GitHub/toilet_observations/contacts/outputs/transition_matrix.csv")
 
 #print(head(transition_matrix)) #to see data
 
@@ -29,15 +29,11 @@ data_long <- melt(transition_matrix[, -1], variable.name = "To_State", value.nam
 # Adding row names as a column for ggplot
 data_long$From_State <- rownames(transition_matrix)
 
-# Convert factor to ensure categorical axis labels 
-#data_long$State <- factor(data_long$State)
-#data_long$To_State <- factor(data_long$To_State)
-
 # Create the heatmap
 heatmap_plot <- ggplot(data_long, aes(x = From_State, y = To_State, fill = Probability)) +
   geom_tile() +  # This creates the tiles for the heatmap
   scale_fill_gradient(low = "orange", high = "blue", na.value = "white", limits = c(0, 1)) +  # Adjust color gradient
-  labs(title = "Transition Matrix Heatmap for Defecation in Men's Toilet (handwashing setting)",
+  labs(title = "Transition Matrix Heatmap: Sequence of Surface Contacts During Urination in Men's Toilet (handwashing setting)",
        x = "From State",
        y = "To State",
        fill = "Probability") +

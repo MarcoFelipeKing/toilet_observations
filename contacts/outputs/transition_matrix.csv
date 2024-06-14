@@ -1,0 +1,20 @@
+,Door handle outside,Cubicle door handle outside,Toilet surface,Cubicle door handle inside,Hand dryer,Door handle inside,Bag,Phone,Toilet paper,Flush button,Soap dispenser,Tap,Paper towel,Bin outside the cubicle,Bin inside the cubicle,Clothing,Skin,Bottle,Hair
+Door handle outside,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cubicle door handle outside,0,0,0.2,0,0,0,0.2,0,0.1,0,0,0,0,0,0.1,0.1,0,0.1,0.2
+Toilet surface,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cubicle door handle inside,0,0,0,0,0.2,0,0,0,0,0,0.3,0.1,0.1,0.3,0,0,0,0,0
+Hand dryer,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bag,0,0,0.2,0,0,0,0.3,0.2,0.1,0,0,0,0,0,0,0.2,0,0,0
+Phone,0,0,0,0,0,0,0,0,0.666666667,0,0,0,0,0,0,0.333333333,0,0,0
+Toilet paper,0,0,0,0,0,0,0.076923077,0.038461538,0.192307692,0.038461538,0,0,0,0,0,0.269230769,0.307692308,0.038461538,0.038461538
+Flush button,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Soap dispenser,0,0,0,0,0,0,0,0,0,0,0.111111111,0.888888889,0,0,0,0,0,0,0
+Tap,0,0,0,0,0,0,0,0,0,0,0.227272727,0.590909091,0.136363636,0.045454545,0,0,0,0,0
+Paper towel,0,0,0,0,0,0,0,0,0,0,0,0,0.333333333,0.666666667,0,0,0,0,0
+Bin outside the cubicle,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bin inside the cubicle,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Clothing,0,0,0,0,0,0,0.117647059,0,0.529411765,0.176470588,0,0,0,0,0,0.058823529,0.058823529,0.058823529,0
+Skin,0,0,0,0,0,0,0.111111111,0,0.555555556,0.111111111,0,0,0,0,0,0.111111111,0,0,0.111111111
+Bottle,0,0,0.333333333,0,0,0,0,0,0.666666667,0,0,0,0,0,0,0,0,0,0
+Hair,0,0,0,0,0,0,0,0,0.25,0,0,0,0,0,0,0.75,0,0,0
+Door handle inside,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
