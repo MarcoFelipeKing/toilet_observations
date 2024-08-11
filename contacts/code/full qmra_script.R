@@ -5,6 +5,7 @@ pacman::p_load(dplyr,vroom,tidyr,tidytext,ggplot2,stringr,stringi,ggpubr,RColorB
 require(dplyr)
 require(markovchain)
 require(vroom)
+require(truncdist)
 df<-vroom::vroom(file="contacts/data/clean_contact_data.csv")
 
 df <- df %>%

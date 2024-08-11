@@ -9,7 +9,7 @@ library(tidyr)
 library(reshape2)
 
 # Load the transition matrix data
-transition_matrix <- read_csv("C:/Users/CNBH/Documents/GitHub/toilet_observations/contacts/outputs/transition_matrix.csv")
+transition_matrix <- read_csv("C:/Users/CNBH/Documents/GitHub/toilet_observations/mc_female_ss_defecation_10000_cubicle.csv")
 
 #print(head(transition_matrix)) #to see data
 
@@ -33,7 +33,7 @@ data_long$From_State <- rownames(transition_matrix)
 heatmap_plot <- ggplot(data_long, aes(x = From_State, y = To_State, fill = Probability)) +
   geom_tile() +  # This creates the tiles for the heatmap
   scale_fill_gradient(low = "orange", high = "blue", na.value = "white", limits = c(0, 1)) +  # Adjust color gradient
-  labs(title = "Transition Matrix Heatmap: Sequence of Surface Contacts During Urination in Men's Toilet (handwashing setting)",
+  labs(title = "Transition Matrix Heatmap: Sequence of Surface Contacts During Defecation in Women's Toilet",
        x = "From State",
        y = "To State",
        fill = "Probability") +

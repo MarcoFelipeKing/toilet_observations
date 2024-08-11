@@ -1,16 +1,16 @@
-#exposure.model<-function(num.people,Activity,Toilet_type){
+library(truncdist)
 
-#DEFINE THESE VARIABLES TO CHECK THINGS OUT
-num.people=10
-Activity="Urination"
-Toilet_type="Women"
+#Define the exposure model function
+exposure.model <- function(num.people = 10, Activity = "Urination", Toilet_type = "Women") {
   
-  require(truncdist)
+  # Ensure that necessary datasets are loaded
+  if(!exists("all.my.events") || !exists("hands_proportions")) {
+    stop("Required data 'all.my.events' or 'hands_proportions' not found in the environment")
+  }
   
   exposure.people<-list()
   
- # for (i in 1:num.people){ #WE ARE COMMENTING THIS OUT SO THAT WE CAN FOCUS ON GETTING THE CODE FOR 
-  #1 PERSON TO RUN SMOOTHLY
+ for (i in 1:num.people){ 
   i=1
     
     #creating my "spreadsheet" and adding the events for person i in my first column
@@ -324,13 +324,13 @@ exposure.frame$S.h[exposure.frame$events=="Bin outside the cubicle"|
                                                                                                exposure.frame$events=="Tissue paper"]), min=0.03, max=0.06)
 #FSA: closed hand grip
 exposure.frame$S.h[exposure.frame$events=="Door handle inside"|
-                     exposure.frame$events=="Cubicle door handle inside"| #double check this
+                     exposure.frame$events=="Cubicle door handle inside"| 
                      exposure.frame$events=="Phone"|
                      exposure.frame$events=="Clothing"|
                      exposure.frame$events=="Bag"|
                      exposure.frame$events=="Bottle"|
                      exposure.frame$events=="Toilet brush handle"]<-runif(length(exposure.frame$S.h[exposure.frame$events=="Door handle inside"|
-                                                                                                      exposure.frame$events=="Cubicle door handle inside"| #double check this
+                                                                                                      exposure.frame$events=="Cubicle door handle inside"| 
                                                                                                       exposure.frame$events=="Phone"|
                                                                                                       exposure.frame$events=="Clothing"|
                                                                                                       exposure.frame$events=="Bag"|
@@ -493,7 +493,7 @@ ggplot(plotting.frame)+geom_point(aes(x=position,y=Chand,group=hand,color=events
 print(exposure.frame)
 
 
- # } #end of the loop through each person that I model
+ } #end of the loop through each person that I model
   
   
-#}# end of my function
+}# end of my function
