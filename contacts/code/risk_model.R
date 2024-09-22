@@ -1,4 +1,4 @@
-#1. Install and load necessary libraries 
+#1. Install and load libraries 
 
 install.packages("truncdist")  # For truncated distributions
 install.packages("dplyr")      # For data manipulation
@@ -10,81 +10,36 @@ library(ggplot2)
 library(drc)
 
 # 2. DEFINE PARAMETERS
-num_people <- 1000  # Number of simulations
-activity <- "Urination"  # Example activity
-toilet_type <- "Women"  # Example toilet type
-sex <- "Female"  # Example sex
+num_people <- 10000  # Number of simulations
+activity <- "Urination"  
+toilet_type <- "Men"  
+sex <- "Male"  
 
 # Surface contact frequencies (Average number of contacts)
-average_contacts <- 20  # Example for Urination - Female - Women
-
-# Transfer Efficiencies
-
-# Define means and standard deviations for TE_SH (hand-to-surface) and TE_HS (surface-to-hand)
-surface_params_TE_SH <- data.frame(
-  mean = c(0.28, 0.23, 0.3, 0.4, 0.23),
-  sd = c(0.23, 0.19, 0.2, 0.4, 0.24)
-)
-
-surface_params_TE_HS <- data.frame(
-  mean = c(0.17, 0.18, 0.3, 0.4, 0.23),
-  sd = c(0.19, 0.20, 0.2, 0.4, 0.24)
-)
-
-# Pre-allocate lists to store the results for TE_SH and TE_HS
-transfer_efficiencies_TE_SH <- list()
-transfer_efficiencies_TE_HS <- list()
-
-# Loop through each surface's parameters for TE_SH and simulate transfer efficiencies
-for (i in 1:nrow(surface_params_TE_SH)) {
-  mean_val_TE_SH <- surface_params_TE_SH$mean[i]
-  sd_val_TE_SH <- surface_params_TE_SH$sd[i]
-  
-  # Simulate transfer efficiency for TE_SH
-  TE_SH <- rtrunc(num_people, spec="norm", a=0, b=1, mean=mean_val_TE_SH, sd=sd_val_TE_SH)
-  
-  # Store the results in the list
-  transfer_efficiencies_TE_SH[[i]] <- TE_SH
-}
-
-# Loop through each surface's parameters for TE_HS and simulate transfer efficiencies
-for (i in 1:nrow(surface_params_TE_HS)) {
-  mean_val_TE_HS <- surface_params_TE_HS$mean[i]
-  sd_val_TE_HS <- surface_params_TE_HS$sd[i]
-  
-  # Simulate transfer efficiency for TE_HS
-  TE_HS <- rtrunc(num_people, spec="norm", a=0, b=1, mean=mean_val_TE_HS, sd=sd_val_TE_HS)
-  
-  # Store the results in the list
-  transfer_efficiencies_TE_HS[[i]] <- TE_HS
-}
-
-# Define which surface you want to use (here, selecting the first surface)
-selected_TE_SH <- transfer_efficiencies_TE_SH[[1]]  # Example: first surface for TE_SH
-selected_TE_HS <- transfer_efficiencies_TE_HS[[1]]  # Example: first surface for TE_HS
+average_contacts <- 10  
 
 #3. SIMULATE TRANSFER EFFICIENCIES
-TE_SH <- selected_TE_SH
-TE_HS <- selected_TE_HS
 
-# Transfer Efficiency for Hand-to-Mouth
-
-TE_HM <- rep(0.34, num_people)
+TE_SH <- rtrunc(num_people, spec="norm", a=0, b=1, mean=0.23, sd=0.19) #TE surface to hand (metal, Anderson & Boehm, 2021)
+TE_HS <- rtrunc(num_people, spec="norm", a=0, b=1, mean=0.18, sd=0.20) #TE hand to surface (metal, Anderson & Boehm, 2021)
+TE_HM <- rep(0.34, num_people) #TE hand to mouth 
 
 #4. SIMULATE SURFACE AREAS AND SURFACE CONCENTRATIONS
+
 A_hand<- 910 #cm^2: Julian et al., 2018
 A_surface_min <- 13
 A_surface_max <- 641
-C_surf_min <- 28.1
+C_surf_min <- 28.1 
 C_surf_max <- 132.7
-FSA <- 227.5  # FSA max of 0.25 from AuYeung 2008: 25% of 910cm^2
 A_mouth <- 41 # surface area of mouth- max area used from AuYeung 2008
 HM_area <- 2 #surface area of hand in contact with mouth (Amoah et al)
+C_hand <- c() 
 
 
 C_surf <- runif(num_people, min=C_surf_min, max=C_surf_max)
 A_surfaces <- runif(num_people, min=A_surface_min, max=A_surface_max)
 
+FSA <- 0.25 * A_hand/A_surfaces  # FSA max of 0.25 from AuYeung 2008: 25% of 910cm^2
 
 #5. SIMULATE VIRAL LOAD ON HANDS AFTER CONTACT
 
@@ -93,39 +48,43 @@ simulate_viral_load <- function(C_hand_initial, TE_SH, FSA, C_surf, TE_HS) {
   C_hand_new <- C_hand_initial + (TE_SH * FSA * C_surf) - (TE_HS * FSA * C_hand_initial)
   return(C_hand_new)
 }
-
-# Initialize initial concentration on hands (assuming it's 0 at the start)
-C_hand_initial <- rep(0, num_people)  # Initially, no virus on hands
-
-# Apply the function to simulate the viral load
-C_hand <- simulate_viral_load(C_hand_initial, TE_SH, FSA, C_surf, TE_HS)
-
 # 6. CALCULATE THE NEW CONCENTRATION ON SURFACES (C_surf_new)
 simulate_surface_concentration <- function(TE_SH, A_hand, A_surfaces, C_surf, TE_HS, FSA, C_hand) {
   C_surf_new <- TE_SH * (A_hand / A_surfaces) * C_surf + TE_HS * FSA * (A_hand / A_surfaces) * C_hand
   return(C_surf_new)
 }
+# Initialize initial concentration on hands (assuming it's 0 at the start)
+C_hand_initial <- rep(0, num_people)  # Initially, no virus on hands
 
-
-# Simulate the new concentration on surfaces after hand contact
-C_surf_new <- simulate_surface_concentration(TE_SH, A_hand, A_surfaces, C_surf, TE_HS, FSA, C_hand)
-
+#Creating loop to run exposure model 
+for(i in 1: (average_contacts)){
+  # Apply the function to simulate the viral load
+  if (i==1) {
+    C_hand <- simulate_viral_load(C_hand_initial, TE_SH, FSA, C_surf, TE_HS)} 
+    else {
+      C_hand <- simulate_viral_load(C_hand, TE_SH, FSA, C_surf, TE_HS) 
+    }
+  
+  # Simulate the new concentration on surfaces after hand contact
+  C_surf_new <- simulate_surface_concentration(TE_SH, A_hand, A_surfaces, C_surf, TE_HS, FSA, C_hand)
+  
+}
 
 # 7. CALCULATE CONCENTRATION ON HAND AFTER HAND-TO-MOUTH CONTACT
-simulate_hand_after_hm_contact <- function(C_hand, TE_HM, A_mouth) {
+simulate_hand_after_hm_contact <- function(C_hand, TE_HM) {
   # Calculate new concentration on hand after hand-to-mouth contact using the correct equation
-  C_hand_after_hm <- (1 - TE_HM * A_mouth) * C_hand
+  C_hand_after_hm <- C_hand - TE_HM * C_hand
   return(C_hand_after_hm)
 }
 
 # Simulate the concentration on hands after hand-to-mouth contact
-C_hand_after_hm <- simulate_hand_after_hm_contact(C_hand, TE_HM, A_mouth)
+C_hand_after_hm <- simulate_hand_after_hm_contact(C_hand, TE_HM)
 
 # Optional: print the concentration on hand after hand-to-mouth contact for debugging
 print(C_hand_after_hm)
 
 #8. CALCULATE DOSE AFTER HAND-TO-MOUTH CONTACT
-Dose <- TE_HM * A_mouth * C_hand
+Dose <- TE_HM * HM_area * C_hand
 print(Dose)
 
 #9.INCORPORATE HAND WASHING EVENTS 
@@ -153,7 +112,7 @@ k <- 4.1e2 #infectivity constanct for SARS-CoV(Amoah et al., 2021) )
 
 # Define the exponential dose-response function
 exponential_risk <- function(dose, k) {
-  risk <- 1 - exp(-k * dose)
+  risk <- 1 - exp(- dose/k)
   return(risk)
 }
 
@@ -161,8 +120,8 @@ exponential_risk <- function(dose, k) {
 
 # Calculate infection risk before and after handwashing using the exponential model
 
-infection_risk_before <- 1 - exp(-k * Dose)
-infection_risk_after <- 1 - exp(-k * Dose_after_wash)
+infection_risk_before <- 1 - exp(-Dose/k)
+infection_risk_after <- 1 - exp(-Dose_after_wash/k)
 
 # 12. RUN THE MODEL ACROSS ALL SIMULATIONS
 results <- data.frame(
@@ -191,22 +150,74 @@ results <- data.frame(
 file_name <- paste0("results_with_exponential_risk_", activity, "_", toilet_type, "_", num_people, "_people.csv")
 write.csv(results, file = file_name, row.names = FALSE)
 
+#Plot simple dose-response curve 
+plot(log10(1:10000), 1-exp(-(1:10000)/410))
+
+# Plot dose-response curve with custom axis labels
+
+# Load ggplot2 library
+library(ggplot2)
+
+# Create a data frame for Dose and Probability of Response
+dose_data <- data.frame(
+  Dose = log10(1:10000),
+  Probability = 1 - exp(-(1:10000) / 410)
+)
+
+# Plot dose-response curve using ggplot2
+ggplot(dose_data, aes(x = Dose, y = Probability)) +
+  geom_line(color = "black", size = 1.2) +  # Line plot with custom color and size
+  labs(title = "Dose-Response Curve", x = "Dose (log10(1:10000))", y = "Probability of Response") +  # Labels for title and axes
+  theme_minimal()  # Use a minimal theme for a cleaner look
+
+# Optional: Save the plot to a file
+ggsave("dose_response_curve_ggplot.png")
+
+#--------------------
+
+# two dose response curves in the same graph
+
+# Load ggplot2 library
+library(ggplot2)
+
+# Create two data frames for two different dose-response curves
+dose_data <- data.frame(
+  Dose = log10(1:10000),
+  Probability1 = 1 - exp(-(1:10000) / 410),   # First curve
+  Probability2 = 1 - exp(-(1:10000) / 200)    # Second curve with a different k value
+)
+
+# Convert to long format for ggplot compatibility
+dose_data_long <- tidyr::pivot_longer(dose_data, cols = starts_with("Probability"), 
+                                      names_to = "Curve", values_to = "Probability")
+
+# Plot both dose-response curves using ggplot2
+ggplot(dose_data_long, aes(x = Dose, y = Probability, color = Curve)) +
+  geom_line(size = 1.2) +  # Line plot with custom line width
+  labs(title = "Dose-Response Curves", x = "Dose", y = "Probability of Response") +  # Labels for title and axes
+  theme_minimal() +  # Use a minimal theme for cleaner aesthetics
+  scale_color_manual(values = c("blue", "red"), labels = c("Curve 1", "Curve 2"))  # Custom colors and labels
+
+# Optional: Save the plot to a file
+ggsave("two_dose_response_curves.png")
+
+
 # 14. FIT AN EXPONENTIAL DOSE-RESPONSE MODEL AND GENERATE PLOT
 
 # Fit an exponential dose-response model
-exponential_model <- drm(infection_risk_before ~ Dose, data=results, fct = EXD.2())
+#exponential_model <- drm(infection_risk_before ~ Dose, data=results, fct = EXD.2())
 
 # Generate the plot with confidence intervals
-plot(exponential_model, type="confidence", main="Exponential Model with Confidence Bounds",
-     xlab="Dose", ylab="Probability of Response",
-     ylim=c(0, 1))
+#plot(exponential_model, type="confidence", main="Exponential Model with Confidence Bounds",
+ #    xlab="Dose", ylab="Probability of Response",
+  #   ylim=c(0, 1))
 
 # Add 95% and 99% confidence intervals
-plot(exponential_model, add=TRUE, type="confidence", level=0.95, lty=2)
-plot(exponential_model, add=TRUE, type="confidence", level=0.99, lty=3)
+#plot(exponential_model, add=TRUE, type="confidence", level=0.95, lty=2)
+#plot(exponential_model, add=TRUE, type="confidence", level=0.99, lty=3)
 
 # Save the plot
-ggsave("exponential_model_confidence_plot.png")
+#ggsave("exponential_model_confidence_plot.png")
 
 
 # 15. SENSITIVITY ANALYSIS
@@ -348,24 +359,3 @@ ggplot(results_combined) +
   scale_fill_manual(values=c("Before Handwashing"="blue", "After Handwashing"="green")) +
   theme_minimal()
 
-#TROUBLESHOOTING
-# Check if Dose and infection_risk_before have non-NA values
-if (sum(is.na(results$Dose)) == 0 && sum(is.na(results$infection_risk_before)) == 0) {
-  print("Dose and infection_risk_before have valid values.")
-} else {
-  stop("Dose or infection_risk_before contains NA values.")
-}
-
-# Apply log transformation to Dose
-results$log_Dose <- log(results$Dose + 1)  # Adding 1 to avoid log(0)
-
-# Recalculate infection risk using the transformed dose
-results$infection_risk_before_log <- 1 - exp(-r * results$log_Dose)
-
-# Check the new distribution
-ggplot(results, aes(x=infection_risk_before_log)) +
-  geom_histogram(bins=30, fill="blue", alpha=0.7) +
-  labs(title="Histogram of Infection Risk (Log-Transformed Dose)",
-       x="Infection Risk Before Handwashing (Log Dose)",
-       y="Frequency") +
-  theme_minimal()
