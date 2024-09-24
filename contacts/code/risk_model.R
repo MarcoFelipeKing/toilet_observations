@@ -10,7 +10,7 @@ library(ggplot2)
 library(drc)
 
 # 2. DEFINE PARAMETERS
-num_people <- 10000  # Number of simulations
+num_people <- 10  # Number of simulations
 activity <- "Urination"  
 toilet_type <- "Men"  
 sex <- "Male"  
@@ -29,17 +29,27 @@ TE_HM <- rep(0.34, num_people) #TE hand to mouth
 A_hand<- 910 #cm^2: Julian et al., 2018
 A_surface_min <- 13
 A_surface_max <- 641
-C_surf_min <- 28.1 
-C_surf_max <- 132.7
 A_mouth <- 41 # surface area of mouth- max area used from AuYeung 2008
 HM_area <- 2 #surface area of hand in contact with mouth (Amoah et al)
 C_hand <- c() 
-
-
-C_surf <- runif(num_people, min=C_surf_min, max=C_surf_max)
 A_surfaces <- runif(num_people, min=A_surface_min, max=A_surface_max)
 
 FSA <- 0.25 * A_hand/A_surfaces  # FSA max of 0.25 from AuYeung 2008: 25% of 910cm^2
+
+# Define min and max concentrations (in gene copies per cm^2)
+C_surf_min <- 28.1 
+C_surf_max <- 132.7
+C_surf <- runif(num_people, min=C_surf_min, max=C_surf_max)
+
+# Convert genome copies to viable viral particles using a ratio of 1:100 to 1:1000
+#ratio_min <- 1/100   # Minimum viable virus ratio
+#ratio_max <- 1/1000  # Maximum viable virus ratio
+#viable_ratio <- runif(num_people, min=ratio_min, max=ratio_max)
+
+# Adjust surface concentrations to reflect viable virus concentrations
+#C_surf_viable <- C_surf * viable_ratio
+
+#print(C_surf_viable)
 
 #5. SIMULATE VIRAL LOAD ON HANDS AFTER CONTACT
 
@@ -60,14 +70,17 @@ C_hand_initial <- rep(0, num_people)  # Initially, no virus on hands
 for(i in 1: (average_contacts)){
   # Apply the function to simulate the viral load
   if (i==1) {
-    C_hand <- simulate_viral_load(C_hand_initial, TE_SH, FSA, C_surf, TE_HS)} 
+    C_hand <- simulate_viral_load(C_hand_initial, TE_SH, FSA, C_surf, TE_HS)
+    print(C_hand)} 
+    
     else {
       C_hand <- simulate_viral_load(C_hand, TE_SH, FSA, C_surf, TE_HS) 
+      print(C_hand)
     }
   
   # Simulate the new concentration on surfaces after hand contact
   C_surf_new <- simulate_surface_concentration(TE_SH, A_hand, A_surfaces, C_surf, TE_HS, FSA, C_hand)
-  
+  print(paste('C_surf',C_surf_new))
 }
 
 # 7. CALCULATE CONCENTRATION ON HAND AFTER HAND-TO-MOUTH CONTACT
@@ -111,17 +124,24 @@ Dose_after_wash <- TE_HM * A_hand * C_hand_after_wash
 k <- 4.1e2 #infectivity constanct for SARS-CoV(Amoah et al., 2021) )
 
 # Define the exponential dose-response function
-exponential_risk <- function(dose, k) {
-  risk <- 1 - exp(- dose/k)
+exponential_risk_100 <- function(dose, k) {
+  risk <- 1 - exp(- dose/k/100) #divide by 100 to get from genome copies to PFUs
+  #risk <- 1 - exp(- dose/k/1000) 
   return(risk)
 }
+exponential_risk_1000 <- function(dose, k) {
+  #risk <- 1 - exp(- dose/k/100) #divide by 100 to get from genome copies to PFUs
+  risk <- 1 - exp(- dose/k/1000) 
+  return(risk)
+}
+
 
 # 11. CALCULATE INFECTION RISK USING EXPONENTIAL MODEL
 
 # Calculate infection risk before and after handwashing using the exponential model
 
-infection_risk_before <- 1 - exp(-Dose/k)
-infection_risk_after <- 1 - exp(-Dose_after_wash/k)
+#infection_risk_before <-  #1 - exp(-Dose/k)
+#infection_risk_after <- #1 - exp(-Dose_after_wash/k)
 
 # 12. RUN THE MODEL ACROSS ALL SIMULATIONS
 results <- data.frame(
@@ -140,8 +160,10 @@ results <- data.frame(
   FSA = FSA,  # Fractional Surface Area
   A_mouth = A_mouth,  # Surface area of the mouth
   HM_area = HM_area,  # Hand-to-mouth contact area
-  infection_risk_before = infection_risk_before,
-  infection_risk_after = infection_risk_after
+  infection_risk_before_wash_100 = exponential_risk_100(Dose,410),
+  infection_risk_before_wash_1000 = exponential_risk_1000(Dose,410),
+  infection_risk_after_100 = exponential_risk_100(Dose_after_wash,410),
+  infection_risk_after_1000 = exponential_risk_1000(Dose_after_wash,410)
 )
 
 
