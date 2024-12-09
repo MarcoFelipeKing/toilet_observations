@@ -11,12 +11,14 @@ class ContactNetworkAnalyzer:
             'Entry': '#1f77b4',    # blue
             'Cubicle': '#ff7f0e',  # orange
             'Hygiene': '#2ca02c',  # green
-            'Personal': '#d62728'   # red
+            'Personal': '#d62728',   # red
+            'Exit': '#5f77b4'
         }
         
     def get_surface_location(self, surface: str) -> str:
         """Map surface to location category"""
-        entry_surfaces = {'Door handle outside', 'Door handle inside'}
+        entry_surfaces = {'Door handle outside'}
+        exit_surfaces = { 'Door handle inside'}
         cubicle_surfaces = {
             'Toilet paper', 'Toilet surface', 'Flush button',
             'Cubicle door handle inside', 'Door lock',
@@ -33,31 +35,54 @@ class ContactNetworkAnalyzer:
             return 'Cubicle'
         elif surface in hygiene_surfaces:
             return 'Hygiene'
+        elif surface in exit_surfaces:
+            return 'Exit'
         else:
             return 'Personal'
     
-    def create_contact_network(self, exp_id: str) -> nx.DiGraph:
-        """Create directed graph with sequence information"""
-        sequence = self.data[self.data['ExperimentID'] == exp_id]
+    
+    def create_contact_network(self, activity: str, toilet_type: str, exp_id: str) -> nx.DiGraph:
+        """Create directed graph for a specific experiment sequence"""
+        # Filter data for specific experiment, activity and toilet type
+        sequence = self.data[
+            (self.data['ExperimentID'] == exp_id) & 
+            (self.data['Activity'] == activity) &
+            (self.data['Toilet_type'] == toilet_type)
+        ]
+        
+        if sequence.empty:
+            return None
+        
+        # Create directed graph
         G = nx.DiGraph()
         
+        # Add edges based on surface contacts with sequence numbers
         surfaces = list(sequence['Surface'])
         for i in range(len(surfaces) - 1):
             source = surfaces[i]
             target = surfaces[i + 1]
             
-            # Add nodes with location information
+            # Add nodes with location information if they don't exist
             if not G.has_node(source):
                 G.add_node(source, location=self.get_surface_location(source))
             if not G.has_node(target):
                 G.add_node(target, location=self.get_surface_location(target))
             
             # Add edge with sequence number
-            G.add_edge(source, target, sequence_num=i+1)
+            if G.has_edge(source, target):
+                # If edge exists, append new sequence number
+                G[source][target]['sequence_nums'].append(i+1)
+            else:
+                # Create new edge with first sequence number
+                G.add_edge(source, target, sequence_nums=[i+1])
                 
         return G
     
     def plot_network(self, G: nx.DiGraph, title: str):
+        if G is None or len(G.nodes()) == 0:
+            print(f"No data to plot for {title}")
+            return None
+            
         plt.figure(figsize=(15, 10))
         
         # Use spring layout with more space between nodes
@@ -73,12 +98,14 @@ class ContactNetworkAnalyzer:
         nx.draw_networkx_edges(G, pos, edge_color='gray',
                              width=2, arrowsize=20)
         
-        # Add labels
-        nx.draw_networkx_labels(G, pos, font_size=8)
+        # Add node labels with smaller font and word wrapping
+        labels = {node: '\n'.join(node.split()) for node in G.nodes()}
+        nx.draw_networkx_labels(G, pos, labels, font_size=8)
         
         # Add sequence numbers as edge labels
-        edge_labels = nx.get_edge_attributes(G, 'sequence_num')
-        nx.draw_networkx_edge_labels(G, pos, edge_labels)
+        edge_labels = {(u, v): ','.join(map(str, d['sequence_nums'])) 
+                      for u, v, d in G.edges(data=True)}
+        nx.draw_networkx_edge_labels(G, pos, edge_labels, font_size=8)
         
         # Add legend for locations
         legend_elements = [plt.Line2D([0], [0], marker='o', color='w', 
@@ -86,7 +113,7 @@ class ContactNetworkAnalyzer:
                          for loc, color in self.location_colors.items()]
         plt.legend(handles=legend_elements, loc='upper left', title='Locations')
         
-        plt.title(title)
+        plt.title(title, wrap=True)
         plt.axis('off')
         return plt.gcf()
     
@@ -127,19 +154,40 @@ class ContactNetworkAnalyzer:
         return pd.DataFrame(patterns)
 
 if __name__ == "__main__":
+    # Initialize analyzer
     analyzer = ContactNetworkAnalyzer("../data/clean_contact_data.csv")
     
     # Plot example networks
     activities = analyzer.data['Activity'].unique()
-    for activity in activities:
-        exp_ids = analyzer.data[analyzer.data['Activity'] == activity]['ExperimentID'].unique()[:2]
-        for exp_id in exp_ids:
-            G = analyzer.create_contact_network(exp_id)
-            title = f"{activity} - Experiment {exp_id}"
-            fig = analyzer.plot_network(G, title)
-            fig.savefig(f"network_{activity}_{exp_id}.png", bbox_inches='tight', dpi=300)
-            plt.close()
+    toilet_types = analyzer.data['Toilet_type'].unique()
     
+    # Create networks for each combination
+    for activity in activities:
+        for toilet_type in toilet_types:
+            # Get first 5 unique experiment IDs for this combination
+            exp_ids = analyzer.data[
+                (analyzer.data['Activity'] == activity) & 
+                (analyzer.data['Toilet_type'] == toilet_type)
+            ]['ExperimentID'].unique()[:5]
+            
+            # Create and save network for each experiment
+            for exp_id in exp_ids:
+                G = analyzer.create_contact_network(activity, toilet_type, exp_id)
+                if G is not None:
+                    title = f"{activity} in {toilet_type} toilet\nExperiment {exp_id}"
+                    fig = analyzer.plot_network(G, title)
+                    if fig is not None:
+                        fig.savefig(
+                            f"network_{activity}_{toilet_type}_{exp_id}.png",
+                            bbox_inches='tight',
+                            dpi=300
+                        )
+                        plt.close()
+                    else:
+                        print(f"Could not create plot for {title}")
+                else:
+                    print(f"No network created for {activity} - {toilet_type} - {exp_id}")
+                    
     # Analyze patterns
     patterns_df = analyzer.analyze_patterns()
     patterns_df.to_csv("sequence_patterns.csv", index=False)
