@@ -1,15 +1,18 @@
+# analysis.py
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from gpt_pro_model import EnhancedToiletModelWithValidation
 import numpy as np
 import networkx as nx
+import os
+import math
 
-# Initialize model with provided data
+# Ensure output directories exist
+os.makedirs("scenario_transition_matrices", exist_ok=True)
+
 model = EnhancedToiletModelWithValidation("../data/clean_contact_data.csv")
 
-# Generate synthetic data: 
-# 30 sequences per activity/toilet combination
 activities = ["Urination", "Defecation", "MHM"]
 toilet_types = ["Men", "Women", "Gender neutral"]
 
@@ -17,52 +20,175 @@ all_sequences = []
 all_metadata = []
 all_contaminations = []
 
-for act in activities:
-    for tt in toilet_types:
+participant_id = 0  # We'll assign a unique ID to each generated participant (sequence)
+
+for tt in toilet_types:
+    # If men, exclude MHM from possible activities
+    if tt == "Men":
+        possible_activities = ["Urination", "Defecation"]
+    else:
+        possible_activities = activities
+    
+    for act in possible_activities:
         for i in range(30):
+            participant_id += 1
             seq, hand_pattern, meta = model.generate_sequence(act, tt)
-            contamination = model.simulate_contamination(
-                seq,
-                initial_surface_contamination=100,
-                transfer_efficiency=0.1,
-                surface_contact_fraction=0.1
-            )
+            contamination = model.simulate_contamination(seq)
+            # Store results
             all_sequences.append(seq)
+            meta["ParticipantID"] = participant_id
             all_metadata.append(meta)
-            all_contaminations.append((act, tt, contamination))
+            all_contaminations.append((act, tt, contamination, participant_id, seq))
 
 # Validation
 validation_results = model.validate_sequences(n_samples=100)
 print("Validation Results:")
 print(validation_results)
 
-# Extract final hand contamination across sequences for visualization
-final_contam_data = []
-for (act, tt, cont) in all_contaminations:
-    lh, rh = cont["final_hands"]
-    final_load = (lh+rh)/2.0
-    final_contam_data.append({"Activity": act, "ToiletType": tt, "FinalHandContamination": final_load})
+# Compute descriptive stats for lengths
+sequences = model._extract_sequences()
+observed_lengths = [len(s) for _, s, _, _ in sequences]
 
-final_df = pd.DataFrame(final_contam_data)
+generated_lengths = []
+for i in range(1000):
+    chosen_tt = np.random.choice(toilet_types)
+    if chosen_tt == "Men":
+        chosen_act = np.random.choice(["Urination", "Defecation"])
+    else:
+        chosen_act = np.random.choice(activities)
+    seq, _, _ = model.generate_sequence(chosen_act, chosen_tt)
+    generated_lengths.append(len(seq))
 
-# Violin Plot comparing final hand contamination across toilet types and activities
-plt.figure(figsize=(12,6))
-sns.violinplot(data=final_df, x="ToiletType", y="FinalHandContamination", hue="Activity")
-plt.title("Final Hand Contamination by Toilet Type and Activity")
-plt.ylabel("Final Hand Contamination (arbitrary units)")
-plt.xlabel("Toilet Type")
-plt.legend(title="Activity")
+obs_mean = np.mean(observed_lengths)
+obs_median = np.median(observed_lengths)
+obs_std = np.std(observed_lengths)
+
+gen_mean = np.mean(generated_lengths)
+gen_median = np.median(generated_lengths)
+gen_std = np.std(generated_lengths)
+
+print("Observed Length Statistics:")
+print(f"Mean: {obs_mean:.2f}, Median: {obs_median:.2f}, Std: {obs_std:.2f}")
+
+print("Generated Length Statistics:")
+print(f"Mean: {gen_mean:.2f}, Median: {gen_median:.2f}, Std: {gen_std:.2f}")
+
+length_diff_mean = gen_mean - obs_mean
+print(f"Difference in Mean Length (Generated - Observed): {length_diff_mean:.2f}")
+
+# ---- Save scenario-based transition matrices to CSV ----
+for ttype in toilet_types:
+    for act in activities:
+        scenario_key = (ttype, act)
+        if scenario_key not in model.markov_chains:
+            continue
+        
+        scenario_chain = model.markov_chains[scenario_key]
+        # Extract states
+        unique_states = set()
+        for prev in scenario_chain:
+            for nxt in scenario_chain[prev]:
+                unique_states.add(nxt)
+            unique_states.update(prev)
+        
+        unique_states = list(unique_states)
+        state_index = {s: i for i, s in enumerate(unique_states)}
+        
+        # Build matrix
+        matrix = np.zeros((len(unique_states), len(unique_states)))
+        
+        counts = {}
+        for (prev_states), transitions in scenario_chain.items():
+            for nxt, p in transitions.items():
+                current_state = prev_states[-1]
+                counts[(current_state, nxt)] = counts.get((current_state, nxt), 0) + p
+        
+        # Normalize rows
+        row_sums = {}
+        for (c, n), val in counts.items():
+            row_sums[c] = row_sums.get(c, 0) + val
+        
+        for (c, n), val in counts.items():
+            if row_sums[c] > 0:
+                matrix[state_index[c], state_index[n]] = val/row_sums[c]
+        
+        scenario_name = f"{ttype}_{act}".replace(" ", "_")
+        df_mat = pd.DataFrame(matrix, index=unique_states, columns=unique_states)
+        df_mat.to_csv(f"scenario_transition_matrices/{scenario_name}_transition_matrix.csv")
+
+# ---- Create a CSV recording all contamination at each contact for each participant ----
+# Structure: ParticipantID, Activity, ToiletType, ContactIndex, LeftHandConc, RightHandConc, SurfaceContacted, SurfaceConc
+contamination_records = []
+for (act, tt, cont, pid, seq) in all_contaminations:
+    hand_series = cont["hand_time_series"]  # [(LH, RH), ...]
+    surface_series = cont["surface_time_series"]  # [ {surface: conc, ...}, ...]
+    # Each index i corresponds to the i-th contact event in seq
+    # seq[i] is the surface contacted at step i
+    # hand_series[i], surface_series[i] correspond to state after i-th contact.
+    
+    for idx, (lh, rh) in enumerate(hand_series):
+        contacted_surface = seq[idx]
+        # Check if contacted_surface is in surface_series[idx]
+        # If not (like "Exit"), put NaN
+        if contacted_surface in surface_series[idx]:
+            surface_conc = surface_series[idx][contacted_surface]
+        else:
+            surface_conc = math.nan
+        
+        contamination_records.append({
+            "ParticipantID": pid,
+            "Activity": act,
+            "ToiletType": tt,
+            "ContactIndex": idx,
+            "LeftHandConc": lh,
+            "RightHandConc": rh,
+            "SurfaceContacted": contacted_surface,
+            "SurfaceConc": surface_conc
+        })
+
+df_contamination = pd.DataFrame(contamination_records)
+df_contamination.to_csv("hand_contamination_per_participant.csv", index=False)
+
+# ---- 3x3 Grid of Contamination vs Contact Step (First 9 Participants) ----
+n_examples = 9
+example_data = all_contaminations[:n_examples]
+
+fig, axes = plt.subplots(3, 3, figsize=(15, 12))
+axes = axes.flatten()
+
+for i, (act, tt, cont, pid, seq) in enumerate(example_data):
+    ax = axes[i]
+    hand_series = cont["hand_time_series"]
+    times = np.arange(len(hand_series))
+    lh_series = [h[0] for h in hand_series]
+    rh_series = [h[1] for h in hand_series]
+    ax.plot(times, lh_series, label="Left Hand")
+    ax.plot(times, rh_series, label="Right Hand")
+    ax.set_title(f"PID:{pid}, {tt}, {act}")
+    ax.set_xlabel("Contact Step")
+    ax.set_ylabel("Hand Contamination (PFU/cm^2)")
+    if i == 0:
+        ax.legend()
+
 plt.tight_layout()
+plt.savefig("contamination_3x3_grid.png")
 plt.show()
 
-# Network visualization of contact patterns (example)
-# Build a graph of transitions from one sequence
-example_seq = all_sequences[0]
-G = nx.DiGraph()
-for i in range(len(example_seq)-1):
-    G.add_edge(example_seq[i], example_seq[i+1])
-pos = nx.spring_layout(G)
-plt.figure(figsize=(8,6))
-nx.draw_networkx(G, pos, with_labels=True, node_color='lightblue', arrows=True, arrowstyle='->', arrowsize=12)
-plt.title("Example Contact Pattern Network")
+# ---- 3x3 Grid of Network Plots for the same 9 participants ----
+fig, axes = plt.subplots(3, 3, figsize=(15, 12))
+axes = axes.flatten()
+
+for i, (act, tt, cont, pid, seq) in enumerate(example_data):
+    ax = axes[i]
+    G = nx.DiGraph()
+    for j in range(len(seq)-1):
+        G.add_edge(seq[j], seq[j+1])
+    pos = nx.spring_layout(G, seed=42)
+    nx.draw_networkx(G, pos, with_labels=True, node_color='lightblue', arrows=True, 
+                     arrowstyle='->', arrowsize=12, ax=ax, font_size=8)
+    ax.set_title(f"PID:{pid}, {tt}, {act}")
+    ax.set_axis_off()
+
+plt.tight_layout()
+plt.savefig("sequence_network_3x3_grid.png")
 plt.show()

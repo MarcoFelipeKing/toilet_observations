@@ -1,131 +1,196 @@
+# gpt_pro_model.py
 import pandas as pd
 import numpy as np
 import random
 from collections import defaultdict, Counter
-from scipy.stats import beta, lognorm, bernoulli, ks_2samp, chi2_contingency
+from scipy.stats import beta, lognorm, bernoulli, ks_2samp, chi2_contingency, gamma, norm
 import networkx as nx
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 class EnhancedToiletModelWithValidation:
     def __init__(self, data_file):
         """
         Initialize model with observed data.
-        :param data_file: Path to clean_contact_data.csv
         """
         self.data_file = data_file
         self.data = pd.read_csv(data_file, sep=",")
-        
-        # Ensure data integrity: every ExperimentID has Entry and Exit at least
-        # Filtering logic may be needed if data incomplete
+
         self._check_data_integrity()
         
-        # Define states (surface categories), activities, toilet types
-        self.surface_categories = ["Entry", "CubicleIN", "Cubicle", "CubicleOUT", "Hygiene", "Personal", "Exit", "MHM"]
-        # Note: MHM surfaces can be considered a subtype of Cubicle or their own category
-        # depending on modeling choice. For simplicity, treat "Menstrual product" etc. as "MHM" state category.
+        # Define states: Add "Urinal" for men's toilets
+        self.surface_categories = ["Entry", "CubicleIN", "Cubicle", "Unlock", "CubicleOUT", 
+                                   "Hygiene", "Personal", "MHM", "Exit", "Urinal"]
         
         self.activities = ["Urination", "Defecation", "MHM"]
         self.toilet_types = ["Men", "Women", "Gender neutral"]
         
-        # Preprocess data to build higher-order Markov chain transition probabilities
-        self.markov_chain = self._build_higher_order_markov_chain(order=2)
+        # Build scenario-specific Markov chains:
+        self.markov_chains = self._build_scenario_markov_chains(order=2)
         
-        # Hand hygiene compliance probability (assumed global or activity-specific)
-        self.hand_hygiene_compliance_prob = 0.7  # example value
+        # Parameters
+        self.hand_hygiene_compliance_prob = 0.45
         
-        # Surface to hand and hand to surface parameters
-        self.default_transfer_efficiency = 0.1
-        self.default_surface_contact_fraction = 0.1
-        self.default_initial_contamination = 100.0
-        self.default_pathogen_decay_rate = 0.05  # arbitrary daily decay or per-minute decay factor
+        # Transfer efficiency Beta parameters
+        self.alpha_lambda = 2.0
+        self.beta_lambda = 5.0
         
+        # Gamma distribution for contact area
+        self.k_area = 2.0
+        self.theta_area = 1.0
+        
+        # Fraction available for transfer
+        self.theta = 0.1
+        
+        # Pathogen decay rate
+        self.default_pathogen_decay_rate = 0.05
+        
+        # Hands start clean
+        self.initial_left_hand_contamination = 0.0
+        self.initial_right_hand_contamination = 0.0
+        
+        # Amoah paper surface contamination distributions:
+        self.surface_contamination_params = {
+            "Cubicle": ("Toilet seat", 132.9, 39.8),
+            "Hygiene": ("Tap", 30.0, 5.0),
+            "CubicleIN": ("Cubicle door lock", 60.1, 14.5),
+            "CubicleOUT": ("Cubicle door lock", 60.1, 14.5),
+            "Unlock": ("Cubicle door lock", 60.1, 14.5),
+            "Entry": ("Low contamination", 1.0, 0.5),
+            "Personal": ("Low contamination", 1.0, 0.5),
+            "MHM": ("Low contamination", 1.0, 0.5),
+            "Exit": ("Low contamination", 1.0, 0.5),
+            # Urinal: If present in data, assume similar low contamination or estimate if data available
+            "Urinal": ("Low contamination", 5.0, 2.0)
+        }
+
     def _check_data_integrity(self):
-        # Simple check: Ensure each ExperimentID starts with Entry and ends with Exit
-        # Note: This may require domain logic. For now, just a placeholder.
+        # Optionally check if each experiment starts at Entry and ends at Exit
         pass
         
     def _extract_sequences(self):
-        """
-        Extract sequences of surfaces from observed data grouped by ExperimentID.
-        """
         sequences = []
         for exp_id, group in self.data.groupby("ExperimentID"):
-            # Sort by order of occurrence if needed
-            seq = group.sort_values(by="ID")  # If ID represents chronological order
+            seq = group.sort_values(by="ID")
             surfaces = seq["SurfaceCategories"].tolist()
-            # Additional info can be stored as metadata
             activity = seq["Activity"].iloc[0]
             toilet_type = seq["Toilet_type"].iloc[0]
+            # Only count until Exit if needed:
+            # If your data always has Exit at end, good. If not, ensure:
+            if "Exit" in surfaces:
+                # Truncate sequence at first Exit occurrence
+                exit_idx = surfaces.index("Exit")
+                surfaces = surfaces[:exit_idx] 
             sequences.append((exp_id, surfaces, activity, toilet_type))
         return sequences
-    
-    def _build_higher_order_markov_chain(self, order=2):
+
+    def _build_scenario_markov_chains(self, order=2):
         """
-        Build a higher-order Markov chain from observed sequences.
-        Using order=2 for demonstration.
+        Build a separate Markov chain for each (toilet_type, activity) scenario.
         """
         sequences = self._extract_sequences()
-        # Dictionary keyed by (prev_state1, prev_state2) to counts of next_state
-        transition_counts = defaultdict(Counter)
         
-        for _, surf_seq, activity, ttype in sequences:
-            # Add pseudo-start states if needed
-            padded_seq = ["Entry"] + surf_seq + ["Exit"]
-            for i in range(len(padded_seq) - order):
-                prev_states = tuple(padded_seq[i:i+order])
-                next_state = padded_seq[i+order]
-                transition_counts[(prev_states)][next_state] += 1
+        # Dictionary: (toilet_type, activity) -> transition_probs
+        scenario_chains = {}
         
-        # Convert counts to probabilities
-        transition_probs = {}
-        for prev, counts in transition_counts.items():
-            total = sum(counts.values())
-            transition_probs[prev] = {k: v/total for k, v in counts.items()}
+        # Loop over each scenario
+        for ttype in self.toilet_types:
+            for act in self.activities:
+                # Filter sequences for this scenario
+                scenario_seqs = [s for (_, s, a, t) in sequences if a == act and t == ttype]
+                
+                # If no sequences for this scenario, skip
+                if len(scenario_seqs) == 0:
+                    continue
+                
+                # Build chain for these sequences
+                transition_counts = defaultdict(Counter)
+                for surf_seq in scenario_seqs:
+                    padded_seq = ["Entry"] + surf_seq + ["Exit"]
+                    for i in range(len(padded_seq) - order):
+                        prev_states = tuple(padded_seq[i:i+order])
+                        next_state = padded_seq[i+order]
+                        transition_counts[prev_states][next_state] += 1
+                
+                transition_probs = {}
+                for prev, counts in transition_counts.items():
+                    total = sum(counts.values())
+                    transition_probs[prev] = {k: v/total for k, v in counts.items()}
+                
+                scenario_chains[(ttype, act)] = transition_probs
         
-        return transition_probs
-    
+        return scenario_chains
+
     def generate_sequence(self, activity, toilet_type, max_length=50):
         """
-        Generate a synthetic sequence of surface contacts given activity and toilet type.
-        Incorporate logic and constraints:
-        - Start at "Entry"
-        - Must progress logically: Entry -> CubicleIN (if using cubicle) -> Cubicle -> ...
-        - Can have Personal interruptions (e.g. phone, clothing)
-        - End at "Exit"
+        Generate a synthetic sequence with scenario-specific chain:
+        - If Men and MHM, switch activity since Men shouldn't do MHM.
+        - If no chain for a scenario, return a minimal sequence (Entry->Exit).
+        - Use scenario-specific chain to pick transitions.
+        - Cubicle logic and personal interruptions remain.
         """
-        # For simplicity, start with "Entry"
-        # We'll randomly pick transitions from self.markov_chain
+        
+        if toilet_type == "Men" and activity == "MHM":
+            activity = np.random.choice(["Urination", "Defecation"])
+        
+        chain = self.markov_chains.get((toilet_type, activity), None)
+        if chain is None:
+            # No data for this scenario, return a simple minimal sequence
+            sequence = ["Entry", "Exit"]
+            hand_pattern = np.random.choice(["Left", "Right", "Both"], size=len(sequence))
+            metadata = {
+                "activity": activity,
+                "toilet_type": toilet_type,
+                "hand_hygiene_compliant": bool(bernoulli.rvs(self.hand_hygiene_compliance_prob))
+            }
+            return sequence, hand_pattern, metadata
+        
         sequence = ["Entry"]
         
-        # Attempt a generative process using the Markov chain:
-        # We'll try to maintain a last 2 states context
-        while len(sequence) < max_length and sequence[-1] != "Exit":
-            prev_states = tuple(sequence[-2:]) if len(sequence) > 1 else ("Entry", sequence[-1])
-            if prev_states not in self.markov_chain:
-                # If no known transitions, break
+        while len(sequence) < max_length:
+            if sequence[-1] == "Exit":
                 break
-            next_states_prob = self.markov_chain[prev_states]
+            
+            prev_states = tuple(sequence[-2:]) if len(sequence) > 1 else ("Entry", sequence[-1])
+            if prev_states not in chain:
+                # No known transitions from here, append Exit
+                sequence.append("Exit")
+                break
+            next_states_prob = chain[prev_states]
             next_state = np.random.choice(list(next_states_prob.keys()), p=list(next_states_prob.values()))
             
-            # Apply constraints (e.g. if activity=Urination and toilet_type=Men, prefer Urinal surfaces)
-            # For demonstration, we won't deeply implement all constraints here, but in a real model you would:
-            # - If activity=Urination (men) -> includes "Urinal" states
-            # - If inside cubicle, restrict transitions to surfaces inside cubicle + personal items
-            # etc.
-            
-            # Add random personal interruptions:
-            # With some probability, insert a "Personal" item touch
-            if np.random.rand() < 0.2 and sequence[-1] != "Exit":
+            # Insert personal interruptions (if not about to exit)
+            if next_state != "Exit" and np.random.rand() < 0.2:
                 sequence.append("Personal")
+                if len(sequence) >= max_length:
+                    sequence.append("Exit")
+                    break
             
-            sequence.append(next_state)
+            # Cubicle logic
+            if sequence[-1] == "Cubicle" and next_state in ["CubicleOUT", "Exit"]:
+                sequence.append("Unlock")
+                if next_state == "Exit":
+                    sequence.append("CubicleOUT")
+                    sequence.append("Exit")
+                    break
+                else:
+                    sequence.append("CubicleOUT")
+            else:
+                sequence.append(next_state)
+            
+            if sequence[-1] == "Exit":
+                break
         
-        # Ensure there's an Exit
         if sequence[-1] != "Exit":
             sequence.append("Exit")
         
-        # Assign random hand usage (Left/Right/Both) pattern
-        hand_pattern = np.random.choice(["Left", "Right", "Both"], size=len(sequence))
-        
+        hand_pattern = np.random.choice(["Left", "Right", "Both"], size=len(sequence),p=[0.319, 0.445, 0.235]) #Here we can infer from data
+        '''
+         hand      n     prop
+        <chr> <int>    <dbl>
+        1 Both    543 0.235   
+        2 Left    738 0.319   
+        3 Right  1027 0.445   '''
         metadata = {
             "activity": activity,
             "toilet_type": toilet_type,
@@ -133,90 +198,68 @@ class EnhancedToiletModelWithValidation:
         }
         
         return sequence, hand_pattern, metadata
+
+    def _initialize_surfaces(self):
+        surfaces = {}
+        for s in self.surface_categories:
+            if s == "Exit":
+                continue
+            surf_name, mean_val, std_val = self.surface_contamination_params[s]
+            val = np.random.normal(loc=mean_val, scale=std_val)
+            val = max(val, 0.0)
+            surfaces[s] = val
+        return surfaces
     
-    def simulate_contamination(self, sequence, initial_surface_contamination=None,
-                               transfer_efficiency=None, surface_contact_fraction=None,
-                               pathogen_decay_rate=None):
-        """
-        Simulate pathogen contamination over the generated sequence.
-        
-        Each surface has a contamination level. Each hand has a contamination level.
-        On touching a surface:
-        - Transfer occurs bidirectionally based on concentration gradient.
-        - After contact, update hand and surface contamination.
-        
-        Then apply hand hygiene if performed.
-        """
-        if initial_surface_contamination is None:
-            initial_surface_contamination = self.default_initial_contamination
-        if transfer_efficiency is None:
-            transfer_efficiency = self.default_transfer_efficiency
-        if surface_contact_fraction is None:
-            surface_contact_fraction = self.default_surface_contact_fraction
+    def simulate_contamination(self, sequence, pathogen_decay_rate=None):
         if pathogen_decay_rate is None:
             pathogen_decay_rate = self.default_pathogen_decay_rate
         
-        # Initialize surfaces with some contamination (for simplicity, uniform)
-        # In reality, different surfaces would have different initial levels
-        surfaces = {s: initial_surface_contamination for s in self.surface_categories if s != "Exit"}
-        # Hands start clean or with low contamination
-        left_hand_contamination = 10.0
-        right_hand_contamination = 10.0
+        surfaces = self._initialize_surfaces()
+        
+        left_hand_contamination = self.initial_left_hand_contamination
+        right_hand_contamination = self.initial_right_hand_contamination
         
         hand_contamination_over_time = []
         surface_contamination_over_time = []
         
-        # Assume each step is a contact event
         for idx, surf in enumerate(sequence):
-            # Decay pathogen on surfaces over time (simple multiplicative decay)
+            # Decay pathogen on surfaces
             for k in surfaces:
                 surfaces[k] *= (1 - pathogen_decay_rate)
             
-            # Determine which hand(s) used
-            # For simplicity, assume we have a stored hand pattern
-            # If you passed hand_pattern from generate_sequence, you would use it.
-            # Here, just randomly choose:
             chosen_hand = np.random.choice(["Left", "Right", "Both"])
             
-            # Hand contamination before contact
-            h_before = (left_hand_contamination + right_hand_contamination)/2
-            
             if surf in surfaces:
-                # Contact event:
-                surface_load = surfaces[surf]
-                hand_load = (left_hand_contamination + right_hand_contamination)/2.0
+                C_s = surfaces[surf]
+                C_h_avg = (left_hand_contamination + right_hand_contamination)/2.0
                 
-                # Transfer proportion based on gradient
-                # delta = transfer_efficiency * contact fraction * (difference in contamination)
-                delta = transfer_efficiency * surface_contact_fraction * (surface_load - hand_load)
+                lam = beta.rvs(self.alpha_lambda, self.beta_lambda)
+                A = gamma.rvs(self.k_area, scale=self.theta_area)
+                theta = self.theta
                 
-                # Update both
+                Delta_PFU = (C_s - C_h_avg) * A
+                Delta = lam * theta * Delta_PFU
+                
+                surfaces[surf] = C_s - (Delta / A)
+                
                 if chosen_hand == "Left":
-                    left_hand_contamination += delta
+                    left_hand_contamination = ((left_hand_contamination * A) + Delta) / A
                 elif chosen_hand == "Right":
-                    right_hand_contamination += delta
+                    right_hand_contamination = ((right_hand_contamination * A) + Delta) / A
                 else:
-                    # Both hands share transfer
-                    left_hand_contamination += delta/2
-                    right_hand_contamination += delta/2
-                
-                # Surface loses or gains from the hand correspondingly
-                surfaces[surf] -= delta
+                    left_hand_contamination = ((left_hand_contamination * A) + (Delta/2)) / A
+                    right_hand_contamination = ((right_hand_contamination * A) + (Delta/2)) / A
             
-            # Possibly apply hand hygiene if at a Hygiene state and user is compliant
-            # Handwashing reduces contamination by a lognormal distributed factor
+            # Hand hygiene
             if surf == "Hygiene":
-                # Check compliance
                 if bernoulli.rvs(self.hand_hygiene_compliance_prob):
-                    # Draw from lognormal to get reduction factor
-                    reduction_factor = lognorm(s=0.5, scale=np.exp(-1)).rvs()  # example: ~e^-1 on average
+                    reduction_factor = lognorm(s=0.5, scale=np.exp(-1)).rvs()
                     left_hand_contamination *= reduction_factor
                     right_hand_contamination *= reduction_factor
             
             hand_contamination_over_time.append((left_hand_contamination, right_hand_contamination))
             surface_contamination_over_time.append(surfaces.copy())
         
-        # Return final contamination levels and full timeline
         return {
             "final_hands": (left_hand_contamination, right_hand_contamination),
             "hand_time_series": hand_contamination_over_time,
@@ -224,48 +267,42 @@ class EnhancedToiletModelWithValidation:
         }
     
     def validate_sequences(self, n_samples=1000):
-        """
-        Validate generated sequences against observed data.
-        
-        Metrics:
-        - Length distribution: KS test between observed and generated
-        - Transition patterns: Chi-square test on transition counts
-        """
+        # Validation now relies on scenario-based generation
         sequences = self._extract_sequences()
         observed_lengths = [len(s) for _, s, _, _ in sequences]
         
         generated_lengths = []
         for i in range(n_samples):
-            seq, _, _ = self.generate_sequence(
-                activity=np.random.choice(self.activities),
-                toilet_type=np.random.choice(self.toilet_types)
-            )
+            chosen_tt = np.random.choice(self.toilet_types)
+            if chosen_tt == "Men":
+                chosen_act = np.random.choice(["Urination", "Defecation"])
+            else:
+                chosen_act = np.random.choice(self.activities)
+            seq, _, _ = self.generate_sequence(chosen_act, chosen_tt)
             generated_lengths.append(len(seq))
         
-        # KS test for length distributions
         ks_stat, ks_p = ks_2samp(observed_lengths, generated_lengths)
         
-        # For transition patterns: create a contingency table of observed vs generated transitions
         def get_transitions(seq):
             return [tuple(seq[i:i+2]) for i in range(len(seq)-1)]
         
         observed_transitions = []
-        for _, s, _, _ in sequences:
+        for _, s, a, t in sequences:
             observed_transitions.extend(get_transitions(["Entry"]+s+["Exit"]))
         
         generated_transitions = []
         for i in range(n_samples):
-            seq, _, _ = self.generate_sequence(
-                activity=np.random.choice(self.activities),
-                toilet_type=np.random.choice(self.toilet_types)
-            )
+            chosen_tt = np.random.choice(self.toilet_types)
+            if chosen_tt == "Men":
+                chosen_act = np.random.choice(["Urination", "Defecation"])
+            else:
+                chosen_act = np.random.choice(self.activities)
+            seq, _, _ = self.generate_sequence(chosen_act, chosen_tt)
             generated_transitions.extend(get_transitions(seq))
         
-        # Count transitions
         obs_counts = Counter(observed_transitions)
         gen_counts = Counter(generated_transitions)
         
-        # Create a common set
         all_trans = set(obs_counts.keys()).union(set(gen_counts.keys()))
         obs_array = np.array([obs_counts[t] for t in all_trans])
         gen_array = np.array([gen_counts[t] for t in all_trans])
@@ -278,3 +315,51 @@ class EnhancedToiletModelWithValidation:
             "transition_chi2_stat": chi2_stat,
             "transition_chi2_p": chi2_p
         }
+    
+    def visualize_transition_matrix(self):
+        """
+        Visualize the Markov chain transition probabilities as a heatmap.
+        Note: This visualizes the global transitions aggregated from all scenarios combined if needed.
+        You may want to visualize scenario-specific matrices separately.
+        """
+        # For demonstration, choose one scenario (e.g., Women, Urination) if available:
+        # If you'd like to visualize a specific scenario, pick one here:
+        chosen_scenario = ("Women", "Urination")
+        if chosen_scenario not in self.markov_chains:
+            print(f"No chain for scenario {chosen_scenario}")
+            return
+        
+        scenario_chain = self.markov_chains[chosen_scenario]
+        
+        unique_states = set()
+        for prev in scenario_chain:
+            for nxt in scenario_chain[prev]:
+                unique_states.add(nxt)
+            unique_states.update(prev)
+        
+        unique_states = list(unique_states)
+        state_index = {s: i for i, s in enumerate(unique_states)}
+        
+        matrix = np.zeros((len(unique_states), len(unique_states)))
+        
+        counts = defaultdict(float)
+        for (prev_states), transitions in scenario_chain.items():
+            for nxt, p in transitions.items():
+                current_state = prev_states[-1]
+                counts[(current_state, nxt)] += p
+        
+        row_sums = defaultdict(float)
+        for (c, n), val in counts.items():
+            row_sums[c] += val
+        
+        for (c, n), val in counts.items():
+            if row_sums[c] > 0:
+                matrix[state_index[c], state_index[n]] = val / row_sums[c]
+        
+        plt.figure(figsize=(10,8))
+        sns.heatmap(matrix, xticklabels=unique_states, yticklabels=unique_states, annot=False, cmap="viridis")
+        plt.title(f"Markov Chain Transition Matrix for {chosen_scenario}")
+        plt.xlabel("Next State")
+        plt.ylabel("Current State")
+        plt.tight_layout()
+        plt.show()
