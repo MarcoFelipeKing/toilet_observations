@@ -29,7 +29,7 @@ class EnhancedToiletModelWithValidation:
         self.markov_chains = self._build_scenario_markov_chains(order=2)
         
         # Parameters
-        self.hand_hygiene_compliance_prob = 0.45
+        self.hand_hygiene_compliance_prob = 0.45 #From literature (men 31%, women up to 60%)
         
         # Transfer efficiency Beta parameters
         self.alpha_lambda = 2.0
@@ -40,7 +40,7 @@ class EnhancedToiletModelWithValidation:
         self.theta_area = 1.0
         
         # Fraction available for transfer
-        self.theta = 0.1
+        #self.theta = 0.1
         
         # Pathogen decay rate
         self.default_pathogen_decay_rate = 0.05
@@ -184,7 +184,7 @@ class EnhancedToiletModelWithValidation:
         if sequence[-1] != "Exit":
             sequence.append("Exit")
         
-        hand_pattern = np.random.choice(["Left", "Right", "Both"], size=len(sequence),p=[0.319, 0.445, 0.235]) #Here we can infer from data
+        hand_pattern = np.random.choice(["Left", "Right", "Both"], size=len(sequence),p=[0.319, 0.445, 0.236]) #Here we can infer from data
         '''
          hand      n     prop
         <chr> <int>    <dbl>
@@ -233,22 +233,27 @@ class EnhancedToiletModelWithValidation:
                 C_s = surfaces[surf]
                 C_h_avg = (left_hand_contamination + right_hand_contamination)/2.0
                 
-                lam = beta.rvs(self.alpha_lambda, self.beta_lambda)
-                A = gamma.rvs(self.k_area, scale=self.theta_area)
-                theta = self.theta
-                
-                Delta_PFU = (C_s - C_h_avg) * A
-                Delta = lam * theta * Delta_PFU
-                
-                surfaces[surf] = C_s - (Delta / A)
-                
+                # Constants
+                TOTAL_HAND_AREA = 150.0  # cm², approximate total surface area of a single hand
+
+                lam = beta.rvs(self.alpha_lambda, self.beta_lambda)  # transfer efficiency (unitless)
+                A = gamma.rvs(self.k_area, scale=self.theta_area)    # contact area (cm²)
+
+                # Calculate contamination transferred
+                Delta_PFU = C_s * A * lam  # total PFU transferred
+
+                # Update surface contamination
+                surfaces[surf] = max(C_s - (Delta_PFU / A), 0.0)
+
+                # Spread contamination homogeneously across total hand area
                 if chosen_hand == "Left":
-                    left_hand_contamination = ((left_hand_contamination * A) + Delta) / A
+                    left_hand_contamination = (left_hand_contamination * TOTAL_HAND_AREA + Delta_PFU) / TOTAL_HAND_AREA
                 elif chosen_hand == "Right":
-                    right_hand_contamination = ((right_hand_contamination * A) + Delta) / A
+                    right_hand_contamination = (right_hand_contamination * TOTAL_HAND_AREA + Delta_PFU) / TOTAL_HAND_AREA
                 else:
-                    left_hand_contamination = ((left_hand_contamination * A) + (Delta/2)) / A
-                    right_hand_contamination = ((right_hand_contamination * A) + (Delta/2)) / A
+                    left_hand_contamination = (left_hand_contamination * TOTAL_HAND_AREA + Delta_PFU / 2) / TOTAL_HAND_AREA
+                    right_hand_contamination = (right_hand_contamination * TOTAL_HAND_AREA + Delta_PFU / 2) / TOTAL_HAND_AREA
+                
             
             # Hand hygiene
             if surf == "Hygiene":

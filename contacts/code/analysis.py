@@ -192,3 +192,78 @@ for i, (act, tt, cont, pid, seq) in enumerate(example_data):
 plt.tight_layout()
 plt.savefig("sequence_network_3x3_grid.png")
 plt.show()
+
+def compare_length_distributions(model, activities, toilet_types, n_generated=1000, plot_type='hist'):
+    """
+    Compare the observed vs generated length distributions for each (activity, toilet_type) scenario.
+    
+    Parameters:
+    - model: EnhancedToiletModelWithValidation instance
+    - activities: list of activities, e.g. ["Urination", "Defecation", "MHM"]
+    - toilet_types: list of toilet types, e.g. ["Men", "Women", "Gender neutral"]
+    - n_generated: number of generated sequences per scenario
+    - plot_type: 'hist' for histogram or 'density' for kernel density estimate plots
+    
+    The function:
+    - Extracts observed lengths per scenario.
+    - Generates lengths for new sequences per scenario.
+    - Plots both distributions for comparison.
+    """
+    # Extract observed sequences
+    sequences = model._extract_sequences()  # returns (exp_id, surfaces, activity, toilet_type)
+    # Organize observed lengths by scenario
+    observed_lengths_by_scenario = {}
+    for _, surf_seq, act, ttype in sequences:
+        scenario = (act, ttype)
+        length = len(surf_seq)
+        if scenario not in observed_lengths_by_scenario:
+            observed_lengths_by_scenario[scenario] = []
+        observed_lengths_by_scenario[scenario].append(length)
+    
+    # For each scenario, generate sequences and record their lengths
+    fig, axes = plt.subplots(len(toilet_types), len(activities), figsize=(15, 12))
+    axes = axes.flatten()
+    
+    i = 0
+    for ttype in toilet_types:
+        # Determine which activities to consider if Men
+        if ttype == "Men":
+            scenario_activities = ["Urination", "Defecation"]
+        else:
+            scenario_activities = activities
+        
+        for act in scenario_activities:
+            scenario = (act, ttype)
+            
+            # Observed lengths
+            obs_lengths = observed_lengths_by_scenario.get(scenario, [])
+            
+            # Generate sequences and lengths
+            gen_lengths = []
+            for _ in range(n_generated):
+                seq, _, _ = model.generate_sequence(act, ttype)
+                gen_lengths.append(len(seq))
+            
+            ax = axes[i]
+            i += 1
+            
+            # Plotting
+            if plot_type == 'hist':
+                # Plot observed and generated as overlapping histograms
+                ax.hist(obs_lengths, bins=20, alpha=0.5, label='Observed', density=True)
+                ax.hist(gen_lengths, bins=20, alpha=0.5, label='Generated', density=True)
+            else:
+                # Plot density using seaborn
+                sns.kdeplot(obs_lengths, label='Observed', ax=ax, shade=True)
+                sns.kdeplot(gen_lengths, label='Generated', ax=ax, shade=True)
+            
+            ax.set_title(f"{ttype}, {act}")
+            ax.set_xlabel("Sequence Length")
+            ax.set_ylabel("Density")
+            ax.legend()
+    
+    plt.tight_layout()
+    plt.show()
+
+# Example usage:
+compare_length_distributions(model, activities, toilet_types, n_generated=1000, plot_type='hist')
