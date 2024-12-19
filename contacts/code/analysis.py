@@ -193,7 +193,7 @@ plt.tight_layout()
 plt.savefig("sequence_network_3x3_grid.png")
 plt.show()
 
-def compare_length_distributions(model, activities, toilet_types, n_generated=1000, plot_type='hist'):
+def compare_length_distributions(model, activities, toilet_types, n_generated=1000, plot_type='density'):
     """
     Compare the observed vs generated length distributions for each (activity, toilet_type) scenario.
     
@@ -263,7 +263,33 @@ def compare_length_distributions(model, activities, toilet_types, n_generated=10
             ax.legend()
     
     plt.tight_layout()
+    plt.savefig("length_comparison.png")
     plt.show()
 
-# Example usage:
-compare_length_distributions(model, activities, toilet_types, n_generated=1000, plot_type='hist')
+compare_length_distributions(model, activities, toilet_types, n_generated=1000, plot_type='density')
+
+# Combine Activity and ToiletType into a single scenario column
+df_contamination["Scenario"] = df_contamination["Activity"] + "_" + df_contamination["ToiletType"].str.replace(" ", "_")
+# Calculate final hand contamination for each participant
+df_contamination["FinalHandContamination"] = df_contamination.groupby("ParticipantID")["RightHandConc"].transform("last")
+
+# Split Scenario into Activity and ToiletType again (if you don't already have them separate)
+# Assuming you already have "Activity" and "ToiletType" in df_contamination
+
+g = sns.catplot(data=df_contamination, x="ToiletType", y="FinalHandContamination", hue="ToiletType", col="Activity", kind="violin", cut=0, sharey=False)
+g.set_xticklabels(rotation=45)
+g.set_axis_labels("Toilet Type", "Final Hand Contamination (RNA copies/cm^2)")
+g.fig.subplots_adjust(top=0.9)
+g.fig.suptitle("Final Hand Contamination by Activity and Toilet Type")
+plt.savefig("final_hand_contamination_violin.png")
+plt.show()
+
+# Perform a Kruskal-Wallis test across all scenarios
+# This checks if at least one scenario differs significantly from the others.
+from scipy.stats import kruskal
+
+groups = [group["FinalHandContamination"].values for _, group in df_contamination.groupby("Scenario")]
+stat, p = kruskal(*groups)
+print("Kruskal-Wallis test across scenarios:")
+print("Statistic:", stat)
+print("p-value:", p)

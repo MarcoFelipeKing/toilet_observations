@@ -37,13 +37,13 @@ class EnhancedToiletModelWithValidation:
         
         # Gamma distribution for contact area
         self.k_area = 2.0
-        self.theta_area = 1.0
+        self.theta_area = 2.0
         
         # Fraction available for transfer
         #self.theta = 0.1
         
         # Pathogen decay rate
-        self.default_pathogen_decay_rate = 0.05
+        self.default_pathogen_decay_rate = 0.0116 # if you assume a half-life of ~1 hour and each step ~1 min, the per-step decay would be about ~1- (0.5^(1/60)) ≈ 0.0116
         
         # Hands start clean
         self.initial_left_hand_contamination = 0.0
@@ -160,11 +160,11 @@ class EnhancedToiletModelWithValidation:
             next_state = np.random.choice(list(next_states_prob.keys()), p=list(next_states_prob.values()))
             
             # Insert personal interruptions (if not about to exit)
-            if next_state != "Exit" and np.random.rand() < 0.2:
-                sequence.append("Personal")
-                if len(sequence) >= max_length:
-                    sequence.append("Exit")
-                    break
+            #if next_state != "Exit" and np.random.rand() < 0.41:
+            #    sequence.append("Personal")
+            #    if len(sequence) >= max_length:
+            #        sequence.append("Exit")
+            #        break
             
             # Cubicle logic
             if sequence[-1] == "Cubicle" and next_state in ["CubicleOUT", "Exit"]:
@@ -231,30 +231,40 @@ class EnhancedToiletModelWithValidation:
             
             if surf in surfaces:
                 C_s = surfaces[surf]
-                C_h_avg = (left_hand_contamination + right_hand_contamination)/2.0
-                
-                # Constants
-                TOTAL_HAND_AREA = 150.0  # cm², approximate total surface area of a single hand
 
-                lam = beta.rvs(self.alpha_lambda, self.beta_lambda)  # transfer efficiency (unitless)
-                A = gamma.rvs(self.k_area, scale=self.theta_area)    # contact area (cm²)
+                TOTAL_HAND_AREA = 150.0
+                lam = beta.rvs(self.alpha_lambda, self.beta_lambda)  # transfer efficiency
+                A = gamma.rvs(self.k_area, scale=self.theta_area)    # contact area
 
-                # Calculate contamination transferred
-                Delta_PFU = C_s * A * lam  # total PFU transferred
+                Delta_PFU = 0.0
 
-                # Update surface contamination
-                surfaces[surf] = max(C_s - (Delta_PFU / A), 0.0)
-
-                # Spread contamination homogeneously across total hand area
                 if chosen_hand == "Left":
-                    left_hand_contamination = (left_hand_contamination * TOTAL_HAND_AREA + Delta_PFU) / TOTAL_HAND_AREA
+                    Delta_PFU = (C_s - left_hand_contamination) * A * lam
+                    new_left = (left_hand_contamination * TOTAL_HAND_AREA + Delta_PFU) / TOTAL_HAND_AREA
+                    left_hand_contamination = max(new_left, 0.0)
+
                 elif chosen_hand == "Right":
-                    right_hand_contamination = (right_hand_contamination * TOTAL_HAND_AREA + Delta_PFU) / TOTAL_HAND_AREA
+                    Delta_PFU = (C_s - right_hand_contamination) * A * lam
+                    new_right = (right_hand_contamination * TOTAL_HAND_AREA + Delta_PFU) / TOTAL_HAND_AREA
+                    right_hand_contamination = max(new_right, 0.0)
+
                 else:
-                    left_hand_contamination = (left_hand_contamination * TOTAL_HAND_AREA + Delta_PFU / 2) / TOTAL_HAND_AREA
-                    right_hand_contamination = (right_hand_contamination * TOTAL_HAND_AREA + Delta_PFU / 2) / TOTAL_HAND_AREA
-                
-            
+                    # Both hands scenario:
+                    Delta_PFU_left = (C_s - left_hand_contamination) * (A/2) * lam
+                    new_left = (left_hand_contamination * TOTAL_HAND_AREA + Delta_PFU_left) / TOTAL_HAND_AREA
+                    left_hand_contamination = max(new_left, 0.0)
+
+                    Delta_PFU_right = (C_s - right_hand_contamination) * (A/2) * lam
+                    new_right = (right_hand_contamination * TOTAL_HAND_AREA + Delta_PFU_right) / TOTAL_HAND_AREA
+                    right_hand_contamination = max(new_right, 0.0)
+
+                    Delta_PFU = Delta_PFU_left + Delta_PFU_right
+
+                surfaces[surf] = max(C_s - (Delta_PFU / A), 0.0)
+            else:
+                # If surf is not in surfaces, do nothing
+                pass
+
             # Hand hygiene
             if surf == "Hygiene":
                 if bernoulli.rvs(self.hand_hygiene_compliance_prob):
