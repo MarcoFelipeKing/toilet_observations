@@ -235,11 +235,13 @@ class EnhancedToiletModelWithValidation:
                 TOTAL_HAND_AREA = 150.0
                 lam = beta.rvs(self.alpha_lambda, self.beta_lambda)  # transfer efficiency
                 A = gamma.rvs(self.k_area, scale=self.theta_area)    # contact area
+                A = min(A,TOTAL_HAND_AREA)
+                A = max(A,0.0)
 
                 Delta_PFU = 0.0
 
                 if chosen_hand == "Left":
-                    Delta_PFU = (C_s - left_hand_contamination) * A * lam
+                    Delta_PFU = (C_s - left_hand_contamination) * A * lam 
                     new_left = (left_hand_contamination * TOTAL_HAND_AREA + Delta_PFU) / TOTAL_HAND_AREA
                     left_hand_contamination = max(new_left, 0.0)
 

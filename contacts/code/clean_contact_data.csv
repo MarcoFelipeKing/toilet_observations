@@ -1,0 +1,2311 @@
+ExperimentID,ParticipantID,Activity,Activity_Sub_Type,Surface,Hand,Toilet_type,Sex,ID,SurfaceCategories
+YPPXM4223O,CEW005,Urination,NA,Door handle outside,Right,Women,Female,1 CEW005,Entry
+YPPXM4223O,CEW005,Urination,NA,Cubicle door handle inside,Right,Women,Female,1 CEW005,CubicleOUT
+YPPXM4223O,CEW005,Urination,NA,Toilet surface,Left,Women,Female,1 CEW005,Cubicle
+YPPXM4223O,CEW005,Urination,NA,Phone,Both,Women,Female,1 CEW005,Personal
+YPPXM4223O,CEW005,Urination,NA,Toilet paper,Both,Women,Female,1 CEW005,Cubicle
+YPPXM4223O,CEW005,Urination,NA,Phone,Left,Women,Female,1 CEW005,Personal
+YPPXM4223O,CEW005,Urination,NA,Clothing,Both,Women,Female,1 CEW005,Personal
+YPPXM4223O,CEW005,Urination,NA,Flush button,Right,Women,Female,1 CEW005,Cubicle
+YPPXM4223O,CEW005,Urination,NA,Phone,Left,Women,Female,1 CEW005,Personal
+YPPXM4223O,CEW005,Urination,NA,Cubicle door handle inside,Right,Women,Female,1 CEW005,CubicleOUT
+YPPXM4223O,CEW005,Urination,NA,Tap,Right,Women,Female,1 CEW005,Hygiene
+YPPXM4223O,CEW005,Urination,NA,Soap dispenser,Left,Women,Female,1 CEW005,Hygiene
+YPPXM4223O,CEW005,Urination,NA,Tap,Right,Women,Female,1 CEW005,Hygiene
+YPPXM4223O,CEW005,Urination,NA,Tap,Right,Women,Female,1 CEW005,Hygiene
+YPPXM4223O,CEW005,Urination,NA,Phone,Right,Women,Female,1 CEW005,Personal
+YPPXM4223O,CEW005,Urination,NA,Hand dryer,Both,Women,Female,1 CEW005,Hygiene
+YPPXM4223O,CEW005,Urination,NA,Door handle inside,Right,Women,Female,1 CEW005,Exit
+WPNWF7148K,CEW005,Defecation,NA,Door handle outside,Right,Women,Female,2 CEW005,Entry
+WPNWF7148K,CEW005,Defecation,NA,Cubicle door handle outside,Left,Women,Female,2 CEW005,CubicleIN
+WPNWF7148K,CEW005,Defecation,NA,Cubicle door handle inside,Left,Women,Female,2 CEW005,CubicleOUT
+WPNWF7148K,CEW005,Defecation,NA,Cubicle door handle inside,Right,Women,Female,2 CEW005,CubicleOUT
+WPNWF7148K,CEW005,Defecation,NA,Phone,Right,Women,Female,2 CEW005,Personal
+WPNWF7148K,CEW005,Defecation,NA,Clothing,Both,Women,Female,2 CEW005,Personal
+WPNWF7148K,CEW005,Defecation,NA,Skin,Left,Women,Female,2 CEW005,Personal
+WPNWF7148K,CEW005,Defecation,NA,Phone,Left,Women,Female,2 CEW005,Personal
+WPNWF7148K,CEW005,Defecation,NA,Clothing,Both,Women,Female,2 CEW005,Personal
+WPNWF7148K,CEW005,Defecation,NA,Flush button,Right,Women,Female,2 CEW005,Cubicle
+WPNWF7148K,CEW005,Defecation,NA,Phone,Left,Women,Female,2 CEW005,Personal
+WPNWF7148K,CEW005,Defecation,NA,Cubicle door handle inside,Right,Women,Female,2 CEW005,CubicleOUT
+WPNWF7148K,CEW005,Defecation,NA,Tap,Right,Women,Female,2 CEW005,Hygiene
+WPNWF7148K,CEW005,Defecation,NA,Soap dispenser,Left,Women,Female,2 CEW005,Hygiene
+WPNWF7148K,CEW005,Defecation,NA,Tap,Right,Women,Female,2 CEW005,Hygiene
+WPNWF7148K,CEW005,Defecation,NA,Tap,Right,Women,Female,2 CEW005,Hygiene
+WPNWF7148K,CEW005,Defecation,NA,Phone,Right,Women,Female,2 CEW005,Personal
+WPNWF7148K,CEW005,Defecation,NA,Hand dryer,Both,Women,Female,2 CEW005,Hygiene
+WPNWF7148K,CEW005,Defecation,NA,Door handle inside,Left,Women,Female,2 CEW005,Exit
+RTIHL2258R,CEW005,MHM,Sanitary pad,Door handle outside,Right,Women,Female,3 CEW005,Entry
+RTIHL2258R,CEW005,MHM,Sanitary pad,Cubicle door handle outside,Left,Women,Female,3 CEW005,CubicleIN
+RTIHL2258R,CEW005,MHM,Sanitary pad,Cubicle door handle inside,Left,Women,Female,3 CEW005,CubicleOUT
+RTIHL2258R,CEW005,MHM,Sanitary pad,Cubicle door handle inside,Right,Women,Female,3 CEW005,CubicleOUT
+RTIHL2258R,CEW005,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW005,Personal
+RTIHL2258R,CEW005,MHM,Sanitary pad,Menstrual product,Right,Women,Female,3 CEW005,MHM
+RTIHL2258R,CEW005,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW005,Personal
+RTIHL2258R,CEW005,MHM,Sanitary pad,Menstrual product,Left,Women,Female,3 CEW005,MHM
+RTIHL2258R,CEW005,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW005,Personal
+RTIHL2258R,CEW005,MHM,Sanitary pad,Flush button,Right,Women,Female,3 CEW005,Cubicle
+RTIHL2258R,CEW005,MHM,Sanitary pad,Cubicle door handle inside,Right,Women,Female,3 CEW005,CubicleOUT
+RTIHL2258R,CEW005,MHM,Sanitary pad,Tap,Right,Women,Female,3 CEW005,Hygiene
+RTIHL2258R,CEW005,MHM,Sanitary pad,Soap dispenser,Left,Women,Female,3 CEW005,Hygiene
+RTIHL2258R,CEW005,MHM,Sanitary pad,Tap,Right,Women,Female,3 CEW005,Hygiene
+RTIHL2258R,CEW005,MHM,Sanitary pad,Tap,Right,Women,Female,3 CEW005,Hygiene
+RTIHL2258R,CEW005,MHM,Sanitary pad,Hand dryer,Both,Women,Female,3 CEW005,Hygiene
+RTIHL2258R,CEW005,MHM,Sanitary pad,Door handle inside,Left,Women,Female,3 CEW005,Exit
+MXKYM6897V,CEW015,Urination,NA,Door handle outside,Right,Women,Female,1 CEW015,Entry
+MXKYM6897V,CEW015,Urination,NA,Cubicle door handle inside,Left,Women,Female,1 CEW015,CubicleOUT
+MXKYM6897V,CEW015,Urination,NA,Cubicle door handle inside,Right,Women,Female,1 CEW015,CubicleOUT
+MXKYM6897V,CEW015,Urination,NA,Clothing,Both,Women,Female,1 CEW015,Personal
+MXKYM6897V,CEW015,Urination,NA,Phone,Left,Women,Female,1 CEW015,Personal
+MXKYM6897V,CEW015,Urination,NA,Toilet paper,Both,Women,Female,1 CEW015,Cubicle
+MXKYM6897V,CEW015,Urination,NA,Clothing,Both,Women,Female,1 CEW015,Personal
+MXKYM6897V,CEW015,Urination,NA,Phone,Left,Women,Female,1 CEW015,Personal
+MXKYM6897V,CEW015,Urination,NA,Cubicle door handle inside,Right,Women,Female,1 CEW015,CubicleOUT
+MXKYM6897V,CEW015,Urination,NA,Flush button,Right,Women,Female,1 CEW015,Cubicle
+MXKYM6897V,CEW015,Urination,NA,Tap,Left,Women,Female,1 CEW015,Hygiene
+MXKYM6897V,CEW015,Urination,NA,Tap,Right,Women,Female,1 CEW015,Hygiene
+MXKYM6897V,CEW015,Urination,NA,Paper towel ,Right,Women,Female,1 CEW015,Hygiene
+MXKYM6897V,CEW015,Urination,NA,Paper towel ,Right,Women,Female,1 CEW015,Hygiene
+MXKYM6897V,CEW015,Urination,NA,Bin outside the cubicle,Left,Women,Female,1 CEW015,Hygiene
+MXKYM6897V,CEW015,Urination,NA,Door handle inside,Left,Women,Female,1 CEW015,Exit
+MMHSI0598X,CEW015,Defecation,NA,Door handle outside,Right,Women,Female,2 CEW015,Entry
+MMHSI0598X,CEW015,Defecation,NA,Cubicle door handle inside,Left,Women,Female,2 CEW015,CubicleOUT
+MMHSI0598X,CEW015,Defecation,NA,Phone,Right,Women,Female,2 CEW015,Personal
+MMHSI0598X,CEW015,Defecation,NA,Clothing,Both,Women,Female,2 CEW015,Personal
+MMHSI0598X,CEW015,Defecation,NA,Toilet paper,Both,Women,Female,2 CEW015,Cubicle
+MMHSI0598X,CEW015,Defecation,NA,Clothing,Right,Women,Female,2 CEW015,Personal
+MMHSI0598X,CEW015,Defecation,NA,Toilet paper,Both,Women,Female,2 CEW015,Cubicle
+MMHSI0598X,CEW015,Defecation,NA,Clothing,Right,Women,Female,2 CEW015,Personal
+MMHSI0598X,CEW015,Defecation,NA,Toilet paper,Both,Women,Female,2 CEW015,Cubicle
+MMHSI0598X,CEW015,Defecation,NA,Clothing,Right,Women,Female,2 CEW015,Personal
+MMHSI0598X,CEW015,Defecation,NA,Clothing,Both,Women,Female,2 CEW015,Personal
+MMHSI0598X,CEW015,Defecation,NA,Flush button,Right,Women,Female,2 CEW015,Cubicle
+MMHSI0598X,CEW015,Defecation,NA,Toilet brush handle,Left,Women,Female,2 CEW015,Cubicle
+MMHSI0598X,CEW015,Defecation,NA,Phone,Left,Women,Female,2 CEW015,Personal
+MMHSI0598X,CEW015,Defecation,NA,Phone,Right,Women,Female,2 CEW015,Personal
+MMHSI0598X,CEW015,Defecation,NA,Flush button,Right,Women,Female,2 CEW015,Cubicle
+MMHSI0598X,CEW015,Defecation,NA,Tap,Left,Women,Female,2 CEW015,Hygiene
+MMHSI0598X,CEW015,Defecation,NA,Tap,Right,Women,Female,2 CEW015,Hygiene
+MMHSI0598X,CEW015,Defecation,NA,Tap,Right,Women,Female,2 CEW015,Hygiene
+MMHSI0598X,CEW015,Defecation,NA,Paper towel ,Right,Women,Female,2 CEW015,Hygiene
+MMHSI0598X,CEW015,Defecation,NA,Bin outside the cubicle,Left,Women,Female,2 CEW015,Hygiene
+MMHSI0598X,CEW015,Defecation,NA,Phone,Both,Women,Female,2 CEW015,Personal
+MMHSI0598X,CEW015,Defecation,NA,Door handle inside,Left,Women,Female,2 CEW015,Exit
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Door handle outside,Right,Women,Female,3 CEW015,Entry
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Cubicle door handle inside,Left,Women,Female,3 CEW015,CubicleOUT
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Cubicle door handle inside,Right,Women,Female,3 CEW015,CubicleOUT
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Bag,Left,Women,Female,3 CEW015,Personal
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Phone,Right,Women,Female,3 CEW015,Personal
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW015,Personal
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Hair,Both,Women,Female,3 CEW015,Personal
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Menstrual product,Left,Women,Female,3 CEW015,MHM
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Menstrual product,Both,Women,Female,3 CEW015,MHM
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Sanitary bin,Left,Women,Female,3 CEW015,Cubicle
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW015,Personal
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Menstrual product,Left,Women,Female,3 CEW015,MHM
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Toilet paper,Both,Women,Female,3 CEW015,Cubicle
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW015,Personal
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Flush button,Right,Women,Female,3 CEW015,Cubicle
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Bag,Left,Women,Female,3 CEW015,Personal
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Phone,Left,Women,Female,3 CEW015,Personal
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Toilet brush handle,Right,Women,Female,3 CEW015,Cubicle
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW015,Personal
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Flush button,Right,Women,Female,3 CEW015,Cubicle
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Tap,Left,Women,Female,3 CEW015,Hygiene
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Tap,Right,Women,Female,3 CEW015,Hygiene
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Tap,Right,Women,Female,3 CEW015,Hygiene
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Paper towel ,Right,Women,Female,3 CEW015,Hygiene
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Bin outside the cubicle,Left,Women,Female,3 CEW015,Hygiene
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Phone,Right,Women,Female,3 CEW015,Personal
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Hair,Both,Women,Female,3 CEW015,Personal
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Phone,Right,Women,Female,3 CEW015,Personal
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Bag,Left,Women,Female,3 CEW015,Personal
+UBTTQ3458J,CEW015,MHM,Sanitary pad,Door handle inside,Left,Women,Female,3 CEW015,Exit
+NZFQO4331M,CEW017,Urination,NA,Cubicle door handle outside,Left,Women,Female,1 CEW017,CubicleIN
+NZFQO4331M,CEW017,Urination,NA,Cubicle door handle inside,Left,Women,Female,1 CEW017,CubicleOUT
+NZFQO4331M,CEW017,Urination,NA,Toilet paper,Left,Women,Female,1 CEW017,Cubicle
+NZFQO4331M,CEW017,Urination,NA,Toilet paper,Right,Women,Female,1 CEW017,Cubicle
+NZFQO4331M,CEW017,Urination,NA,Clothing,Both,Women,Female,1 CEW017,Personal
+NZFQO4331M,CEW017,Urination,NA,Phone,Right,Women,Female,1 CEW017,Personal
+NZFQO4331M,CEW017,Urination,NA,Hair,Both,Women,Female,1 CEW017,Personal
+NZFQO4331M,CEW017,Urination,NA,Toilet paper,Both,Women,Female,1 CEW017,Cubicle
+NZFQO4331M,CEW017,Urination,NA,Clothing,Both,Women,Female,1 CEW017,Personal
+NZFQO4331M,CEW017,Urination,NA,Flush button,Left,Women,Female,1 CEW017,Cubicle
+NZFQO4331M,CEW017,Urination,NA,Phone,Right,Women,Female,1 CEW017,Personal
+NZFQO4331M,CEW017,Urination,NA,Soap dispenser,Left,Women,Female,1 CEW017,Hygiene
+NZFQO4331M,CEW017,Urination,NA,Tap,Right,Women,Female,1 CEW017,Hygiene
+NZFQO4331M,CEW017,Urination,NA,Tap,Right,Women,Female,1 CEW017,Hygiene
+NZFQO4331M,CEW017,Urination,NA,Tap,Right,Women,Female,1 CEW017,Hygiene
+NZFQO4331M,CEW017,Urination,NA,Soap dispenser,Left,Women,Female,1 CEW017,Hygiene
+NZFQO4331M,CEW017,Urination,NA,Tap,Right,Women,Female,1 CEW017,Hygiene
+NZFQO4331M,CEW017,Urination,NA,Tap,Right,Women,Female,1 CEW017,Hygiene
+NZFQO4331M,CEW017,Urination,NA,Hand dryer,Both,Women,Female,1 CEW017,Hygiene
+NZFQO4331M,CEW017,Urination,NA,Door handle inside,Right,Women,Female,1 CEW017,Exit
+CNCNL8817S,CEW017,Defecation,NA,Cubicle door handle outside,Left,Women,Female,2 CEW017,CubicleIN
+CNCNL8817S,CEW017,Defecation,NA,Cubicle door handle inside,Left,Women,Female,2 CEW017,CubicleOUT
+CNCNL8817S,CEW017,Defecation,NA,Cubicle door handle inside,Right,Women,Female,2 CEW017,CubicleOUT
+CNCNL8817S,CEW017,Defecation,NA,Clothing,Both,Women,Female,2 CEW017,Personal
+CNCNL8817S,CEW017,Defecation,NA,Phone,Right,Women,Female,2 CEW017,Personal
+CNCNL8817S,CEW017,Defecation,NA,Toilet paper,Both,Women,Female,2 CEW017,Cubicle
+CNCNL8817S,CEW017,Defecation,NA,Clothing,Both,Women,Female,2 CEW017,Personal
+CNCNL8817S,CEW017,Defecation,NA,Flush button,Right,Women,Female,2 CEW017,Cubicle
+CNCNL8817S,CEW017,Defecation,NA,Cubicle door handle inside,Left,Women,Female,2 CEW017,CubicleOUT
+CNCNL8817S,CEW017,Defecation,NA,Soap dispenser,Left,Women,Female,2 CEW017,Hygiene
+CNCNL8817S,CEW017,Defecation,NA,Tap,Right,Women,Female,2 CEW017,Hygiene
+CNCNL8817S,CEW017,Defecation,NA,Soap dispenser,Left,Women,Female,2 CEW017,Hygiene
+CNCNL8817S,CEW017,Defecation,NA,Tap,Right,Women,Female,2 CEW017,Hygiene
+CNCNL8817S,CEW017,Defecation,NA,Hand dryer,Both,Women,Female,2 CEW017,Hygiene
+CNCNL8817S,CEW017,Defecation,NA,Hair,Both,Women,Female,2 CEW017,Personal
+CNCNL8817S,CEW017,Defecation,NA,Door handle inside,Left,Women,Female,2 CEW017,Exit
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Soap dispenser,Left,Women,Female,3 CEW017,Hygiene
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Tap,Right,Women,Female,3 CEW017,Hygiene
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Soap dispenser,Left,Women,Female,3 CEW017,Hygiene
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Tap,Right,Women,Female,3 CEW017,Hygiene
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Tap,Right,Women,Female,3 CEW017,Hygiene
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Cubicle door handle inside,Right,Women,Female,3 CEW017,CubicleOUT
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Clothing,Both,Women,Female,3 CEW017,Personal
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Phone,Right,Women,Female,3 CEW017,Personal
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Clothing,Both,Women,Female,3 CEW017,Personal
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Menstrual product,Right,Women,Female,3 CEW017,MHM
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Skin,Right,Women,Female,3 CEW017,Personal
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Toilet paper,Both,Women,Female,3 CEW017,Cubicle
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Sanitary bin,Right,Women,Female,3 CEW017,Cubicle
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Clothing,Both,Women,Female,3 CEW017,Personal
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Flush button,Right,Women,Female,3 CEW017,Cubicle
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Phone,Right,Women,Female,3 CEW017,Personal
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Cubicle door handle inside,Right,Women,Female,3 CEW017,CubicleOUT
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Tap,Right,Women,Female,3 CEW017,Hygiene
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Soap dispenser,Right,Women,Female,3 CEW017,Hygiene
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Tap,Right,Women,Female,3 CEW017,Hygiene
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Tap,Right,Women,Female,3 CEW017,Hygiene
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Hand dryer,Both,Women,Female,3 CEW017,Hygiene
+NJKKJ2731E,CEW017,MHM,Menstrual cup,Door handle inside,Right,Women,Female,3 CEW017,Exit
+PHLRV8051T,CEW023,Urination,NA,Door handle outside,Right,Women,Female,1 CEW023,Entry
+PHLRV8051T,CEW023,Urination,NA,Cubicle door handle outside,Left,Women,Female,1 CEW023,CubicleIN
+PHLRV8051T,CEW023,Urination,NA,Cubicle door handle inside,Left,Women,Female,1 CEW023,CubicleOUT
+PHLRV8051T,CEW023,Urination,NA,Cubicle door handle inside,Right,Women,Female,1 CEW023,CubicleOUT
+PHLRV8051T,CEW023,Urination,NA,Bag,Both,Women,Female,1 CEW023,Personal
+PHLRV8051T,CEW023,Urination,NA,Clothing,Both,Women,Female,1 CEW023,Personal
+PHLRV8051T,CEW023,Urination,NA,Phone,Right,Women,Female,1 CEW023,Personal
+PHLRV8051T,CEW023,Urination,NA,Phone,Both,Women,Female,1 CEW023,Personal
+PHLRV8051T,CEW023,Urination,NA,Toilet paper,Both,Women,Female,1 CEW023,Cubicle
+PHLRV8051T,CEW023,Urination,NA,Clothing,Both,Women,Female,1 CEW023,Personal
+PHLRV8051T,CEW023,Urination,NA,Skin,Right,Women,Female,1 CEW023,Personal
+PHLRV8051T,CEW023,Urination,NA,Clothing,Both,Women,Female,1 CEW023,Personal
+PHLRV8051T,CEW023,Urination,NA,Bag,Both,Women,Female,1 CEW023,Personal
+PHLRV8051T,CEW023,Urination,NA,Cubicle door handle inside,Right,Women,Female,1 CEW023,CubicleOUT
+PHLRV8051T,CEW023,Urination,NA,Tap,Right,Women,Female,1 CEW023,Hygiene
+PHLRV8051T,CEW023,Urination,NA,Flush button,Left,Women,Female,1 CEW023,Cubicle
+PHLRV8051T,CEW023,Urination,NA,Flush button,Left,Women,Female,1 CEW023,Cubicle
+PHLRV8051T,CEW023,Urination,NA,Tap,Right,Women,Female,1 CEW023,Hygiene
+PHLRV8051T,CEW023,Urination,NA,Tap,Right,Women,Female,1 CEW023,Hygiene
+PHLRV8051T,CEW023,Urination,NA,Paper towel ,Right,Women,Female,1 CEW023,Hygiene
+PHLRV8051T,CEW023,Urination,NA,Paper towel ,Right,Women,Female,1 CEW023,Hygiene
+PHLRV8051T,CEW023,Urination,NA,Bin outside the cubicle,Right,Women,Female,1 CEW023,Hygiene
+PHLRV8051T,CEW023,Urination,NA,Door handle inside,Left,Women,Female,1 CEW023,Exit
+JUYVY3080H,CEW023,Defecation,NA,Door handle outside,Right,Women,Female,2 CEW023,Entry
+JUYVY3080H,CEW023,Defecation,NA,Cubicle door handle inside,Left,Women,Female,2 CEW023,CubicleOUT
+JUYVY3080H,CEW023,Defecation,NA,Bag,Both,Women,Female,2 CEW023,Personal
+JUYVY3080H,CEW023,Defecation,NA,Clothing,Both,Women,Female,2 CEW023,Personal
+JUYVY3080H,CEW023,Defecation,NA,Phone,Right,Women,Female,2 CEW023,Personal
+JUYVY3080H,CEW023,Defecation,NA,Toilet paper,Both,Women,Female,2 CEW023,Cubicle
+JUYVY3080H,CEW023,Defecation,NA,Skin,Right,Women,Female,2 CEW023,Personal
+JUYVY3080H,CEW023,Defecation,NA,Toilet paper,Both,Women,Female,2 CEW023,Cubicle
+JUYVY3080H,CEW023,Defecation,NA,Skin,Right,Women,Female,2 CEW023,Personal
+JUYVY3080H,CEW023,Defecation,NA,Toilet paper,Both,Women,Female,2 CEW023,Cubicle
+JUYVY3080H,CEW023,Defecation,NA,Skin,Right,Women,Female,2 CEW023,Personal
+JUYVY3080H,CEW023,Defecation,NA,Clothing,Both,Women,Female,2 CEW023,Personal
+JUYVY3080H,CEW023,Defecation,NA,Flush button,Right,Women,Female,2 CEW023,Cubicle
+JUYVY3080H,CEW023,Defecation,NA,Bag,Right,Women,Female,2 CEW023,Personal
+JUYVY3080H,CEW023,Defecation,NA,Door handle outside,Right,Women,Female,2 CEW023,Entry
+JUYVY3080H,CEW023,Defecation,NA,Tap,Right,Women,Female,2 CEW023,Hygiene
+JUYVY3080H,CEW023,Defecation,NA,Flush button,Right,Women,Female,2 CEW023,Cubicle
+JUYVY3080H,CEW023,Defecation,NA,Flush button,Right,Women,Female,2 CEW023,Cubicle
+JUYVY3080H,CEW023,Defecation,NA,Tap,Right,Women,Female,2 CEW023,Hygiene
+JUYVY3080H,CEW023,Defecation,NA,Tap,Right,Women,Female,2 CEW023,Hygiene
+JUYVY3080H,CEW023,Defecation,NA,Tap,Right,Women,Female,2 CEW023,Hygiene
+JUYVY3080H,CEW023,Defecation,NA,Paper towel ,Both,Women,Female,2 CEW023,Hygiene
+JUYVY3080H,CEW023,Defecation,NA,Bin outside the cubicle,Left,Women,Female,2 CEW023,Hygiene
+JUYVY3080H,CEW023,Defecation,NA,Bag,Both,Women,Female,2 CEW023,Personal
+JUYVY3080H,CEW023,Defecation,NA,Face,Right,Women,Female,2 CEW023,Personal
+JUYVY3080H,CEW023,Defecation,NA,Face,Both,Women,Female,2 CEW023,Personal
+JUYVY3080H,CEW023,Defecation,NA,Face,Right,Women,Female,2 CEW023,Personal
+JUYVY3080H,CEW023,Defecation,NA,Bag,Both,Women,Female,2 CEW023,Personal
+JUYVY3080H,CEW023,Defecation,NA,Hair,Left,Women,Female,2 CEW023,Personal
+JUYVY3080H,CEW023,Defecation,NA,Door handle inside,Right,Women,Female,2 CEW023,Exit
+UEJEG5402G,CEW023,MHM,Sanitary pad,Door handle outside,Right,Women,Female,3 CEW023,Entry
+UEJEG5402G,CEW023,MHM,Sanitary pad,Cubicle door handle inside,Left,Women,Female,3 CEW023,CubicleOUT
+UEJEG5402G,CEW023,MHM,Sanitary pad,Cubicle door handle outside,Left,Women,Female,3 CEW023,CubicleIN
+UEJEG5402G,CEW023,MHM,Sanitary pad,Bag,Both,Women,Female,3 CEW023,Personal
+UEJEG5402G,CEW023,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW023,Personal
+UEJEG5402G,CEW023,MHM,Sanitary pad,Bag,Both,Women,Female,3 CEW023,Personal
+UEJEG5402G,CEW023,MHM,Sanitary pad,Menstrual product,Left,Women,Female,3 CEW023,MHM
+UEJEG5402G,CEW023,MHM,Sanitary pad,Menstrual product,Both,Women,Female,3 CEW023,MHM
+UEJEG5402G,CEW023,MHM,Sanitary pad,Skin,Right,Women,Female,3 CEW023,Personal
+UEJEG5402G,CEW023,MHM,Sanitary pad,Clothing,Right,Women,Female,3 CEW023,Personal
+UEJEG5402G,CEW023,MHM,Sanitary pad,Sanitary bin,Left,Women,Female,3 CEW023,Cubicle
+UEJEG5402G,CEW023,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW023,Personal
+UEJEG5402G,CEW023,MHM,Sanitary pad,Menstrual product,Left,Women,Female,3 CEW023,MHM
+UEJEG5402G,CEW023,MHM,Sanitary pad,Toilet paper,Both,Women,Female,3 CEW023,Cubicle
+UEJEG5402G,CEW023,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW023,Personal
+UEJEG5402G,CEW023,MHM,Sanitary pad,Hair,Right,Women,Female,3 CEW023,Personal
+UEJEG5402G,CEW023,MHM,Sanitary pad,Bag,Both,Women,Female,3 CEW023,Personal
+UEJEG5402G,CEW023,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW023,Personal
+UEJEG5402G,CEW023,MHM,Sanitary pad,Cubicle door handle inside,Right,Women,Female,3 CEW023,CubicleOUT
+UEJEG5402G,CEW023,MHM,Sanitary pad,Flush button,Right,Women,Female,3 CEW023,Cubicle
+UEJEG5402G,CEW023,MHM,Sanitary pad,Tap,Left,Women,Female,3 CEW023,Hygiene
+UEJEG5402G,CEW023,MHM,Sanitary pad,Tap,Right,Women,Female,3 CEW023,Hygiene
+UEJEG5402G,CEW023,MHM,Sanitary pad,Tap,Right,Women,Female,3 CEW023,Hygiene
+UEJEG5402G,CEW023,MHM,Sanitary pad,Paper towel ,Right,Women,Female,3 CEW023,Hygiene
+UEJEG5402G,CEW023,MHM,Sanitary pad,Bin outside the cubicle,Left,Women,Female,3 CEW023,Hygiene
+UEJEG5402G,CEW023,MHM,Sanitary pad,Door handle inside,Right,Women,Female,3 CEW023,Exit
+ATQPH0145Q,CEW024,Urination,NA,Door handle outside,Right,Women,Female,1 CEW024,Entry
+ATQPH0145Q,CEW024,Urination,NA,Cubicle door handle inside,Left,Women,Female,1 CEW024,CubicleOUT
+ATQPH0145Q,CEW024,Urination,NA,Toilet paper,Both,Women,Female,1 CEW024,Cubicle
+ATQPH0145Q,CEW024,Urination,NA,Toilet paper,Right,Women,Female,1 CEW024,Cubicle
+ATQPH0145Q,CEW024,Urination,NA,Bag,Left,Women,Female,1 CEW024,Personal
+ATQPH0145Q,CEW024,Urination,NA,Clothing,Right,Women,Female,1 CEW024,Personal
+ATQPH0145Q,CEW024,Urination,NA,Toilet paper,Right,Women,Female,1 CEW024,Cubicle
+ATQPH0145Q,CEW024,Urination,NA,Toilet surface,Right,Women,Female,1 CEW024,Cubicle
+ATQPH0145Q,CEW024,Urination,NA,Skin,Left,Women,Female,1 CEW024,Personal
+ATQPH0145Q,CEW024,Urination,NA,Toilet paper,Both,Women,Female,1 CEW024,Cubicle
+ATQPH0145Q,CEW024,Urination,NA,Toilet paper,Left,Women,Female,1 CEW024,Cubicle
+ATQPH0145Q,CEW024,Urination,NA,Clothing,Both,Women,Female,1 CEW024,Personal
+ATQPH0145Q,CEW024,Urination,NA,Toilet surface,Right,Women,Female,1 CEW024,Cubicle
+ATQPH0145Q,CEW024,Urination,NA,Flush button,Right,Women,Female,1 CEW024,Cubicle
+ATQPH0145Q,CEW024,Urination,NA,Toilet paper,Right,Women,Female,1 CEW024,Cubicle
+ATQPH0145Q,CEW024,Urination,NA,Clothing,Both,Women,Female,1 CEW024,Personal
+ATQPH0145Q,CEW024,Urination,NA,Bag,Left,Women,Female,1 CEW024,Personal
+ATQPH0145Q,CEW024,Urination,NA,Cubicle door handle inside,Right,Women,Female,1 CEW024,CubicleOUT
+ATQPH0145Q,CEW024,Urination,NA,Clothing,Right,Women,Female,1 CEW024,Personal
+ATQPH0145Q,CEW024,Urination,NA,Bag,Left,Women,Female,1 CEW024,Personal
+ATQPH0145Q,CEW024,Urination,NA,Clothing,Left,Women,Female,1 CEW024,Personal
+ATQPH0145Q,CEW024,Urination,NA,Tap,Right,Women,Female,1 CEW024,Hygiene
+ATQPH0145Q,CEW024,Urination,NA,Tap,Right,Women,Female,1 CEW024,Hygiene
+ATQPH0145Q,CEW024,Urination,NA,Soap dispenser,Right,Women,Female,1 CEW024,Hygiene
+ATQPH0145Q,CEW024,Urination,NA,Tap,Left,Women,Female,1 CEW024,Hygiene
+ATQPH0145Q,CEW024,Urination,NA,Tap,Right,Women,Female,1 CEW024,Hygiene
+ATQPH0145Q,CEW024,Urination,NA,Paper towel ,Left,Women,Female,1 CEW024,Hygiene
+ATQPH0145Q,CEW024,Urination,NA,Face,Right,Women,Female,1 CEW024,Personal
+ATQPH0145Q,CEW024,Urination,NA,Bin outside the cubicle,Left,Women,Female,1 CEW024,Hygiene
+ATQPH0145Q,CEW024,Urination,NA,Door handle inside,Right,Women,Female,1 CEW024,Exit
+CUZXN6848K,CEW024,Defecation,NA,Door handle outside,Right,Women,Female,2 CEW024,Entry
+CUZXN6848K,CEW024,Defecation,NA,Cubicle door handle inside,Left,Women,Female,2 CEW024,CubicleOUT
+CUZXN6848K,CEW024,Defecation,NA,Toilet paper,Both,Women,Female,2 CEW024,Cubicle
+CUZXN6848K,CEW024,Defecation,NA,Toilet paper,Right,Women,Female,2 CEW024,Cubicle
+CUZXN6848K,CEW024,Defecation,NA,Clothing,Right,Women,Female,2 CEW024,Personal
+CUZXN6848K,CEW024,Defecation,NA,Bag,Left,Women,Female,2 CEW024,Personal
+CUZXN6848K,CEW024,Defecation,NA,Clothing,Both,Women,Female,2 CEW024,Personal
+CUZXN6848K,CEW024,Defecation,NA,Toilet paper,Both,Women,Female,2 CEW024,Cubicle
+CUZXN6848K,CEW024,Defecation,NA,Toilet paper,Right,Women,Female,2 CEW024,Cubicle
+CUZXN6848K,CEW024,Defecation,NA,Cubicle door handle inside,Left,Women,Female,2 CEW024,CubicleOUT
+CUZXN6848K,CEW024,Defecation,NA,Clothing,Both,Women,Female,2 CEW024,Personal
+CUZXN6848K,CEW024,Defecation,NA,Phone,Left,Women,Female,2 CEW024,Personal
+CUZXN6848K,CEW024,Defecation,NA,Phone,Both,Women,Female,2 CEW024,Personal
+CUZXN6848K,CEW024,Defecation,NA,Phone,Left,Women,Female,2 CEW024,Personal
+CUZXN6848K,CEW024,Defecation,NA,Clothing,Both,Women,Female,2 CEW024,Personal
+CUZXN6848K,CEW024,Defecation,NA,Toilet paper,Right,Women,Female,2 CEW024,Cubicle
+CUZXN6848K,CEW024,Defecation,NA,Flush button,Right,Women,Female,2 CEW024,Cubicle
+CUZXN6848K,CEW024,Defecation,NA,Clothing,Right,Women,Female,2 CEW024,Personal
+CUZXN6848K,CEW024,Defecation,NA,Clothing,Both,Women,Female,2 CEW024,Personal
+CUZXN6848K,CEW024,Defecation,NA,Bag,Right,Women,Female,2 CEW024,Personal
+CUZXN6848K,CEW024,Defecation,NA,Cubicle door handle inside,Left,Women,Female,2 CEW024,CubicleOUT
+CUZXN6848K,CEW024,Defecation,NA,Clothing,Right,Women,Female,2 CEW024,Personal
+CUZXN6848K,CEW024,Defecation,NA,Clothing,Left,Women,Female,2 CEW024,Personal
+CUZXN6848K,CEW024,Defecation,NA,Soap dispenser,Left,Women,Female,2 CEW024,Hygiene
+CUZXN6848K,CEW024,Defecation,NA,Tap,Right,Women,Female,2 CEW024,Hygiene
+CUZXN6848K,CEW024,Defecation,NA,Tap,Right,Women,Female,2 CEW024,Hygiene
+CUZXN6848K,CEW024,Defecation,NA,Soap dispenser,Left,Women,Female,2 CEW024,Hygiene
+CUZXN6848K,CEW024,Defecation,NA,Tap,Left,Women,Female,2 CEW024,Hygiene
+CUZXN6848K,CEW024,Defecation,NA,Tap,Right,Women,Female,2 CEW024,Hygiene
+CUZXN6848K,CEW024,Defecation,NA,Paper towel ,Left,Women,Female,2 CEW024,Hygiene
+CUZXN6848K,CEW024,Defecation,NA,Bin outside the cubicle,Left,Women,Female,2 CEW024,Hygiene
+CUZXN6848K,CEW024,Defecation,NA,Door handle inside,Left,Women,Female,2 CEW024,Exit
+VPKLO6035P,CEW024,MHM,Sanitary pad,Door handle outside,Right,Women,Female,3 CEW024,Entry
+VPKLO6035P,CEW024,MHM,Sanitary pad,Cubicle door handle inside,Left,Women,Female,3 CEW024,CubicleOUT
+VPKLO6035P,CEW024,MHM,Sanitary pad,Toilet paper,Both,Women,Female,3 CEW024,Cubicle
+VPKLO6035P,CEW024,MHM,Sanitary pad,Toilet paper,Right,Women,Female,3 CEW024,Cubicle
+VPKLO6035P,CEW024,MHM,Sanitary pad,Bag,Left,Women,Female,3 CEW024,Personal
+VPKLO6035P,CEW024,MHM,Sanitary pad,Clothing,Right,Women,Female,3 CEW024,Personal
+VPKLO6035P,CEW024,MHM,Sanitary pad,Toilet paper,Right,Women,Female,3 CEW024,Cubicle
+VPKLO6035P,CEW024,MHM,Sanitary pad,Toilet surface,Right,Women,Female,3 CEW024,Cubicle
+VPKLO6035P,CEW024,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW024,Personal
+VPKLO6035P,CEW024,MHM,Sanitary pad,Menstrual product,Left,Women,Female,3 CEW024,MHM
+VPKLO6035P,CEW024,MHM,Sanitary pad,Menstrual product,Both,Women,Female,3 CEW024,MHM
+VPKLO6035P,CEW024,MHM,Sanitary pad,Sanitary bin,Left,Women,Female,3 CEW024,Cubicle
+VPKLO6035P,CEW024,MHM,Sanitary pad,Menstrual product,Right,Women,Female,3 CEW024,MHM
+VPKLO6035P,CEW024,MHM,Sanitary pad,Skin,Left,Women,Female,3 CEW024,Personal
+VPKLO6035P,CEW024,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW024,Personal
+VPKLO6035P,CEW024,MHM,Sanitary pad,Toilet paper,Right,Women,Female,3 CEW024,Cubicle
+VPKLO6035P,CEW024,MHM,Sanitary pad,Toilet paper,Both,Women,Female,3 CEW024,Cubicle
+VPKLO6035P,CEW024,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW024,Personal
+VPKLO6035P,CEW024,MHM,Sanitary pad,Bag,Left,Women,Female,3 CEW024,Personal
+VPKLO6035P,CEW024,MHM,Sanitary pad,Clothing,Right,Women,Female,3 CEW024,Personal
+VPKLO6035P,CEW024,MHM,Sanitary pad,Toilet paper,Left,Women,Female,3 CEW024,Cubicle
+VPKLO6035P,CEW024,MHM,Sanitary pad,Cubicle door handle inside,Left,Women,Female,3 CEW024,CubicleOUT
+VPKLO6035P,CEW024,MHM,Sanitary pad,Clothing,Right,Women,Female,3 CEW024,Personal
+VPKLO6035P,CEW024,MHM,Sanitary pad,Soap dispenser,Left,Women,Female,3 CEW024,Hygiene
+VPKLO6035P,CEW024,MHM,Sanitary pad,Tap,Right,Women,Female,3 CEW024,Hygiene
+VPKLO6035P,CEW024,MHM,Sanitary pad,Tap,Right,Women,Female,3 CEW024,Hygiene
+VPKLO6035P,CEW024,MHM,Sanitary pad,Soap dispenser,Left,Women,Female,3 CEW024,Hygiene
+VPKLO6035P,CEW024,MHM,Sanitary pad,Tap,Left,Women,Female,3 CEW024,Hygiene
+VPKLO6035P,CEW024,MHM,Sanitary pad,Paper towel ,Left,Women,Female,3 CEW024,Hygiene
+VPKLO6035P,CEW024,MHM,Sanitary pad,Bin outside the cubicle,Left,Women,Female,3 CEW024,Hygiene
+VPKLO6035P,CEW024,MHM,Sanitary pad,Door handle inside,Right,Women,Female,3 CEW024,Exit
+AHHKT1356Y,CEW027,Urination,NA,Door handle outside,Both,Women,Female,1 CEW027,Entry
+AHHKT1356Y,CEW027,Urination,NA,Cubicle door handle outside,Left,Women,Female,1 CEW027,CubicleIN
+AHHKT1356Y,CEW027,Urination,NA,Cubicle door handle inside,Left,Women,Female,1 CEW027,CubicleOUT
+AHHKT1356Y,CEW027,Urination,NA,Cubicle door handle inside,Left,Women,Female,1 CEW027,CubicleOUT
+AHHKT1356Y,CEW027,Urination,NA,Toilet paper,Both,Women,Female,1 CEW027,Cubicle
+AHHKT1356Y,CEW027,Urination,NA,Clothing,Both,Women,Female,1 CEW027,Personal
+AHHKT1356Y,CEW027,Urination,NA,Toilet paper,Both,Women,Female,1 CEW027,Cubicle
+AHHKT1356Y,CEW027,Urination,NA,Flush button,Right,Women,Female,1 CEW027,Cubicle
+AHHKT1356Y,CEW027,Urination,NA,Cubicle door handle inside,Right,Women,Female,1 CEW027,CubicleOUT
+AHHKT1356Y,CEW027,Urination,NA,Clothing,Both,Women,Female,1 CEW027,Personal
+AHHKT1356Y,CEW027,Urination,NA,Tap,Right,Women,Female,1 CEW027,Hygiene
+AHHKT1356Y,CEW027,Urination,NA,Soap dispenser,Left,Women,Female,1 CEW027,Hygiene
+AHHKT1356Y,CEW027,Urination,NA,Tap,Right,Women,Female,1 CEW027,Hygiene
+AHHKT1356Y,CEW027,Urination,NA,Tap,Right,Women,Female,1 CEW027,Hygiene
+AHHKT1356Y,CEW027,Urination,NA,Paper towel ,Right,Women,Female,1 CEW027,Hygiene
+AHHKT1356Y,CEW027,Urination,NA,Bin outside the cubicle,Right,Women,Female,1 CEW027,Hygiene
+AHHKT1356Y,CEW027,Urination,NA,Door handle inside,Left,Women,Female,1 CEW027,Exit
+RRDNK2201G,CEW027,Defecation,NA,Door handle outside,Right,Women,Female,2 CEW027,Entry
+RRDNK2201G,CEW027,Defecation,NA,Door handle inside,Right,Women,Female,2 CEW027,Exit
+RRDNK2201G,CEW027,Defecation,NA,Cubicle door handle outside,Left,Women,Female,2 CEW027,CubicleIN
+RRDNK2201G,CEW027,Defecation,NA,Cubicle door handle inside,Left,Women,Female,2 CEW027,CubicleOUT
+RRDNK2201G,CEW027,Defecation,NA,Cubicle door handle inside,Left,Women,Female,2 CEW027,CubicleOUT
+RRDNK2201G,CEW027,Defecation,NA,Toilet paper,Both,Women,Female,2 CEW027,Cubicle
+RRDNK2201G,CEW027,Defecation,NA,Clothing,Both,Women,Female,2 CEW027,Personal
+RRDNK2201G,CEW027,Defecation,NA,Phone,Both,Women,Female,2 CEW027,Personal
+RRDNK2201G,CEW027,Defecation,NA,Toilet paper,Both,Women,Female,2 CEW027,Cubicle
+RRDNK2201G,CEW027,Defecation,NA,Clothing,Both,Women,Female,2 CEW027,Personal
+RRDNK2201G,CEW027,Defecation,NA,Flush button,Right,Women,Female,2 CEW027,Cubicle
+RRDNK2201G,CEW027,Defecation,NA,Clothing,Both,Women,Female,2 CEW027,Personal
+RRDNK2201G,CEW027,Defecation,NA,Cubicle door handle inside,Left,Women,Female,2 CEW027,CubicleOUT
+RRDNK2201G,CEW027,Defecation,NA,Tap,Right,Women,Female,2 CEW027,Hygiene
+RRDNK2201G,CEW027,Defecation,NA,Tap,Left,Women,Female,2 CEW027,Hygiene
+RRDNK2201G,CEW027,Defecation,NA,Tap,Right,Women,Female,2 CEW027,Hygiene
+RRDNK2201G,CEW027,Defecation,NA,Paper towel ,Right,Women,Female,2 CEW027,Hygiene
+RRDNK2201G,CEW027,Defecation,NA,Door handle inside,Left,Women,Female,2 CEW027,Exit
+KIUPK2807W,CEW027,MHM,Sanitary pad,Door handle outside,Left,Women,Female,3 CEW027,Entry
+KIUPK2807W,CEW027,MHM,Sanitary pad,Door handle inside,Right,Women,Female,3 CEW027,Exit
+KIUPK2807W,CEW027,MHM,Sanitary pad,Cubicle door handle outside,Left,Women,Female,3 CEW027,CubicleIN
+KIUPK2807W,CEW027,MHM,Sanitary pad,Cubicle door handle inside,Left,Women,Female,3 CEW027,CubicleOUT
+KIUPK2807W,CEW027,MHM,Sanitary pad,Toilet paper,Both,Women,Female,3 CEW027,Cubicle
+KIUPK2807W,CEW027,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW027,Personal
+KIUPK2807W,CEW027,MHM,Sanitary pad,Menstrual product,Right,Women,Female,3 CEW027,MHM
+KIUPK2807W,CEW027,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW027,Personal
+KIUPK2807W,CEW027,MHM,Sanitary pad,Menstrual product,Left,Women,Female,3 CEW027,MHM
+KIUPK2807W,CEW027,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW027,Personal
+KIUPK2807W,CEW027,MHM,Sanitary pad,Toilet paper,Both,Women,Female,3 CEW027,Cubicle
+KIUPK2807W,CEW027,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW027,Personal
+KIUPK2807W,CEW027,MHM,Sanitary pad,Flush button,Right,Women,Female,3 CEW027,Cubicle
+KIUPK2807W,CEW027,MHM,Sanitary pad,Cubicle door handle inside,Left,Women,Female,3 CEW027,CubicleOUT
+KIUPK2807W,CEW027,MHM,Sanitary pad,Tap,Right,Women,Female,3 CEW027,Hygiene
+KIUPK2807W,CEW027,MHM,Sanitary pad,Tap,Left,Women,Female,3 CEW027,Hygiene
+KIUPK2807W,CEW027,MHM,Sanitary pad,Tap,Right,Women,Female,3 CEW027,Hygiene
+KIUPK2807W,CEW027,MHM,Sanitary pad,Paper towel ,Right,Women,Female,3 CEW027,Hygiene
+KIUPK2807W,CEW027,MHM,Sanitary pad,Door handle inside,Left,Women,Female,3 CEW027,Exit
+YFNWG7094E,CEW033,Urination,NA,Door handle outside,Right,Women,Female,1 CEW033,Entry
+YFNWG7094E,CEW033,Urination,NA,Cubicle door handle outside,Left,Women,Female,1 CEW033,CubicleIN
+YFNWG7094E,CEW033,Urination,NA,Cubicle door handle inside,Left,Women,Female,1 CEW033,CubicleOUT
+YFNWG7094E,CEW033,Urination,NA,Cubicle door handle inside,Right,Women,Female,1 CEW033,CubicleOUT
+YFNWG7094E,CEW033,Urination,NA,Bag,Right,Women,Female,1 CEW033,Personal
+YFNWG7094E,CEW033,Urination,NA,Clothing,Left,Women,Female,1 CEW033,Personal
+YFNWG7094E,CEW033,Urination,NA,Toilet paper,Both,Women,Female,1 CEW033,Cubicle
+YFNWG7094E,CEW033,Urination,NA,Skin,Right,Women,Female,1 CEW033,Personal
+YFNWG7094E,CEW033,Urination,NA,Toilet paper,Both,Women,Female,1 CEW033,Cubicle
+YFNWG7094E,CEW033,Urination,NA,Cubicle door handle inside,Right,Women,Female,1 CEW033,CubicleOUT
+YFNWG7094E,CEW033,Urination,NA,Soap dispenser,Right,Women,Female,1 CEW033,Hygiene
+YFNWG7094E,CEW033,Urination,NA,Tap,Right,Women,Female,1 CEW033,Hygiene
+YFNWG7094E,CEW033,Urination,NA,Tap,Right,Women,Female,1 CEW033,Hygiene
+YFNWG7094E,CEW033,Urination,NA,Tap,Right,Women,Female,1 CEW033,Hygiene
+YFNWG7094E,CEW033,Urination,NA,Paper towel ,Right,Women,Female,1 CEW033,Hygiene
+YFNWG7094E,CEW033,Urination,NA,Paper towel ,Right,Women,Female,1 CEW033,Hygiene
+YFNWG7094E,CEW033,Urination,NA,Bin outside the cubicle,Left,Women,Female,1 CEW033,Hygiene
+YFNWG7094E,CEW033,Urination,NA,Door handle inside,Left,Women,Female,1 CEW033,Exit
+MPKNA1648J,CEW033,Defecation,NA,Door handle outside,Right,Women,Female,2 CEW033,Entry
+MPKNA1648J,CEW033,Defecation,NA,Cubicle door handle outside,Left,Women,Female,2 CEW033,CubicleIN
+MPKNA1648J,CEW033,Defecation,NA,Cubicle door handle inside,Left,Women,Female,2 CEW033,CubicleOUT
+MPKNA1648J,CEW033,Defecation,NA,Cubicle door handle inside,Right,Women,Female,2 CEW033,CubicleOUT
+MPKNA1648J,CEW033,Defecation,NA,Toilet paper,Both,Women,Female,2 CEW033,Cubicle
+MPKNA1648J,CEW033,Defecation,NA,Toilet surface,Both,Women,Female,2 CEW033,Cubicle
+MPKNA1648J,CEW033,Defecation,NA,Clothing,Left,Women,Female,2 CEW033,Personal
+MPKNA1648J,CEW033,Defecation,NA,Skin,Left,Women,Female,2 CEW033,Personal
+MPKNA1648J,CEW033,Defecation,NA,Clothing,Right,Women,Female,2 CEW033,Personal
+MPKNA1648J,CEW033,Defecation,NA,Toilet paper,Both,Women,Female,2 CEW033,Cubicle
+MPKNA1648J,CEW033,Defecation,NA,Skin,Right,Women,Female,2 CEW033,Personal
+MPKNA1648J,CEW033,Defecation,NA,Flush button,Right,Women,Female,2 CEW033,Cubicle
+MPKNA1648J,CEW033,Defecation,NA,Cubicle door handle inside,Right,Women,Female,2 CEW033,CubicleOUT
+MPKNA1648J,CEW033,Defecation,NA,Soap dispenser,Left,Women,Female,2 CEW033,Hygiene
+MPKNA1648J,CEW033,Defecation,NA,Tap,Right,Women,Female,2 CEW033,Hygiene
+MPKNA1648J,CEW033,Defecation,NA,Tap,Right,Women,Female,2 CEW033,Hygiene
+MPKNA1648J,CEW033,Defecation,NA,Tap,Right,Women,Female,2 CEW033,Hygiene
+MPKNA1648J,CEW033,Defecation,NA,Paper towel ,Right,Women,Female,2 CEW033,Hygiene
+MPKNA1648J,CEW033,Defecation,NA,Paper towel ,Right,Women,Female,2 CEW033,Hygiene
+MPKNA1648J,CEW033,Defecation,NA,Bin outside the cubicle,Left,Women,Female,2 CEW033,Hygiene
+MPKNA1648J,CEW033,Defecation,NA,Door handle inside,Left,Women,Female,2 CEW033,Exit
+HTGKD6878C,CEW033,MHM,Sanitary pad,Door handle outside,Right,Women,Female,3 CEW033,Entry
+HTGKD6878C,CEW033,MHM,Sanitary pad,Cubicle door handle outside,Left,Women,Female,3 CEW033,CubicleIN
+HTGKD6878C,CEW033,MHM,Sanitary pad,Cubicle door handle inside,Left,Women,Female,3 CEW033,CubicleOUT
+HTGKD6878C,CEW033,MHM,Sanitary pad,Cubicle door handle inside,Right,Women,Female,3 CEW033,CubicleOUT
+HTGKD6878C,CEW033,MHM,Sanitary pad,Toilet paper,Both,Women,Female,3 CEW033,Cubicle
+HTGKD6878C,CEW033,MHM,Sanitary pad,Toilet surface,Both,Women,Female,3 CEW033,Cubicle
+HTGKD6878C,CEW033,MHM,Sanitary pad,Clothing,Left,Women,Female,3 CEW033,Personal
+HTGKD6878C,CEW033,MHM,Sanitary pad,Menstrual product,Left,Women,Female,3 CEW033,MHM
+HTGKD6878C,CEW033,MHM,Sanitary pad,Skin,Right,Women,Female,3 CEW033,Personal
+HTGKD6878C,CEW033,MHM,Sanitary pad,Menstrual product,Left,Women,Female,3 CEW033,MHM
+HTGKD6878C,CEW033,MHM,Sanitary pad,Menstrual product,Both,Women,Female,3 CEW033,MHM
+HTGKD6878C,CEW033,MHM,Sanitary pad,Skin,Right,Women,Female,3 CEW033,Personal
+HTGKD6878C,CEW033,MHM,Sanitary pad,Clothing,Right,Women,Female,3 CEW033,Personal
+HTGKD6878C,CEW033,MHM,Sanitary pad,Toilet paper,Both,Women,Female,3 CEW033,Cubicle
+HTGKD6878C,CEW033,MHM,Sanitary pad,Skin,Right,Women,Female,3 CEW033,Personal
+HTGKD6878C,CEW033,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW033,Personal
+HTGKD6878C,CEW033,MHM,Sanitary pad,Flush button,Right,Women,Female,3 CEW033,Cubicle
+HTGKD6878C,CEW033,MHM,Sanitary pad,Cubicle door handle inside,Right,Women,Female,3 CEW033,CubicleOUT
+HTGKD6878C,CEW033,MHM,Sanitary pad,Bag,Right,Women,Female,3 CEW033,Personal
+HTGKD6878C,CEW033,MHM,Sanitary pad,Soap dispenser,Left,Women,Female,3 CEW033,Hygiene
+HTGKD6878C,CEW033,MHM,Sanitary pad,Tap,Right,Women,Female,3 CEW033,Hygiene
+HTGKD6878C,CEW033,MHM,Sanitary pad,Tap,Left,Women,Female,3 CEW033,Hygiene
+HTGKD6878C,CEW033,MHM,Sanitary pad,Tap,Right,Women,Female,3 CEW033,Hygiene
+HTGKD6878C,CEW033,MHM,Sanitary pad,Paper towel ,Left,Women,Female,3 CEW033,Hygiene
+HTGKD6878C,CEW033,MHM,Sanitary pad,Paper towel ,Right,Women,Female,3 CEW033,Hygiene
+HTGKD6878C,CEW033,MHM,Sanitary pad,Bin outside the cubicle,Left,Women,Female,3 CEW033,Hygiene
+HTGKD6878C,CEW033,MHM,Sanitary pad,Door handle inside,Left,Women,Female,3 CEW033,Exit
+DYCUZ2706F,CEW035,Urination,NA,Door handle outside,Right,Women,Female,1 CEW035,Entry
+DYCUZ2706F,CEW035,Urination,NA,Cubicle door handle outside,Left,Women,Female,1 CEW035,CubicleIN
+DYCUZ2706F,CEW035,Urination,NA,Cubicle door handle inside,Left,Women,Female,1 CEW035,CubicleOUT
+DYCUZ2706F,CEW035,Urination,NA,Cubicle door handle inside,Left,Women,Female,1 CEW035,CubicleOUT
+DYCUZ2706F,CEW035,Urination,NA,Toilet surface,Left,Women,Female,1 CEW035,Cubicle
+DYCUZ2706F,CEW035,Urination,NA,Clothing,Both,Women,Female,1 CEW035,Personal
+DYCUZ2706F,CEW035,Urination,NA,Face,Left,Women,Female,1 CEW035,Personal
+DYCUZ2706F,CEW035,Urination,NA,Toilet paper,Left,Women,Female,1 CEW035,Cubicle
+DYCUZ2706F,CEW035,Urination,NA,Toilet paper,Right,Women,Female,1 CEW035,Cubicle
+DYCUZ2706F,CEW035,Urination,NA,Skin,Right,Women,Female,1 CEW035,Personal
+DYCUZ2706F,CEW035,Urination,NA,Clothing,Both,Women,Female,1 CEW035,Personal
+DYCUZ2706F,CEW035,Urination,NA,Flush button,Left,Women,Female,1 CEW035,Cubicle
+DYCUZ2706F,CEW035,Urination,NA,Cubicle door handle inside,Right,Women,Female,1 CEW035,CubicleOUT
+DYCUZ2706F,CEW035,Urination,NA,Tap,Left,Women,Female,1 CEW035,Hygiene
+DYCUZ2706F,CEW035,Urination,NA,Soap dispenser,Right,Women,Female,1 CEW035,Hygiene
+DYCUZ2706F,CEW035,Urination,NA,Tap,Left,Women,Female,1 CEW035,Hygiene
+DYCUZ2706F,CEW035,Urination,NA,Tap,Left,Women,Female,1 CEW035,Hygiene
+DYCUZ2706F,CEW035,Urination,NA,Paper towel ,Left,Women,Female,1 CEW035,Hygiene
+DYCUZ2706F,CEW035,Urination,NA,Bin outside the cubicle,Left,Women,Female,1 CEW035,Hygiene
+DYCUZ2706F,CEW035,Urination,NA,Door handle inside,Left,Women,Female,1 CEW035,Exit
+YPOJX1207C,CEW035,Defecation,NA,Door handle outside,Right,Women,Female,2 CEW035,Entry
+YPOJX1207C,CEW035,Defecation,NA,Cubicle door handle outside,Left,Women,Female,2 CEW035,CubicleIN
+YPOJX1207C,CEW035,Defecation,NA,Cubicle door handle inside,Left,Women,Female,2 CEW035,CubicleOUT
+YPOJX1207C,CEW035,Defecation,NA,Cubicle door handle inside,Right,Women,Female,2 CEW035,CubicleOUT
+YPOJX1207C,CEW035,Defecation,NA,Toilet surface,Right,Women,Female,2 CEW035,Cubicle
+YPOJX1207C,CEW035,Defecation,NA,Clothing,Both,Women,Female,2 CEW035,Personal
+YPOJX1207C,CEW035,Defecation,NA,Clothing,Both,Women,Female,2 CEW035,Personal
+YPOJX1207C,CEW035,Defecation,NA,Clothing,Left,Women,Female,2 CEW035,Personal
+YPOJX1207C,CEW035,Defecation,NA,Clothing,Right,Women,Female,2 CEW035,Personal
+YPOJX1207C,CEW035,Defecation,NA,Clothing,Both,Women,Female,2 CEW035,Personal
+YPOJX1207C,CEW035,Defecation,NA,Toilet paper,Right,Women,Female,2 CEW035,Cubicle
+YPOJX1207C,CEW035,Defecation,NA,Toilet paper,Both,Women,Female,2 CEW035,Cubicle
+YPOJX1207C,CEW035,Defecation,NA,Skin,Right,Women,Female,2 CEW035,Personal
+YPOJX1207C,CEW035,Defecation,NA,Clothing,Both,Women,Female,2 CEW035,Personal
+YPOJX1207C,CEW035,Defecation,NA,Flush button,Left,Women,Female,2 CEW035,Cubicle
+YPOJX1207C,CEW035,Defecation,NA,Cubicle door handle inside,Right,Women,Female,2 CEW035,CubicleOUT
+YPOJX1207C,CEW035,Defecation,NA,Tap,Left,Women,Female,2 CEW035,Hygiene
+YPOJX1207C,CEW035,Defecation,NA,Soap dispenser,Right,Women,Female,2 CEW035,Hygiene
+YPOJX1207C,CEW035,Defecation,NA,Tap,Left,Women,Female,2 CEW035,Hygiene
+YPOJX1207C,CEW035,Defecation,NA,Tap,Left,Women,Female,2 CEW035,Hygiene
+YPOJX1207C,CEW035,Defecation,NA,Soap dispenser,Right,Women,Female,2 CEW035,Hygiene
+YPOJX1207C,CEW035,Defecation,NA,Tap,Left,Women,Female,2 CEW035,Hygiene
+YPOJX1207C,CEW035,Defecation,NA,Paper towel ,Left,Women,Female,2 CEW035,Hygiene
+YPOJX1207C,CEW035,Defecation,NA,Bin outside the cubicle,Left,Women,Female,2 CEW035,Hygiene
+YPOJX1207C,CEW035,Defecation,NA,Door handle inside,Left,Women,Female,2 CEW035,Exit
+PQUXS6985E,CEW035,MHM,Tampon,Door handle outside,Right,Women,Female,3 CEW035,Entry
+PQUXS6985E,CEW035,MHM,Tampon,Cubicle door handle outside,Left,Women,Female,3 CEW035,CubicleIN
+PQUXS6985E,CEW035,MHM,Tampon,Cubicle door handle inside,Left,Women,Female,3 CEW035,CubicleOUT
+PQUXS6985E,CEW035,MHM,Tampon,Cubicle door handle inside,Right,Women,Female,3 CEW035,CubicleOUT
+PQUXS6985E,CEW035,MHM,Tampon,Toilet surface,Right,Women,Female,3 CEW035,Cubicle
+PQUXS6985E,CEW035,MHM,Tampon,Clothing,Both,Women,Female,3 CEW035,Personal
+PQUXS6985E,CEW035,MHM,Tampon,Face,Left,Women,Female,3 CEW035,Personal
+PQUXS6985E,CEW035,MHM,Tampon,Clothing,Both,Women,Female,3 CEW035,Personal
+PQUXS6985E,CEW035,MHM,Tampon,Face,Left,Women,Female,3 CEW035,Personal
+PQUXS6985E,CEW035,MHM,Tampon,Face,Right,Women,Female,3 CEW035,Personal
+PQUXS6985E,CEW035,MHM,Tampon,Clothing,Right,Women,Female,3 CEW035,Personal
+PQUXS6985E,CEW035,MHM,Tampon,Menstrual product,Right,Women,Female,3 CEW035,MHM
+PQUXS6985E,CEW035,MHM,Tampon,Sanitary bin,Right,Women,Female,3 CEW035,Cubicle
+PQUXS6985E,CEW035,MHM,Tampon,Menstrual product,Right,Women,Female,3 CEW035,MHM
+PQUXS6985E,CEW035,MHM,Tampon,Skin,Right,Women,Female,3 CEW035,Personal
+PQUXS6985E,CEW035,MHM,Tampon,Skin,Left,Women,Female,3 CEW035,Personal
+PQUXS6985E,CEW035,MHM,Tampon,Clothing,Right,Women,Female,3 CEW035,Personal
+PQUXS6985E,CEW035,MHM,Tampon,Skin,Right,Women,Female,3 CEW035,Personal
+PQUXS6985E,CEW035,MHM,Tampon,Clothing,Left,Women,Female,3 CEW035,Personal
+PQUXS6985E,CEW035,MHM,Tampon,Toilet paper,Both,Women,Female,3 CEW035,Cubicle
+PQUXS6985E,CEW035,MHM,Tampon,Clothing,Both,Women,Female,3 CEW035,Personal
+PQUXS6985E,CEW035,MHM,Tampon,Flush button,Left,Women,Female,3 CEW035,Cubicle
+PQUXS6985E,CEW035,MHM,Tampon,Cubicle door handle inside,Left,Women,Female,3 CEW035,CubicleOUT
+PQUXS6985E,CEW035,MHM,Tampon,Tap,Left,Women,Female,3 CEW035,Hygiene
+PQUXS6985E,CEW035,MHM,Tampon,Soap dispenser,Right,Women,Female,3 CEW035,Hygiene
+PQUXS6985E,CEW035,MHM,Tampon,Tap,Left,Women,Female,3 CEW035,Hygiene
+PQUXS6985E,CEW035,MHM,Tampon,Paper towel ,Left,Women,Female,3 CEW035,Hygiene
+PQUXS6985E,CEW035,MHM,Tampon,Face,Right,Women,Female,3 CEW035,Personal
+PQUXS6985E,CEW035,MHM,Tampon,Bin outside the cubicle,Left,Women,Female,3 CEW035,Hygiene
+PQUXS6985E,CEW035,MHM,Tampon,Door handle inside,Left,Women,Female,3 CEW035,Exit
+LCIQS0997I,CEW051,Urination,NA,Door handle outside,Right,Women,Female,1 CEW051,Entry
+LCIQS0997I,CEW051,Urination,NA,Cubicle door handle inside,Left,Women,Female,1 CEW051,CubicleOUT
+LCIQS0997I,CEW051,Urination,NA,Clothing,Right,Women,Female,1 CEW051,Personal
+LCIQS0997I,CEW051,Urination,NA,Toilet paper,Left,Women,Female,1 CEW051,Cubicle
+LCIQS0997I,CEW051,Urination,NA,Toilet paper,Both,Women,Female,1 CEW051,Cubicle
+LCIQS0997I,CEW051,Urination,NA,Toilet paper,Right,Women,Female,1 CEW051,Cubicle
+LCIQS0997I,CEW051,Urination,NA,Bag,Right,Women,Female,1 CEW051,Personal
+LCIQS0997I,CEW051,Urination,NA,Bag,Both,Women,Female,1 CEW051,Personal
+LCIQS0997I,CEW051,Urination,NA,Clothing,Both,Women,Female,1 CEW051,Personal
+LCIQS0997I,CEW051,Urination,NA,Face,Right,Women,Female,1 CEW051,Personal
+LCIQS0997I,CEW051,Urination,NA,Toilet paper,Left,Women,Female,1 CEW051,Cubicle
+LCIQS0997I,CEW051,Urination,NA,Toilet paper,Both,Women,Female,1 CEW051,Cubicle
+LCIQS0997I,CEW051,Urination,NA,Skin,Right,Women,Female,1 CEW051,Personal
+LCIQS0997I,CEW051,Urination,NA,Toilet paper,Both,Women,Female,1 CEW051,Cubicle
+LCIQS0997I,CEW051,Urination,NA,Toilet paper,Right,Women,Female,1 CEW051,Cubicle
+LCIQS0997I,CEW051,Urination,NA,Clothing,Both,Women,Female,1 CEW051,Personal
+LCIQS0997I,CEW051,Urination,NA,Toilet surface,Left,Women,Female,1 CEW051,Cubicle
+LCIQS0997I,CEW051,Urination,NA,Flush button,Right,Women,Female,1 CEW051,Cubicle
+LCIQS0997I,CEW051,Urination,NA,Bag,Left,Women,Female,1 CEW051,Personal
+LCIQS0997I,CEW051,Urination,NA,Cubicle door handle inside,Right,Women,Female,1 CEW051,CubicleOUT
+LCIQS0997I,CEW051,Urination,NA,Clothing,Right,Women,Female,1 CEW051,Personal
+LCIQS0997I,CEW051,Urination,NA,Soap dispenser,Right,Women,Female,1 CEW051,Hygiene
+LCIQS0997I,CEW051,Urination,NA,Tap,Left,Women,Female,1 CEW051,Hygiene
+LCIQS0997I,CEW051,Urination,NA,Tap,Left,Women,Female,1 CEW051,Hygiene
+LCIQS0997I,CEW051,Urination,NA,Paper towel ,Left,Women,Female,1 CEW051,Hygiene
+LCIQS0997I,CEW051,Urination,NA,Paper towel ,Right,Women,Female,1 CEW051,Hygiene
+LCIQS0997I,CEW051,Urination,NA,Bin outside the cubicle,Left,Women,Female,1 CEW051,Hygiene
+LCIQS0997I,CEW051,Urination,NA,Door handle inside,Left,Women,Female,1 CEW051,Exit
+GKCBV6300L,CEW051,Defecation,NA,Door handle outside,Right,Women,Female,2 CEW051,Entry
+GKCBV6300L,CEW051,Defecation,NA,Bottle,Both,Women,Female,2 CEW051,Personal
+GKCBV6300L,CEW051,Defecation,NA,Tap,Left,Women,Female,2 CEW051,Hygiene
+GKCBV6300L,CEW051,Defecation,NA,Bottle,Right,Women,Female,2 CEW051,Personal
+GKCBV6300L,CEW051,Defecation,NA,Paper towel ,Right,Women,Female,2 CEW051,Hygiene
+GKCBV6300L,CEW051,Defecation,NA,Bottle,Left,Women,Female,2 CEW051,Personal
+GKCBV6300L,CEW051,Defecation,NA,Bin outside the cubicle,Left,Women,Female,2 CEW051,Hygiene
+GKCBV6300L,CEW051,Defecation,NA,Cubicle door handle inside,Left,Women,Female,2 CEW051,CubicleOUT
+GKCBV6300L,CEW051,Defecation,NA,Bag,Both,Women,Female,2 CEW051,Personal
+GKCBV6300L,CEW051,Defecation,NA,Clothing,Both,Women,Female,2 CEW051,Personal
+GKCBV6300L,CEW051,Defecation,NA,Toilet surface,Right,Women,Female,2 CEW051,Cubicle
+GKCBV6300L,CEW051,Defecation,NA,Toilet paper,Right,Women,Female,2 CEW051,Cubicle
+GKCBV6300L,CEW051,Defecation,NA,Toilet paper,Both,Women,Female,2 CEW051,Cubicle
+GKCBV6300L,CEW051,Defecation,NA,Clothing,Both,Women,Female,2 CEW051,Personal
+GKCBV6300L,CEW051,Defecation,NA,Skin,Left,Women,Female,2 CEW051,Personal
+GKCBV6300L,CEW051,Defecation,NA,Clothing,Left,Women,Female,2 CEW051,Personal
+GKCBV6300L,CEW051,Defecation,NA,Face,Right,Women,Female,2 CEW051,Personal
+GKCBV6300L,CEW051,Defecation,NA,Clothing,Both,Women,Female,2 CEW051,Personal
+GKCBV6300L,CEW051,Defecation,NA,Toilet paper,Right,Women,Female,2 CEW051,Cubicle
+GKCBV6300L,CEW051,Defecation,NA,Clothing,Left,Women,Female,2 CEW051,Personal
+GKCBV6300L,CEW051,Defecation,NA,Clothing,Both,Women,Female,2 CEW051,Personal
+GKCBV6300L,CEW051,Defecation,NA,Toilet paper,Both,Women,Female,2 CEW051,Cubicle
+GKCBV6300L,CEW051,Defecation,NA,Skin,Right,Women,Female,2 CEW051,Personal
+GKCBV6300L,CEW051,Defecation,NA,Toilet paper,Both,Women,Female,2 CEW051,Cubicle
+GKCBV6300L,CEW051,Defecation,NA,Skin,Right,Women,Female,2 CEW051,Personal
+GKCBV6300L,CEW051,Defecation,NA,Bottle,Right,Women,Female,2 CEW051,Personal
+GKCBV6300L,CEW051,Defecation,NA,Toilet paper,Left,Women,Female,2 CEW051,Cubicle
+GKCBV6300L,CEW051,Defecation,NA,Skin,Right,Women,Female,2 CEW051,Personal
+GKCBV6300L,CEW051,Defecation,NA,Toilet surface,Right,Women,Female,2 CEW051,Cubicle
+GKCBV6300L,CEW051,Defecation,NA,Flush button,Right,Women,Female,2 CEW051,Cubicle
+GKCBV6300L,CEW051,Defecation,NA,Bag,Right,Women,Female,2 CEW051,Personal
+GKCBV6300L,CEW051,Defecation,NA,Clothing,Right,Women,Female,2 CEW051,Personal
+GKCBV6300L,CEW051,Defecation,NA,Bottle,Right,Women,Female,2 CEW051,Personal
+GKCBV6300L,CEW051,Defecation,NA,Bottle,Left,Women,Female,2 CEW051,Personal
+GKCBV6300L,CEW051,Defecation,NA,Cubicle door handle inside,Right,Women,Female,2 CEW051,CubicleOUT
+GKCBV6300L,CEW051,Defecation,NA,Clothing,Right,Women,Female,2 CEW051,Personal
+GKCBV6300L,CEW051,Defecation,NA,Soap dispenser,Right,Women,Female,2 CEW051,Hygiene
+GKCBV6300L,CEW051,Defecation,NA,Tap,Left,Women,Female,2 CEW051,Hygiene
+GKCBV6300L,CEW051,Defecation,NA,Tap,Right,Women,Female,2 CEW051,Hygiene
+GKCBV6300L,CEW051,Defecation,NA,Paper towel ,Left,Women,Female,2 CEW051,Hygiene
+GKCBV6300L,CEW051,Defecation,NA,Paper towel ,Left,Women,Female,2 CEW051,Hygiene
+GKCBV6300L,CEW051,Defecation,NA,Bin outside the cubicle,Left,Women,Female,2 CEW051,Hygiene
+GKCBV6300L,CEW051,Defecation,NA,Door handle inside,Left,Women,Female,2 CEW051,Exit
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Door handle outside,Both,Women,Female,3 CEW051,Entry
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Cubicle door handle inside,Left,Women,Female,3 CEW051,CubicleOUT
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Clothing,Right,Women,Female,3 CEW051,Personal
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Bag,Right,Women,Female,3 CEW051,Personal
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Bag,Both,Women,Female,3 CEW051,Personal
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW051,Personal
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Menstrual product,Right,Women,Female,3 CEW051,MHM
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Menstrual product,Left,Women,Female,3 CEW051,MHM
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Sanitary bin,Left,Women,Female,3 CEW051,Cubicle
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Menstrual product,Right,Women,Female,3 CEW051,MHM
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW051,Personal
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Paper towel ,Left,Women,Female,3 CEW051,Hygiene
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Clothing,Both,Women,Female,3 CEW051,Personal
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Toilet surface,Right,Women,Female,3 CEW051,Cubicle
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Flush button,Right,Women,Female,3 CEW051,Cubicle
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Bag,Right,Women,Female,3 CEW051,Personal
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Clothing,Right,Women,Female,3 CEW051,Personal
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Cubicle door handle inside,Right,Women,Female,3 CEW051,CubicleOUT
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Clothing,Right,Women,Female,3 CEW051,Personal
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Bag,Right,Women,Female,3 CEW051,Personal
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Tap,Right,Women,Female,3 CEW051,Hygiene
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Soap dispenser,Left,Women,Female,3 CEW051,Hygiene
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Tap,Right,Women,Female,3 CEW051,Hygiene
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Tap,Right,Women,Female,3 CEW051,Hygiene
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Paper towel ,Left,Women,Female,3 CEW051,Hygiene
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Paper towel ,Left,Women,Female,3 CEW051,Hygiene
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Bin outside the cubicle,Left,Women,Female,3 CEW051,Hygiene
+XUWWJ9414C,CEW051,MHM,Sanitary pad,Door handle inside,Left,Women,Female,3 CEW051,Exit
+FMEPE1878R,SCGN06,Urination,NA,Cubicle door handle outside,Left,Women,Female,1 SCGN06,CubicleIN
+FMEPE1878R,SCGN06,Urination,NA,Cubicle door handle inside,Left,Women,Female,1 SCGN06,CubicleOUT
+FMEPE1878R,SCGN06,Urination,NA,Clothing,Both,Women,Female,1 SCGN06,Personal
+FMEPE1878R,SCGN06,Urination,NA,Toilet paper,Both,Women,Female,1 SCGN06,Cubicle
+FMEPE1878R,SCGN06,Urination,NA,Clothing,Right,Women,Female,1 SCGN06,Personal
+FMEPE1878R,SCGN06,Urination,NA,Flush button,Right,Women,Female,1 SCGN06,Cubicle
+FMEPE1878R,SCGN06,Urination,NA,Cubicle door handle inside,Right,Women,Female,1 SCGN06,CubicleOUT
+FMEPE1878R,SCGN06,Urination,NA,Soap dispenser,Left,Women,Female,1 SCGN06,Hygiene
+FMEPE1878R,SCGN06,Urination,NA,Tap,Right,Women,Female,1 SCGN06,Hygiene
+FMEPE1878R,SCGN06,Urination,NA,Paper towel ,Right,Women,Female,1 SCGN06,Hygiene
+FMEPE1878R,SCGN06,Urination,NA,Paper towel ,Left,Women,Female,1 SCGN06,Hygiene
+FMEPE1878R,SCGN06,Urination,NA,Bin outside the cubicle,Right,Women,Female,1 SCGN06,Hygiene
+FMEPE1878R,SCGN06,Urination,NA,Bag,Left,Women,Female,1 SCGN06,Personal
+FMEPE1878R,SCGN06,Urination,NA,Door handle inside,Right,Women,Female,1 SCGN06,Exit
+UHGMF6378S,SCGN06,Defecation,NA,Cubicle door handle outside,Left,Women,Female,2 SCGN06,CubicleIN
+UHGMF6378S,SCGN06,Defecation,NA,Cubicle door handle inside,Left,Women,Female,2 SCGN06,CubicleOUT
+UHGMF6378S,SCGN06,Defecation,NA,Bag,Both,Women,Female,2 SCGN06,Personal
+UHGMF6378S,SCGN06,Defecation,NA,Phone,Right,Women,Female,2 SCGN06,Personal
+UHGMF6378S,SCGN06,Defecation,NA,Phone,Left,Women,Female,2 SCGN06,Personal
+UHGMF6378S,SCGN06,Defecation,NA,Bag,Right,Women,Female,2 SCGN06,Personal
+UHGMF6378S,SCGN06,Defecation,NA,Toilet paper,Both,Women,Female,2 SCGN06,Cubicle
+UHGMF6378S,SCGN06,Defecation,NA,Toilet surface,Right,Women,Female,2 SCGN06,Cubicle
+UHGMF6378S,SCGN06,Defecation,NA,Flush button,Right,Women,Female,2 SCGN06,Cubicle
+UHGMF6378S,SCGN06,Defecation,NA,Bag,Right,Women,Female,2 SCGN06,Personal
+UHGMF6378S,SCGN06,Defecation,NA,Cubicle door handle inside,Left,Women,Female,2 SCGN06,CubicleOUT
+UHGMF6378S,SCGN06,Defecation,NA,Soap dispenser,Right,Women,Female,2 SCGN06,Hygiene
+UHGMF6378S,SCGN06,Defecation,NA,Tap,Left,Women,Female,2 SCGN06,Hygiene
+UHGMF6378S,SCGN06,Defecation,NA,Paper towel ,Right,Women,Female,2 SCGN06,Hygiene
+UHGMF6378S,SCGN06,Defecation,NA,Paper towel ,Left,Women,Female,2 SCGN06,Hygiene
+UHGMF6378S,SCGN06,Defecation,NA,Paper towel ,Right,Women,Female,2 SCGN06,Hygiene
+UHGMF6378S,SCGN06,Defecation,NA,Bin outside the cubicle,Left,Women,Female,2 SCGN06,Hygiene
+UHGMF6378S,SCGN06,Defecation,NA,Bag,Both,Women,Female,2 SCGN06,Personal
+UHGMF6378S,SCGN06,Defecation,NA,Door handle inside,Right,Women,Female,2 SCGN06,Exit
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Cubicle door handle outside,Right,Women,Female,3 SCGN06,CubicleIN
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Cubicle door handle inside,Right,Women,Female,3 SCGN06,CubicleOUT
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Bag,Right,Women,Female,3 SCGN06,Personal
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Clothing,Both,Women,Female,3 SCGN06,Personal
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Menstrual product,Right,Women,Female,3 SCGN06,MHM
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Toilet paper,Both,Women,Female,3 SCGN06,Cubicle
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Toilet paper,Right,Women,Female,3 SCGN06,Cubicle
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Bag,Both,Women,Female,3 SCGN06,Personal
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Bottle,Right,Women,Female,3 SCGN06,Personal
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Menstrual product,Left,Women,Female,3 SCGN06,MHM
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Menstrual product,Right,Women,Female,3 SCGN06,MHM
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Toilet surface,Left,Women,Female,3 SCGN06,Cubicle
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Flush button,Right,Women,Female,3 SCGN06,Cubicle
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Bottle,Both,Women,Female,3 SCGN06,Personal
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Bag,Left,Women,Female,3 SCGN06,Personal
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Bag,Both,Women,Female,3 SCGN06,Personal
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Cubicle door handle inside,Left,Women,Female,3 SCGN06,CubicleOUT
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Soap dispenser,Right,Women,Female,3 SCGN06,Hygiene
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Tap,Left,Women,Female,3 SCGN06,Hygiene
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Paper towel ,Right,Women,Female,3 SCGN06,Hygiene
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Paper towel ,Left,Women,Female,3 SCGN06,Hygiene
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Paper towel ,Right,Women,Female,3 SCGN06,Hygiene
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Bin outside the cubicle,Left,Women,Female,3 SCGN06,Hygiene
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Bag,Both,Women,Female,3 SCGN06,Personal
+TYWCV0135F,SCGN06,MHM,Menstrual cup,Door handle inside,Right,Women,Female,3 SCGN06,Exit
+XQNZM6081Y,SCGN07,Urination,NA,Door handle outside,Right,Women,Female,1 SCGN07,Entry
+XQNZM6081Y,SCGN07,Urination,NA,Cubicle door handle outside,Left,Women,Female,1 SCGN07,CubicleIN
+XQNZM6081Y,SCGN07,Urination,NA,Cubicle door handle inside,Left,Women,Female,1 SCGN07,CubicleOUT
+XQNZM6081Y,SCGN07,Urination,NA,Cubicle door handle inside,Right,Women,Female,1 SCGN07,CubicleOUT
+XQNZM6081Y,SCGN07,Urination,NA,Bag,Both,Women,Female,1 SCGN07,Personal
+XQNZM6081Y,SCGN07,Urination,NA,Clothing,Both,Women,Female,1 SCGN07,Personal
+XQNZM6081Y,SCGN07,Urination,NA,Toilet paper,Both,Women,Female,1 SCGN07,Cubicle
+XQNZM6081Y,SCGN07,Urination,NA,Clothing,Both,Women,Female,1 SCGN07,Personal
+XQNZM6081Y,SCGN07,Urination,NA,Flush button,Right,Women,Female,1 SCGN07,Cubicle
+XQNZM6081Y,SCGN07,Urination,NA,Bag,Right,Women,Female,1 SCGN07,Personal
+XQNZM6081Y,SCGN07,Urination,NA,Bag,Left,Women,Female,1 SCGN07,Personal
+XQNZM6081Y,SCGN07,Urination,NA,Cubicle door handle inside,Right,Women,Female,1 SCGN07,CubicleOUT
+XQNZM6081Y,SCGN07,Urination,NA,Clothing,Both,Women,Female,1 SCGN07,Personal
+XQNZM6081Y,SCGN07,Urination,NA,Soap dispenser,Right,Women,Female,1 SCGN07,Hygiene
+XQNZM6081Y,SCGN07,Urination,NA,Tap,Right,Women,Female,1 SCGN07,Hygiene
+XQNZM6081Y,SCGN07,Urination,NA,Bin outside the cubicle,Right,Women,Female,1 SCGN07,Hygiene
+XQNZM6081Y,SCGN07,Urination,NA,Paper towel ,Right,Women,Female,1 SCGN07,Hygiene
+XQNZM6081Y,SCGN07,Urination,NA,Door handle inside,Left,Women,Female,1 SCGN07,Exit
+AZUQS6212G,SCGN07,Defecation,NA,Door handle outside,Right,Women,Female,2 SCGN07,Entry
+AZUQS6212G,SCGN07,Defecation,NA,Cubicle door handle outside,Left,Women,Female,2 SCGN07,CubicleIN
+AZUQS6212G,SCGN07,Defecation,NA,Cubicle door handle inside,Left,Women,Female,2 SCGN07,CubicleOUT
+AZUQS6212G,SCGN07,Defecation,NA,Cubicle door handle inside,Right,Women,Female,2 SCGN07,CubicleOUT
+AZUQS6212G,SCGN07,Defecation,NA,Bag,Both,Women,Female,2 SCGN07,Personal
+AZUQS6212G,SCGN07,Defecation,NA,Phone,Left,Women,Female,2 SCGN07,Personal
+AZUQS6212G,SCGN07,Defecation,NA,Clothing,Both,Women,Female,2 SCGN07,Personal
+AZUQS6212G,SCGN07,Defecation,NA,Phone,Right,Women,Female,2 SCGN07,Personal
+AZUQS6212G,SCGN07,Defecation,NA,Toilet paper,Both,Women,Female,2 SCGN07,Cubicle
+AZUQS6212G,SCGN07,Defecation,NA,Toilet paper,Both,Women,Female,2 SCGN07,Cubicle
+AZUQS6212G,SCGN07,Defecation,NA,Clothing,Both,Women,Female,2 SCGN07,Personal
+AZUQS6212G,SCGN07,Defecation,NA,Flush button,Right,Women,Female,2 SCGN07,Cubicle
+AZUQS6212G,SCGN07,Defecation,NA,Phone,Left,Women,Female,2 SCGN07,Personal
+AZUQS6212G,SCGN07,Defecation,NA,Cubicle door handle inside,Right,Women,Female,2 SCGN07,CubicleOUT
+AZUQS6212G,SCGN07,Defecation,NA,Bag,Both,Women,Female,2 SCGN07,Personal
+AZUQS6212G,SCGN07,Defecation,NA,Soap dispenser,Right,Women,Female,2 SCGN07,Hygiene
+AZUQS6212G,SCGN07,Defecation,NA,Soap dispenser,Right,Women,Female,2 SCGN07,Hygiene
+AZUQS6212G,SCGN07,Defecation,NA,Tap,Left,Women,Female,2 SCGN07,Hygiene
+AZUQS6212G,SCGN07,Defecation,NA,Tap,Right,Women,Female,2 SCGN07,Hygiene
+AZUQS6212G,SCGN07,Defecation,NA,Paper towel ,Right,Women,Female,2 SCGN07,Hygiene
+AZUQS6212G,SCGN07,Defecation,NA,Bin outside the cubicle,Right,Women,Female,2 SCGN07,Hygiene
+AZUQS6212G,SCGN07,Defecation,NA,Door handle inside,Left,Women,Female,2 SCGN07,Exit
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Door handle outside,Right,Women,Female,3 SCGN07,Entry
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Cubicle door handle outside,Left,Women,Female,3 SCGN07,CubicleIN
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Cubicle door handle inside,Left,Women,Female,3 SCGN07,CubicleOUT
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Cubicle door handle inside,Right,Women,Female,3 SCGN07,CubicleOUT
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Bag,Right,Women,Female,3 SCGN07,Personal
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Clothing,Both,Women,Female,3 SCGN07,Personal
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Skin,Right,Women,Female,3 SCGN07,Personal
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Menstrual product,Right,Women,Female,3 SCGN07,MHM
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Skin,Right,Women,Female,3 SCGN07,Personal
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Clothing,Both,Women,Female,3 SCGN07,Personal
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Toilet paper,Both,Women,Female,3 SCGN07,Cubicle
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Skin,Right,Women,Female,3 SCGN07,Personal
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Toilet paper,Both,Women,Female,3 SCGN07,Cubicle
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Clothing,Both,Women,Female,3 SCGN07,Personal
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Flush button,Right,Women,Female,3 SCGN07,Cubicle
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Bag,Right,Women,Female,3 SCGN07,Personal
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Cubicle door handle inside,Right,Women,Female,3 SCGN07,CubicleOUT
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Soap dispenser,Right,Women,Female,3 SCGN07,Hygiene
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Tap,Left,Women,Female,3 SCGN07,Hygiene
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Tap,Right,Women,Female,3 SCGN07,Hygiene
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Paper towel ,Right,Women,Female,3 SCGN07,Hygiene
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Bin outside the cubicle,Right,Women,Female,3 SCGN07,Hygiene
+VLSNK1324U,SCGN07,MHM,Menstrual cup,Door handle inside,Left,Women,Female,3 SCGN07,Exit
+DOOOL9042O,CEM026,Urination,NA,Door handle outside,Left,Gender neutral,Male,44 CEM026,Entry
+DOOOL9042O,CEM026,Urination,NA,Cubicle door handle outside,Right,Gender neutral,Male,44 CEM026,CubicleIN
+DOOOL9042O,CEM026,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Male,44 CEM026,CubicleOUT
+DOOOL9042O,CEM026,Urination,NA,Door lock,Right,Gender neutral,Male,44 CEM026,Door
+DOOOL9042O,CEM026,Urination,NA,Clothing,Both,Gender neutral,Male,44 CEM026,Personal
+DOOOL9042O,CEM026,Urination,NA,Clothing,Left,Gender neutral,Male,44 CEM026,Personal
+DOOOL9042O,CEM026,Urination,NA,Phone,Right,Gender neutral,Male,44 CEM026,Personal
+DOOOL9042O,CEM026,Urination,NA,Clothing,Both,Gender neutral,Male,44 CEM026,Personal
+DOOOL9042O,CEM026,Urination,NA,Tap,Left,Gender neutral,Male,44 CEM026,Hygiene
+DOOOL9042O,CEM026,Urination,NA,Soap dispenser,Right,Gender neutral,Male,44 CEM026,Hygiene
+DOOOL9042O,CEM026,Urination,NA,Tap,Left,Gender neutral,Male,44 CEM026,Hygiene
+DOOOL9042O,CEM026,Urination,NA,Door lock,Right,Gender neutral,Male,44 CEM026,Door
+DOOOL9042O,CEM026,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Male,44 CEM026,CubicleOUT
+DOOOL9042O,CEM026,Urination,NA,Door handle inside,Left,Gender neutral,Male,44 CEM026,Exit
+ONALS9939Q,CEM026,Defecation,NA,Door handle outside,Left,Gender neutral,Male,45 CEM026,Entry
+ONALS9939Q,CEM026,Defecation,NA,Cubicle door handle outside,Right,Gender neutral,Male,45 CEM026,CubicleIN
+ONALS9939Q,CEM026,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Male,45 CEM026,CubicleOUT
+ONALS9939Q,CEM026,Defecation,NA,Clothing,Both,Gender neutral,Male,45 CEM026,Personal
+ONALS9939Q,CEM026,Defecation,NA,Clothing,Left,Gender neutral,Male,45 CEM026,Personal
+ONALS9939Q,CEM026,Defecation,NA,Phone,Right,Gender neutral,Male,45 CEM026,Personal
+ONALS9939Q,CEM026,Defecation,NA,Phone,Both,Gender neutral,Male,45 CEM026,Personal
+ONALS9939Q,CEM026,Defecation,NA,Toilet paper,Right,Gender neutral,Male,45 CEM026,Cubicle
+ONALS9939Q,CEM026,Defecation,NA,Toilet paper,Both,Gender neutral,Male,45 CEM026,Cubicle
+ONALS9939Q,CEM026,Defecation,NA,Clothing,Both,Gender neutral,Male,45 CEM026,Personal
+ONALS9939Q,CEM026,Defecation,NA,Flush button,Right,Gender neutral,Male,45 CEM026,Cubicle
+ONALS9939Q,CEM026,Defecation,NA,Soap dispenser,Right,Gender neutral,Male,45 CEM026,Hygiene
+ONALS9939Q,CEM026,Defecation,NA,Tap,Left,Gender neutral,Male,45 CEM026,Hygiene
+ONALS9939Q,CEM026,Defecation,NA,Tap,Left,Gender neutral,Male,45 CEM026,Hygiene
+ONALS9939Q,CEM026,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Male,45 CEM026,CubicleOUT
+ONALS9939Q,CEM026,Defecation,NA,Cubicle door handle inside,Right,Gender neutral,Male,45 CEM026,CubicleOUT
+ONALS9939Q,CEM026,Defecation,NA,Door handle inside,Left,Gender neutral,Male,45 CEM026,Exit
+RSMNG6740F,CEM040,Urination,NA,Door handle outside,Left,Gender neutral,Male,20 CEM040,Entry
+RSMNG6740F,CEM040,Urination,NA,Cubicle door handle outside,Right,Gender neutral,Male,20 CEM040,CubicleIN
+RSMNG6740F,CEM040,Urination,NA,Cubicle door handle inside,Right,Gender neutral,Male,20 CEM040,CubicleOUT
+RSMNG6740F,CEM040,Urination,NA,Door lock,Left,Gender neutral,Male,20 CEM040,Door
+RSMNG6740F,CEM040,Urination,NA,Clothing,Both,Gender neutral,Male,20 CEM040,Personal
+RSMNG6740F,CEM040,Urination,NA,Skin,Both,Gender neutral,Male,20 CEM040,Personal
+RSMNG6740F,CEM040,Urination,NA,Clothing,Both,Gender neutral,Male,20 CEM040,Personal
+RSMNG6740F,CEM040,Urination,NA,Flush button,Right,Gender neutral,Male,20 CEM040,Cubicle
+RSMNG6740F,CEM040,Urination,NA,Tap,Right,Gender neutral,Male,20 CEM040,Hygiene
+RSMNG6740F,CEM040,Urination,NA,Tap,Right,Gender neutral,Male,20 CEM040,Hygiene
+RSMNG6740F,CEM040,Urination,NA,Soap dispenser,Right,Gender neutral,Male,20 CEM040,Hygiene
+RSMNG6740F,CEM040,Urination,NA,Tap,Left,Gender neutral,Male,20 CEM040,Hygiene
+RSMNG6740F,CEM040,Urination,NA,Tap,Left,Gender neutral,Male,20 CEM040,Hygiene
+RSMNG6740F,CEM040,Urination,NA,Door lock,Right,Gender neutral,Male,20 CEM040,Door
+RSMNG6740F,CEM040,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Male,20 CEM040,CubicleOUT
+RSMNG6740F,CEM040,Urination,NA,Door handle inside,Left,Gender neutral,Male,20 CEM040,Exit
+THAZE5970X,CEM040,Defecation,NA,Door handle outside,Left,Gender neutral,Male,21 CEM040,Entry
+THAZE5970X,CEM040,Defecation,NA,Cubicle door handle outside,Right,Gender neutral,Male,21 CEM040,CubicleIN
+THAZE5970X,CEM040,Defecation,NA,Cubicle door handle inside,Right,Gender neutral,Male,21 CEM040,CubicleOUT
+THAZE5970X,CEM040,Defecation,NA,Door lock,Left,Gender neutral,Male,21 CEM040,Door
+THAZE5970X,CEM040,Defecation,NA,Toilet surface,Right,Gender neutral,Male,21 CEM040,Cubicle
+THAZE5970X,CEM040,Defecation,NA,Clothing,Both,Gender neutral,Male,21 CEM040,Personal
+THAZE5970X,CEM040,Defecation,NA,Toilet paper,Right,Gender neutral,Male,21 CEM040,Cubicle
+THAZE5970X,CEM040,Defecation,NA,Toilet paper,Both,Gender neutral,Male,21 CEM040,Cubicle
+THAZE5970X,CEM040,Defecation,NA,Hair,Left,Gender neutral,Male,21 CEM040,Personal
+THAZE5970X,CEM040,Defecation,NA,Hair,Both,Gender neutral,Male,21 CEM040,Personal
+THAZE5970X,CEM040,Defecation,NA,Face,Right,Gender neutral,Male,21 CEM040,Personal
+THAZE5970X,CEM040,Defecation,NA,Toilet paper,Right,Gender neutral,Male,21 CEM040,Cubicle
+THAZE5970X,CEM040,Defecation,NA,Toilet paper,Both,Gender neutral,Male,21 CEM040,Cubicle
+THAZE5970X,CEM040,Defecation,NA,Skin,Right,Gender neutral,Male,21 CEM040,Personal
+THAZE5970X,CEM040,Defecation,NA,Toilet paper,Right,Gender neutral,Male,21 CEM040,Cubicle
+THAZE5970X,CEM040,Defecation,NA,Toilet paper,Both,Gender neutral,Male,21 CEM040,Cubicle
+THAZE5970X,CEM040,Defecation,NA,Clothing,Both,Gender neutral,Male,21 CEM040,Personal
+THAZE5970X,CEM040,Defecation,NA,Flush button,Right,Gender neutral,Male,21 CEM040,Cubicle
+THAZE5970X,CEM040,Defecation,NA,Toilet brush handle,Right,Gender neutral,Male,21 CEM040,Cubicle
+THAZE5970X,CEM040,Defecation,NA,Tap,Left,Gender neutral,Male,21 CEM040,Hygiene
+THAZE5970X,CEM040,Defecation,NA,Tap,Left,Gender neutral,Male,21 CEM040,Hygiene
+THAZE5970X,CEM040,Defecation,NA,Soap dispenser,Left,Gender neutral,Male,21 CEM040,Hygiene
+THAZE5970X,CEM040,Defecation,NA,Tap,Left,Gender neutral,Male,21 CEM040,Hygiene
+THAZE5970X,CEM040,Defecation,NA,Tap,Left,Gender neutral,Male,21 CEM040,Hygiene
+THAZE5970X,CEM040,Defecation,NA,Hair,Left,Gender neutral,Male,21 CEM040,Personal
+THAZE5970X,CEM040,Defecation,NA,Clothing,Both,Gender neutral,Male,21 CEM040,Personal
+THAZE5970X,CEM040,Defecation,NA,Door lock,Right,Gender neutral,Male,21 CEM040,Door
+THAZE5970X,CEM040,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Male,21 CEM040,CubicleOUT
+THAZE5970X,CEM040,Defecation,NA,Door handle inside,Left,Gender neutral,Male,21 CEM040,Exit
+DDSBC9369M,CEM041,Urination,NA,Door handle outside,Right,Gender neutral,Male,49 CEM041,Entry
+DDSBC9369M,CEM041,Urination,NA,Cubicle door handle outside,Right,Gender neutral,Male,49 CEM041,CubicleIN
+DDSBC9369M,CEM041,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Male,49 CEM041,CubicleOUT
+DDSBC9369M,CEM041,Urination,NA,Door lock,Left,Gender neutral,Male,49 CEM041,Door
+DDSBC9369M,CEM041,Urination,NA,Clothing,Both,Gender neutral,Male,49 CEM041,Personal
+DDSBC9369M,CEM041,Urination,NA,Clothing,Left,Gender neutral,Male,49 CEM041,Personal
+DDSBC9369M,CEM041,Urination,NA,Phone,Right,Gender neutral,Male,49 CEM041,Personal
+DDSBC9369M,CEM041,Urination,NA,Clothing,Both,Gender neutral,Male,49 CEM041,Personal
+DDSBC9369M,CEM041,Urination,NA,Tap,Left,Gender neutral,Male,49 CEM041,Hygiene
+DDSBC9369M,CEM041,Urination,NA,Soap dispenser,Right,Gender neutral,Male,49 CEM041,Hygiene
+DDSBC9369M,CEM041,Urination,NA,Tap,Left,Gender neutral,Male,49 CEM041,Hygiene
+DDSBC9369M,CEM041,Urination,NA,Clothing,Both,Gender neutral,Male,49 CEM041,Personal
+DDSBC9369M,CEM041,Urination,NA,Door lock,Right,Gender neutral,Male,49 CEM041,Door
+DDSBC9369M,CEM041,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Male,49 CEM041,CubicleOUT
+DDSBC9369M,CEM041,Urination,NA,Door handle inside,Left,Gender neutral,Male,49 CEM041,Exit
+LKDJN4154Z,CEM041,Defecation,NA,Door handle outside,Left,Gender neutral,Male,50 CEM041,Entry
+LKDJN4154Z,CEM041,Defecation,NA,Cubicle door handle outside,Right,Gender neutral,Male,50 CEM041,CubicleIN
+LKDJN4154Z,CEM041,Defecation,NA,Cubicle door handle inside,Right,Gender neutral,Male,50 CEM041,CubicleOUT
+LKDJN4154Z,CEM041,Defecation,NA,Clothing,Both,Gender neutral,Male,50 CEM041,Personal
+LKDJN4154Z,CEM041,Defecation,NA,Skin,Right,Gender neutral,Male,50 CEM041,Personal
+LKDJN4154Z,CEM041,Defecation,NA,Toilet paper,Both,Gender neutral,Male,50 CEM041,Cubicle
+LKDJN4154Z,CEM041,Defecation,NA,Clothing,Both,Gender neutral,Male,50 CEM041,Personal
+LKDJN4154Z,CEM041,Defecation,NA,Flush button,Right,Gender neutral,Male,50 CEM041,Cubicle
+LKDJN4154Z,CEM041,Defecation,NA,Tap,Left,Gender neutral,Male,50 CEM041,Hygiene
+LKDJN4154Z,CEM041,Defecation,NA,Tap,Left,Gender neutral,Male,50 CEM041,Hygiene
+LKDJN4154Z,CEM041,Defecation,NA,Toilet paper,Both,Gender neutral,Male,50 CEM041,Cubicle
+LKDJN4154Z,CEM041,Defecation,NA,Cubicle door handle inside,Right,Gender neutral,Male,50 CEM041,CubicleOUT
+LKDJN4154Z,CEM041,Defecation,NA,Door handle inside,Right,Gender neutral,Male,50 CEM041,Exit
+LELLB2209X,SCGN06,Urination,NA,Door handle outside,Both,Gender neutral,Female,11 SCGN06,Entry
+LELLB2209X,SCGN06,Urination,NA,Cubicle door handle outside,Right,Gender neutral,Female,11 SCGN06,CubicleIN
+LELLB2209X,SCGN06,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Female,11 SCGN06,CubicleOUT
+LELLB2209X,SCGN06,Urination,NA,Cubicle door handle inside,Right,Gender neutral,Female,11 SCGN06,CubicleOUT
+LELLB2209X,SCGN06,Urination,NA,Bag,Both,Gender neutral,Female,11 SCGN06,Personal
+LELLB2209X,SCGN06,Urination,NA,Clothing,Both,Gender neutral,Female,11 SCGN06,Personal
+LELLB2209X,SCGN06,Urination,NA,Toilet paper,Right,Gender neutral,Female,11 SCGN06,Cubicle
+LELLB2209X,SCGN06,Urination,NA,Toilet paper,Left,Gender neutral,Female,11 SCGN06,Cubicle
+LELLB2209X,SCGN06,Urination,NA,Toilet paper,Both,Gender neutral,Female,11 SCGN06,Cubicle
+LELLB2209X,SCGN06,Urination,NA,Clothing,Both,Gender neutral,Female,11 SCGN06,Personal
+LELLB2209X,SCGN06,Urination,NA,Flush button,Right,Gender neutral,Female,11 SCGN06,Cubicle
+LELLB2209X,SCGN06,Urination,NA,Soap dispenser,Right,Gender neutral,Female,11 SCGN06,Hygiene
+LELLB2209X,SCGN06,Urination,NA,Tap,Left,Gender neutral,Female,11 SCGN06,Hygiene
+LELLB2209X,SCGN06,Urination,NA,Tap,Right,Gender neutral,Female,11 SCGN06,Hygiene
+LELLB2209X,SCGN06,Urination,NA,Tap,Left,Gender neutral,Female,11 SCGN06,Hygiene
+LELLB2209X,SCGN06,Urination,NA,Bag,Right,Gender neutral,Female,11 SCGN06,Personal
+LELLB2209X,SCGN06,Urination,NA,Cubicle door handle inside,Right,Gender neutral,Female,11 SCGN06,CubicleOUT
+LELLB2209X,SCGN06,Urination,NA,Door handle inside,Left,Gender neutral,Female,11 SCGN06,Exit
+CJCKN6209H,SCGN06,Defecation,NA,Door handle outside,Both,Gender neutral,Female,12 SCGN06,Entry
+CJCKN6209H,SCGN06,Defecation,NA,Cubicle door handle outside,Right,Gender neutral,Female,12 SCGN06,CubicleIN
+CJCKN6209H,SCGN06,Defecation,NA,Cubicle door handle inside,Right,Gender neutral,Female,12 SCGN06,CubicleOUT
+CJCKN6209H,SCGN06,Defecation,NA,Door lock,Right,Gender neutral,Female,12 SCGN06,Door
+CJCKN6209H,SCGN06,Defecation,NA,Clothing,Both,Gender neutral,Female,12 SCGN06,Personal
+CJCKN6209H,SCGN06,Defecation,NA,Bag,Right,Gender neutral,Female,12 SCGN06,Personal
+CJCKN6209H,SCGN06,Defecation,NA,Bag,Both,Gender neutral,Female,12 SCGN06,Personal
+CJCKN6209H,SCGN06,Defecation,NA,Phone,Both,Gender neutral,Female,12 SCGN06,Personal
+CJCKN6209H,SCGN06,Defecation,NA,Toilet paper,Right,Gender neutral,Female,12 SCGN06,Cubicle
+CJCKN6209H,SCGN06,Defecation,NA,Toilet paper,Left,Gender neutral,Female,12 SCGN06,Cubicle
+CJCKN6209H,SCGN06,Defecation,NA,Toilet paper,Both,Gender neutral,Female,12 SCGN06,Cubicle
+CJCKN6209H,SCGN06,Defecation,NA,Skin,Right,Gender neutral,Female,12 SCGN06,Personal
+CJCKN6209H,SCGN06,Defecation,NA,Clothing,Both,Gender neutral,Female,12 SCGN06,Personal
+CJCKN6209H,SCGN06,Defecation,NA,Flush button,Right,Gender neutral,Female,12 SCGN06,Cubicle
+CJCKN6209H,SCGN06,Defecation,NA,Soap dispenser,Right,Gender neutral,Female,12 SCGN06,Hygiene
+CJCKN6209H,SCGN06,Defecation,NA,Tap,Left,Gender neutral,Female,12 SCGN06,Hygiene
+CJCKN6209H,SCGN06,Defecation,NA,Tap,Right,Gender neutral,Female,12 SCGN06,Hygiene
+CJCKN6209H,SCGN06,Defecation,NA,Cubicle door handle inside,Right,Gender neutral,Female,12 SCGN06,CubicleOUT
+CJCKN6209H,SCGN06,Defecation,NA,Door lock,Right,Gender neutral,Female,12 SCGN06,Door
+CJCKN6209H,SCGN06,Defecation,NA,Bag,Both,Gender neutral,Female,12 SCGN06,Personal
+CJCKN6209H,SCGN06,Defecation,NA,Door handle inside,Left,Gender neutral,Female,12 SCGN06,Exit
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Door handle outside,Both,Gender neutral,Female,13 SCGN06,Entry
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Cubicle door handle outside,Right,Gender neutral,Female,13 SCGN06,CubicleIN
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Cubicle door handle inside,Right,Gender neutral,Female,13 SCGN06,CubicleOUT
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Door lock,Right,Gender neutral,Female,13 SCGN06,Door
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Clothing,Both,Gender neutral,Female,13 SCGN06,Personal
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Bag,Right,Gender neutral,Female,13 SCGN06,Personal
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Bag,Both,Gender neutral,Female,13 SCGN06,Personal
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Tap,Right,Gender neutral,Female,13 SCGN06,Hygiene
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Tap,Right,Gender neutral,Female,13 SCGN06,Hygiene
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Menstrual product,Left,Gender neutral,Female,13 SCGN06,MHM
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Tap,Right,Gender neutral,Female,13 SCGN06,Hygiene
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Toilet paper,Right,Gender neutral,Female,13 SCGN06,Cubicle
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Toilet paper,Left,Gender neutral,Female,13 SCGN06,Cubicle
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Toilet paper,Both,Gender neutral,Female,13 SCGN06,Cubicle
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Skin,Right,Gender neutral,Female,13 SCGN06,Personal
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Menstrual product,Both,Gender neutral,Female,13 SCGN06,MHM
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Menstrual product,Right,Gender neutral,Female,13 SCGN06,MHM
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Skin,Right,Gender neutral,Female,13 SCGN06,Personal
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Clothing,Both,Gender neutral,Female,13 SCGN06,Personal
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Flush button,Right,Gender neutral,Female,13 SCGN06,Cubicle
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Soap dispenser,Right,Gender neutral,Female,13 SCGN06,Hygiene
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,13 SCGN06,Hygiene
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,13 SCGN06,Hygiene
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,13 SCGN06,Hygiene
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,13 SCGN06,Hygiene
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Bag,Both,Gender neutral,Female,13 SCGN06,Personal
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Door lock,Right,Gender neutral,Female,13 SCGN06,Door
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Cubicle door handle inside,Right,Gender neutral,Female,13 SCGN06,CubicleOUT
+RQLPX3649E,SCGN06,MHM,Menstrual cup,Door handle inside,Left,Gender neutral,Female,13 SCGN06,Exit
+JUZBZ2523D,SCGN07,Urination,NA,Door handle outside,Right,Gender neutral,Female,14 SCGN07,Entry
+JUZBZ2523D,SCGN07,Urination,NA,Cubicle door handle outside,Right,Gender neutral,Female,14 SCGN07,CubicleIN
+JUZBZ2523D,SCGN07,Urination,NA,Cubicle door handle inside,Right,Gender neutral,Female,14 SCGN07,CubicleOUT
+JUZBZ2523D,SCGN07,Urination,NA,Cubicle door handle inside,Right,Gender neutral,Female,14 SCGN07,CubicleOUT
+JUZBZ2523D,SCGN07,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Female,14 SCGN07,CubicleOUT
+JUZBZ2523D,SCGN07,Urination,NA,Door lock,Right,Gender neutral,Female,14 SCGN07,Door
+JUZBZ2523D,SCGN07,Urination,NA,Bag,Both,Gender neutral,Female,14 SCGN07,Personal
+JUZBZ2523D,SCGN07,Urination,NA,Toilet surface,Left,Gender neutral,Female,14 SCGN07,Cubicle
+JUZBZ2523D,SCGN07,Urination,NA,Bag,Both,Gender neutral,Female,14 SCGN07,Personal
+JUZBZ2523D,SCGN07,Urination,NA,Clothing,Both,Gender neutral,Female,14 SCGN07,Personal
+JUZBZ2523D,SCGN07,Urination,NA,Toilet paper,Right,Gender neutral,Female,14 SCGN07,Cubicle
+JUZBZ2523D,SCGN07,Urination,NA,Toilet paper,Left,Gender neutral,Female,14 SCGN07,Cubicle
+JUZBZ2523D,SCGN07,Urination,NA,Toilet paper,Both,Gender neutral,Female,14 SCGN07,Cubicle
+JUZBZ2523D,SCGN07,Urination,NA,Skin,Right,Gender neutral,Female,14 SCGN07,Personal
+JUZBZ2523D,SCGN07,Urination,NA,Clothing,Both,Gender neutral,Female,14 SCGN07,Personal
+JUZBZ2523D,SCGN07,Urination,NA,Flush button,Right,Gender neutral,Female,14 SCGN07,Cubicle
+JUZBZ2523D,SCGN07,Urination,NA,Soap dispenser,Right,Gender neutral,Female,14 SCGN07,Hygiene
+JUZBZ2523D,SCGN07,Urination,NA,Tap,Left,Gender neutral,Female,14 SCGN07,Hygiene
+JUZBZ2523D,SCGN07,Urination,NA,Tap,Right,Gender neutral,Female,14 SCGN07,Hygiene
+JUZBZ2523D,SCGN07,Urination,NA,Bag,Both,Gender neutral,Female,14 SCGN07,Personal
+JUZBZ2523D,SCGN07,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Female,14 SCGN07,CubicleOUT
+JUZBZ2523D,SCGN07,Urination,NA,Door lock,Right,Gender neutral,Female,14 SCGN07,Door
+JUZBZ2523D,SCGN07,Urination,NA,Door handle inside,Left,Gender neutral,Female,14 SCGN07,Exit
+OQAWP4999W,SCGN07,Defecation,NA,Door handle outside,Right,Gender neutral,Female,15 SCGN07,Entry
+OQAWP4999W,SCGN07,Defecation,NA,Cubicle door handle outside,Right,Gender neutral,Female,15 SCGN07,CubicleIN
+OQAWP4999W,SCGN07,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Female,15 SCGN07,CubicleOUT
+OQAWP4999W,SCGN07,Defecation,NA,Door lock,Left,Gender neutral,Female,15 SCGN07,Door
+OQAWP4999W,SCGN07,Defecation,NA,Bag,Both,Gender neutral,Female,15 SCGN07,Personal
+OQAWP4999W,SCGN07,Defecation,NA,Phone,Right,Gender neutral,Female,15 SCGN07,Personal
+OQAWP4999W,SCGN07,Defecation,NA,Phone,Left,Gender neutral,Female,15 SCGN07,Personal
+OQAWP4999W,SCGN07,Defecation,NA,Clothing,Both,Gender neutral,Female,15 SCGN07,Personal
+OQAWP4999W,SCGN07,Defecation,NA,Phone,Both,Gender neutral,Female,15 SCGN07,Personal
+OQAWP4999W,SCGN07,Defecation,NA,Phone,Right,Gender neutral,Female,15 SCGN07,Personal
+OQAWP4999W,SCGN07,Defecation,NA,Toilet paper,Right,Gender neutral,Female,15 SCGN07,Cubicle
+OQAWP4999W,SCGN07,Defecation,NA,Toilet paper,Left,Gender neutral,Female,15 SCGN07,Cubicle
+OQAWP4999W,SCGN07,Defecation,NA,Toilet paper,Both,Gender neutral,Female,15 SCGN07,Cubicle
+OQAWP4999W,SCGN07,Defecation,NA,Skin,Right,Gender neutral,Female,15 SCGN07,Personal
+OQAWP4999W,SCGN07,Defecation,NA,Clothing,Both,Gender neutral,Female,15 SCGN07,Personal
+OQAWP4999W,SCGN07,Defecation,NA,Flush button,Right,Gender neutral,Female,15 SCGN07,Cubicle
+OQAWP4999W,SCGN07,Defecation,NA,Soap dispenser,Right,Gender neutral,Female,15 SCGN07,Hygiene
+OQAWP4999W,SCGN07,Defecation,NA,Tap,Left,Gender neutral,Female,15 SCGN07,Hygiene
+OQAWP4999W,SCGN07,Defecation,NA,Tap,Right,Gender neutral,Female,15 SCGN07,Hygiene
+OQAWP4999W,SCGN07,Defecation,NA,Bag,Both,Gender neutral,Female,15 SCGN07,Personal
+OQAWP4999W,SCGN07,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Female,15 SCGN07,CubicleOUT
+OQAWP4999W,SCGN07,Defecation,NA,Door lock,Right,Gender neutral,Female,15 SCGN07,Door
+OQAWP4999W,SCGN07,Defecation,NA,Door handle inside,Left,Gender neutral,Female,15 SCGN07,Exit
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Door handle outside,Both,Gender neutral,Female,16 SCGN07,Entry
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Cubicle door handle outside,Right,Gender neutral,Female,16 SCGN07,CubicleIN
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Cubicle door handle inside,Left,Gender neutral,Female,16 SCGN07,CubicleOUT
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Door lock,Left,Gender neutral,Female,16 SCGN07,Door
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Bag,Both,Gender neutral,Female,16 SCGN07,Personal
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Clothing,Both,Gender neutral,Female,16 SCGN07,Personal
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Toilet paper,Right,Gender neutral,Female,16 SCGN07,Cubicle
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Toilet paper,Left,Gender neutral,Female,16 SCGN07,Cubicle
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Toilet paper,Both,Gender neutral,Female,16 SCGN07,Cubicle
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Skin,Right,Gender neutral,Female,16 SCGN07,Personal
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Menstrual product,Right,Gender neutral,Female,16 SCGN07,MHM
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Skin,Right,Gender neutral,Female,16 SCGN07,Personal
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,16 SCGN07,Hygiene
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,16 SCGN07,Hygiene
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Menstrual product,Right,Gender neutral,Female,16 SCGN07,MHM
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Skin,Right,Gender neutral,Female,16 SCGN07,Personal
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Toilet paper,Right,Gender neutral,Female,16 SCGN07,Cubicle
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Toilet paper,Left,Gender neutral,Female,16 SCGN07,Cubicle
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Toilet paper,Both,Gender neutral,Female,16 SCGN07,Cubicle
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Clothing,Both,Gender neutral,Female,16 SCGN07,Personal
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Flush button,Right,Gender neutral,Female,16 SCGN07,Cubicle
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Soap dispenser,Right,Gender neutral,Female,16 SCGN07,Hygiene
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,16 SCGN07,Hygiene
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Tap,Right,Gender neutral,Female,16 SCGN07,Hygiene
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Bag,Both,Gender neutral,Female,16 SCGN07,Personal
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Cubicle door handle inside,Right,Gender neutral,Female,16 SCGN07,CubicleOUT
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Door lock,Right,Gender neutral,Female,16 SCGN07,Door
+KHOTD9668M,SCGN07,MHM,Menstrual cup,Door handle inside,Left,Gender neutral,Female,16 SCGN07,Exit
+SAGKZ1459N,SCGN13,Urination,NA,Door handle outside,Right,Gender neutral,Male,4 SCGN13,Entry
+SAGKZ1459N,SCGN13,Urination,NA,Cubicle door handle outside,Right,Gender neutral,Male,4 SCGN13,CubicleIN
+SAGKZ1459N,SCGN13,Urination,NA,Cubicle door handle inside,Right,Gender neutral,Male,4 SCGN13,CubicleOUT
+SAGKZ1459N,SCGN13,Urination,NA,Door lock,Left,Gender neutral,Male,4 SCGN13,Door
+SAGKZ1459N,SCGN13,Urination,NA,Bottle,Right,Gender neutral,Male,4 SCGN13,Personal
+SAGKZ1459N,SCGN13,Urination,NA,Clothing,Both,Gender neutral,Male,4 SCGN13,Personal
+SAGKZ1459N,SCGN13,Urination,NA,Skin,Both,Gender neutral,Male,4 SCGN13,Personal
+SAGKZ1459N,SCGN13,Urination,NA,Clothing,Both,Gender neutral,Male,4 SCGN13,Personal
+SAGKZ1459N,SCGN13,Urination,NA,Flush button,Right,Gender neutral,Male,4 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Urination,NA,Soap dispenser,Right,Gender neutral,Male,4 SCGN13,Hygiene
+SAGKZ1459N,SCGN13,Urination,NA,Tap,Right,Gender neutral,Male,4 SCGN13,Hygiene
+SAGKZ1459N,SCGN13,Urination,NA,Tap,Left,Gender neutral,Male,4 SCGN13,Hygiene
+SAGKZ1459N,SCGN13,Urination,NA,Bottle,Left,Gender neutral,Male,4 SCGN13,Personal
+SAGKZ1459N,SCGN13,Urination,NA,Tap,Left,Gender neutral,Male,4 SCGN13,Hygiene
+SAGKZ1459N,SCGN13,Urination,NA,Toilet paper,Right,Gender neutral,Male,4 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Urination,NA,Toilet paper,Left,Gender neutral,Male,4 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Urination,NA,Toilet paper,Right,Gender neutral,Male,4 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Urination,NA,Bottle,Right,Gender neutral,Male,4 SCGN13,Personal
+SAGKZ1459N,SCGN13,Urination,NA,Clothing,Left,Gender neutral,Male,4 SCGN13,Personal
+SAGKZ1459N,SCGN13,Urination,NA,Toilet paper,Right,Gender neutral,Male,4 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Cubicle door handle outside,Right,Gender neutral,Male,4 SCGN13,CubicleIN
+SAGKZ1459N,SCGN13,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Male,5 SCGN13,CubicleOUT
+SAGKZ1459N,SCGN13,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Male,5 SCGN13,CubicleOUT
+SAGKZ1459N,SCGN13,Defecation,NA,Door lock,Left,Gender neutral,Male,5 SCGN13,Door
+SAGKZ1459N,SCGN13,Defecation,NA,Bottle,Right,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Toilet paper,Left,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Toilet paper,Right,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Clothing,Both,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Clothing,Left,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Phone,Left,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Phone,Both,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Clothing,Right,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Clothing,Right,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Toilet paper,Right,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Toilet paper,Left,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Toilet paper,Right,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Clothing,Left,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Toilet surface,Right,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Clothing,Both,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Clothing,Both,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Toilet paper,Right,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Toilet paper,Left,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Toilet paper,Right,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Phone,Left,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Bottle,Left,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Bottle,Right,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Bottle,Left,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Skin,Right,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Toilet paper,Right,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Toilet paper,Left,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Toilet paper,Right,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Toilet paper,Left,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Phone,Left,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Clothing,Both,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Skin,Left,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Clothing,Both,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Flush button,Right,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Soap dispenser,Right,Gender neutral,Male,5 SCGN13,Hygiene
+SAGKZ1459N,SCGN13,Defecation,NA,Tap,Right,Gender neutral,Male,5 SCGN13,Hygiene
+SAGKZ1459N,SCGN13,Defecation,NA,Bottle,Left,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Tap,Left,Gender neutral,Male,5 SCGN13,Hygiene
+SAGKZ1459N,SCGN13,Defecation,NA,Toilet paper,Right,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Toilet paper,Left,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Toilet paper,Right,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Toilet paper,Left,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Flush button,Right,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Toilet brush handle,Right,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Flush button,Right,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Soap dispenser,Right,Gender neutral,Male,5 SCGN13,Hygiene
+SAGKZ1459N,SCGN13,Defecation,NA,Tap,Left,Gender neutral,Male,5 SCGN13,Hygiene
+SAGKZ1459N,SCGN13,Defecation,NA,Tap,Left,Gender neutral,Male,5 SCGN13,Hygiene
+SAGKZ1459N,SCGN13,Defecation,NA,Toilet paper,Right,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Toilet paper,Left,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Toilet paper,Right,Gender neutral,Male,5 SCGN13,Cubicle
+SAGKZ1459N,SCGN13,Defecation,NA,Bottle,Right,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Bottle,Left,Gender neutral,Male,5 SCGN13,Personal
+SAGKZ1459N,SCGN13,Defecation,NA,Door lock,Right,Gender neutral,Male,5 SCGN13,Door
+SAGKZ1459N,SCGN13,Defecation,NA,Door handle inside,Left,Gender neutral,Male,5 SCGN13,Exit
+RVQPA5255X,SCGN16,Urination,NA,Door handle outside,Right,Gender neutral,Male,42 SCGN16,Entry
+RVQPA5255X,SCGN16,Urination,NA,Cubicle door handle outside,Right,Gender neutral,Male,42 SCGN16,CubicleIN
+RVQPA5255X,SCGN16,Urination,NA,Door lock,Right,Gender neutral,Male,42 SCGN16,Door
+RVQPA5255X,SCGN16,Urination,NA,Clothing,Both,Gender neutral,Male,42 SCGN16,Personal
+RVQPA5255X,SCGN16,Urination,NA,Skin,Both,Gender neutral,Male,42 SCGN16,Personal
+RVQPA5255X,SCGN16,Urination,NA,Clothing,Both,Gender neutral,Male,42 SCGN16,Personal
+RVQPA5255X,SCGN16,Urination,NA,Toilet paper,Both,Gender neutral,Male,42 SCGN16,Cubicle
+RVQPA5255X,SCGN16,Urination,NA,Clothing,Both,Gender neutral,Male,42 SCGN16,Personal
+RVQPA5255X,SCGN16,Urination,NA,Tap,Left,Gender neutral,Male,42 SCGN16,Hygiene
+RVQPA5255X,SCGN16,Urination,NA,Soap dispenser,Right,Gender neutral,Male,42 SCGN16,Hygiene
+RVQPA5255X,SCGN16,Urination,NA,Tap,Left,Gender neutral,Male,42 SCGN16,Hygiene
+RVQPA5255X,SCGN16,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Male,42 SCGN16,CubicleOUT
+RVQPA5255X,SCGN16,Urination,NA,Door lock,Right,Gender neutral,Male,42 SCGN16,Door
+RVQPA5255X,SCGN16,Urination,NA,Door handle inside,Left,Gender neutral,Male,42 SCGN16,Exit
+XNNBS2277A,SCGN16,Defecation,NA,Door handle outside,Right,Gender neutral,Male,43 SCGN16,Entry
+XNNBS2277A,SCGN16,Defecation,NA,Cubicle door handle outside,Right,Gender neutral,Male,43 SCGN16,CubicleIN
+XNNBS2277A,SCGN16,Defecation,NA,Clothing,Left,Gender neutral,Male,43 SCGN16,Personal
+XNNBS2277A,SCGN16,Defecation,NA,Phone,Left,Gender neutral,Male,43 SCGN16,Personal
+XNNBS2277A,SCGN16,Defecation,NA,Toilet surface,Right,Gender neutral,Male,43 SCGN16,Cubicle
+XNNBS2277A,SCGN16,Defecation,NA,Toilet paper,Right,Gender neutral,Male,43 SCGN16,Cubicle
+XNNBS2277A,SCGN16,Defecation,NA,Clothing,Both,Gender neutral,Male,43 SCGN16,Personal
+XNNBS2277A,SCGN16,Defecation,NA,Phone,Left,Gender neutral,Male,43 SCGN16,Personal
+XNNBS2277A,SCGN16,Defecation,NA,Phone,Right,Gender neutral,Male,43 SCGN16,Personal
+XNNBS2277A,SCGN16,Defecation,NA,Phone,Both,Gender neutral,Male,43 SCGN16,Personal
+XNNBS2277A,SCGN16,Defecation,NA,Clothing,Left,Gender neutral,Male,43 SCGN16,Personal
+XNNBS2277A,SCGN16,Defecation,NA,Clothing,Both,Gender neutral,Male,43 SCGN16,Personal
+XNNBS2277A,SCGN16,Defecation,NA,Toilet surface,Right,Gender neutral,Male,43 SCGN16,Cubicle
+XNNBS2277A,SCGN16,Defecation,NA,Toilet surface,Both,Gender neutral,Male,43 SCGN16,Cubicle
+XNNBS2277A,SCGN16,Defecation,NA,Clothing,Both,Gender neutral,Male,43 SCGN16,Personal
+XNNBS2277A,SCGN16,Defecation,NA,Flush button,Right,Gender neutral,Male,43 SCGN16,Cubicle
+XNNBS2277A,SCGN16,Defecation,NA,Soap dispenser,Right,Gender neutral,Male,43 SCGN16,Hygiene
+XNNBS2277A,SCGN16,Defecation,NA,Tap,Left,Gender neutral,Male,43 SCGN16,Hygiene
+XNNBS2277A,SCGN16,Defecation,NA,Tap,Left,Gender neutral,Male,43 SCGN16,Hygiene
+XNNBS2277A,SCGN16,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Male,43 SCGN16,CubicleOUT
+XNNBS2277A,SCGN16,Defecation,NA,Door handle inside,Left,Gender neutral,Male,43 SCGN16,Exit
+WFMPP0425B,SCGN18,Urination,NA,Door handle outside,Both,Gender neutral,Female,1 SCGN18,Entry
+WFMPP0425B,SCGN18,Urination,NA,Cubicle door handle outside,Right,Gender neutral,Female,1 SCGN18,CubicleIN
+WFMPP0425B,SCGN18,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Female,1 SCGN18,CubicleOUT
+WFMPP0425B,SCGN18,Urination,NA,Cubicle door handle inside,Right,Gender neutral,Female,1 SCGN18,CubicleOUT
+WFMPP0425B,SCGN18,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Female,1 SCGN18,CubicleOUT
+WFMPP0425B,SCGN18,Urination,NA,Door lock,Left,Gender neutral,Female,1 SCGN18,Door
+WFMPP0425B,SCGN18,Urination,NA,Bag,Left,Gender neutral,Female,1 SCGN18,Personal
+WFMPP0425B,SCGN18,Urination,NA,Bag,Right,Gender neutral,Female,1 SCGN18,Personal
+WFMPP0425B,SCGN18,Urination,NA,Clothing,Right,Gender neutral,Female,1 SCGN18,Personal
+WFMPP0425B,SCGN18,Urination,NA,Phone,Right,Gender neutral,Female,1 SCGN18,Personal
+WFMPP0425B,SCGN18,Urination,NA,Toilet surface,Right,Gender neutral,Female,1 SCGN18,Cubicle
+WFMPP0425B,SCGN18,Urination,NA,Clothing,Both,Gender neutral,Female,1 SCGN18,Personal
+WFMPP0425B,SCGN18,Urination,NA,Toilet paper,Both,Gender neutral,Female,1 SCGN18,Cubicle
+WFMPP0425B,SCGN18,Urination,NA,Clothing,Both,Gender neutral,Female,1 SCGN18,Personal
+WFMPP0425B,SCGN18,Urination,NA,Flush button,Right,Gender neutral,Female,1 SCGN18,Cubicle
+WFMPP0425B,SCGN18,Urination,NA,Soap dispenser,Right,Gender neutral,Female,1 SCGN18,Hygiene
+WFMPP0425B,SCGN18,Urination,NA,Tap,Right,Gender neutral,Female,1 SCGN18,Hygiene
+WFMPP0425B,SCGN18,Urination,NA,Tap,Right,Gender neutral,Female,1 SCGN18,Hygiene
+WFMPP0425B,SCGN18,Urination,NA,Tap,Right,Gender neutral,Female,1 SCGN18,Hygiene
+WFMPP0425B,SCGN18,Urination,NA,Tap,Right,Gender neutral,Female,1 SCGN18,Hygiene
+WFMPP0425B,SCGN18,Urination,NA,Clothing,Left,Gender neutral,Female,1 SCGN18,Personal
+WFMPP0425B,SCGN18,Urination,NA,Phone,Right,Gender neutral,Female,1 SCGN18,Personal
+WFMPP0425B,SCGN18,Urination,NA,Bag,Right,Gender neutral,Female,1 SCGN18,Personal
+WFMPP0425B,SCGN18,Urination,NA,Bag,Left,Gender neutral,Female,1 SCGN18,Personal
+WFMPP0425B,SCGN18,Urination,NA,Door lock,Right,Gender neutral,Female,1 SCGN18,Door
+WFMPP0425B,SCGN18,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Female,1 SCGN18,CubicleOUT
+WFMPP0425B,SCGN18,Urination,NA,Bag,Right,Gender neutral,Female,1 SCGN18,Personal
+WFMPP0425B,SCGN18,Urination,NA,Cubicle door handle outside,Left,Gender neutral,Female,1 SCGN18,CubicleIN
+WFMPP0425B,SCGN18,Urination,NA,Bag,Right,Gender neutral,Female,1 SCGN18,Personal
+WFMPP0425B,SCGN18,Urination,NA,Door handle inside,Left,Gender neutral,Female,1 SCGN18,Exit
+KYDPI7685X,SCGN18,Defecation,NA,Door handle outside,Both,Gender neutral,Female,2 SCGN18,Entry
+KYDPI7685X,SCGN18,Defecation,NA,Clothing,Right,Gender neutral,Female,2 SCGN18,Personal
+KYDPI7685X,SCGN18,Defecation,NA,Phone,Right,Gender neutral,Female,2 SCGN18,Personal
+KYDPI7685X,SCGN18,Defecation,NA,Cubicle door handle outside,Right,Gender neutral,Female,2 SCGN18,CubicleIN
+KYDPI7685X,SCGN18,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Female,2 SCGN18,CubicleOUT
+KYDPI7685X,SCGN18,Defecation,NA,Door lock,Left,Gender neutral,Female,2 SCGN18,Door
+KYDPI7685X,SCGN18,Defecation,NA,Bag,Right,Gender neutral,Female,2 SCGN18,Personal
+KYDPI7685X,SCGN18,Defecation,NA,Bag,Left,Gender neutral,Female,2 SCGN18,Personal
+KYDPI7685X,SCGN18,Defecation,NA,Phone,Right,Gender neutral,Female,2 SCGN18,Personal
+KYDPI7685X,SCGN18,Defecation,NA,Clothing,Both,Gender neutral,Female,2 SCGN18,Personal
+KYDPI7685X,SCGN18,Defecation,NA,Toilet surface,Right,Gender neutral,Female,2 SCGN18,Cubicle
+KYDPI7685X,SCGN18,Defecation,NA,Phone,Right,Gender neutral,Female,2 SCGN18,Personal
+KYDPI7685X,SCGN18,Defecation,NA,Phone,Both,Gender neutral,Female,2 SCGN18,Personal
+KYDPI7685X,SCGN18,Defecation,NA,Toilet paper,Both,Gender neutral,Female,2 SCGN18,Cubicle
+KYDPI7685X,SCGN18,Defecation,NA,Skin,Right,Gender neutral,Female,2 SCGN18,Personal
+KYDPI7685X,SCGN18,Defecation,NA,Clothing,Both,Gender neutral,Female,2 SCGN18,Personal
+KYDPI7685X,SCGN18,Defecation,NA,Flush button,Right,Gender neutral,Female,2 SCGN18,Cubicle
+KYDPI7685X,SCGN18,Defecation,NA,Clothing,Right,Gender neutral,Female,2 SCGN18,Personal
+KYDPI7685X,SCGN18,Defecation,NA,Clothing,Left,Gender neutral,Female,2 SCGN18,Personal
+KYDPI7685X,SCGN18,Defecation,NA,Clothing,Right,Gender neutral,Female,2 SCGN18,Personal
+KYDPI7685X,SCGN18,Defecation,NA,Soap dispenser,Right,Gender neutral,Female,2 SCGN18,Hygiene
+KYDPI7685X,SCGN18,Defecation,NA,Tap,Right,Gender neutral,Female,2 SCGN18,Hygiene
+KYDPI7685X,SCGN18,Defecation,NA,Tap,Right,Gender neutral,Female,2 SCGN18,Hygiene
+KYDPI7685X,SCGN18,Defecation,NA,Tap,Right,Gender neutral,Female,2 SCGN18,Hygiene
+KYDPI7685X,SCGN18,Defecation,NA,Phone,Right,Gender neutral,Female,2 SCGN18,Personal
+KYDPI7685X,SCGN18,Defecation,NA,Clothing,Both,Gender neutral,Female,2 SCGN18,Personal
+KYDPI7685X,SCGN18,Defecation,NA,Bag,Right,Gender neutral,Female,2 SCGN18,Personal
+KYDPI7685X,SCGN18,Defecation,NA,Bag,Left,Gender neutral,Female,2 SCGN18,Personal
+KYDPI7685X,SCGN18,Defecation,NA,Bag,Right,Gender neutral,Female,2 SCGN18,Personal
+KYDPI7685X,SCGN18,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Female,2 SCGN18,CubicleOUT
+KYDPI7685X,SCGN18,Defecation,NA,Door handle inside,Left,Gender neutral,Female,2 SCGN18,Exit
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Door handle outside,Both,Gender neutral,Female,3 SCGN18,Entry
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Cubicle door handle outside,Right,Gender neutral,Female,3 SCGN18,CubicleIN
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Cubicle door handle inside,Left,Gender neutral,Female,3 SCGN18,CubicleOUT
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Cubicle door handle inside,Right,Gender neutral,Female,3 SCGN18,CubicleOUT
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Door lock,Right,Gender neutral,Female,3 SCGN18,Door
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Bag,Right,Gender neutral,Female,3 SCGN18,Personal
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Bag,Left,Gender neutral,Female,3 SCGN18,Personal
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Bag,Right,Gender neutral,Female,3 SCGN18,Personal
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Menstrual product,Right,Gender neutral,Female,3 SCGN18,MHM
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Bag,Left,Gender neutral,Female,3 SCGN18,Personal
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Phone,Right,Gender neutral,Female,3 SCGN18,Personal
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Clothing,Left,Gender neutral,Female,3 SCGN18,Personal
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Clothing,Both,Gender neutral,Female,3 SCGN18,Personal
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Menstrual product,Both,Gender neutral,Female,3 SCGN18,MHM
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Clothing,Left,Gender neutral,Female,3 SCGN18,Personal
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Skin,Right,Gender neutral,Female,3 SCGN18,Personal
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Toilet paper,Both,Gender neutral,Female,3 SCGN18,Cubicle
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Menstrual product,Left,Gender neutral,Female,3 SCGN18,MHM
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Toilet paper,Both,Gender neutral,Female,3 SCGN18,Cubicle
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Menstrual product,Both,Gender neutral,Female,3 SCGN18,MHM
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Toilet paper,Both,Gender neutral,Female,3 SCGN18,Cubicle
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Menstrual product,Both,Gender neutral,Female,3 SCGN18,MHM
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Menstrual product,Left,Gender neutral,Female,3 SCGN18,MHM
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Bin outside the cubicle,Left,Gender neutral,Female,3 SCGN18,Hygiene
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Toilet paper,Both,Gender neutral,Female,3 SCGN18,Cubicle
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Skin,Right,Gender neutral,Female,3 SCGN18,Personal
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Clothing,Left,Gender neutral,Female,3 SCGN18,Personal
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Clothing,Both,Gender neutral,Female,3 SCGN18,Personal
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Soap dispenser,Right,Gender neutral,Female,3 SCGN18,Hygiene
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Tap,Right,Gender neutral,Female,3 SCGN18,Hygiene
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Tap,Right,Gender neutral,Female,3 SCGN18,Hygiene
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Phone,Right,Gender neutral,Female,3 SCGN18,Personal
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Clothing,Both,Gender neutral,Female,3 SCGN18,Personal
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Bag,Right,Gender neutral,Female,3 SCGN18,Personal
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Bag,Left,Gender neutral,Female,3 SCGN18,Personal
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Bag,Right,Gender neutral,Female,3 SCGN18,Personal
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Cubicle door handle inside,Left,Gender neutral,Female,3 SCGN18,CubicleOUT
+GMKOU9857N,SCGN18,MHM,Sanitary pad,Door handle inside,Left,Gender neutral,Female,3 SCGN18,Exit
+JLKTZ7475M,SCGN19,Urination,NA,Door handle outside,Left,Gender neutral,Female,17 SCGN19,Entry
+JLKTZ7475M,SCGN19,Urination,NA,Cubicle door handle outside,Right,Gender neutral,Female,17 SCGN19,CubicleIN
+JLKTZ7475M,SCGN19,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Female,17 SCGN19,CubicleOUT
+JLKTZ7475M,SCGN19,Urination,NA,Door lock,Left,Gender neutral,Female,17 SCGN19,Door
+JLKTZ7475M,SCGN19,Urination,NA,Bottle,Both,Gender neutral,Female,17 SCGN19,Personal
+JLKTZ7475M,SCGN19,Urination,NA,Tap,Right,Gender neutral,Female,17 SCGN19,Hygiene
+JLKTZ7475M,SCGN19,Urination,NA,Bottle,Right,Gender neutral,Female,17 SCGN19,Personal
+JLKTZ7475M,SCGN19,Urination,NA,Tap,Left,Gender neutral,Female,17 SCGN19,Hygiene
+JLKTZ7475M,SCGN19,Urination,NA,Bottle,Both,Gender neutral,Female,17 SCGN19,Personal
+JLKTZ7475M,SCGN19,Urination,NA,Bottle,Right,Gender neutral,Female,17 SCGN19,Personal
+JLKTZ7475M,SCGN19,Urination,NA,Clothing,Right,Gender neutral,Female,17 SCGN19,Personal
+JLKTZ7475M,SCGN19,Urination,NA,Clothing,Both,Gender neutral,Female,17 SCGN19,Personal
+JLKTZ7475M,SCGN19,Urination,NA,Bottle,Right,Gender neutral,Female,17 SCGN19,Personal
+JLKTZ7475M,SCGN19,Urination,NA,Bottle,Left,Gender neutral,Female,17 SCGN19,Personal
+JLKTZ7475M,SCGN19,Urination,NA,Bottle,Right,Gender neutral,Female,17 SCGN19,Personal
+JLKTZ7475M,SCGN19,Urination,NA,Toilet paper,Both,Gender neutral,Female,17 SCGN19,Cubicle
+JLKTZ7475M,SCGN19,Urination,NA,Skin,Right,Gender neutral,Female,17 SCGN19,Personal
+JLKTZ7475M,SCGN19,Urination,NA,Clothing,Both,Gender neutral,Female,17 SCGN19,Personal
+JLKTZ7475M,SCGN19,Urination,NA,Flush button,Right,Gender neutral,Female,17 SCGN19,Cubicle
+JLKTZ7475M,SCGN19,Urination,NA,Tap,Right,Gender neutral,Female,17 SCGN19,Hygiene
+JLKTZ7475M,SCGN19,Urination,NA,Door lock,Left,Gender neutral,Female,17 SCGN19,Door
+JLKTZ7475M,SCGN19,Urination,NA,Door handle inside,Left,Gender neutral,Female,17 SCGN19,Exit
+JLKTZ7475M,SCGN19,Urination,NA,Door handle outside,Left,Gender neutral,Female,17 SCGN19,Entry
+DYNJO1349O,SCGN19,Defecation,NA,Cubicle door handle outside,Right,Gender neutral,Female,18 SCGN19,CubicleIN
+DYNJO1349O,SCGN19,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Female,18 SCGN19,CubicleOUT
+DYNJO1349O,SCGN19,Defecation,NA,Door lock,Left,Gender neutral,Female,18 SCGN19,Door
+DYNJO1349O,SCGN19,Defecation,NA,Bottle,Both,Gender neutral,Female,18 SCGN19,Personal
+DYNJO1349O,SCGN19,Defecation,NA,Tap,Left,Gender neutral,Female,18 SCGN19,Hygiene
+DYNJO1349O,SCGN19,Defecation,NA,Tap,Left,Gender neutral,Female,18 SCGN19,Hygiene
+DYNJO1349O,SCGN19,Defecation,NA,Bottle,Right,Gender neutral,Female,18 SCGN19,Personal
+DYNJO1349O,SCGN19,Defecation,NA,Bottle,Both,Gender neutral,Female,18 SCGN19,Personal
+DYNJO1349O,SCGN19,Defecation,NA,Clothing,Both,Gender neutral,Female,18 SCGN19,Personal
+DYNJO1349O,SCGN19,Defecation,NA,Bottle,Right,Gender neutral,Female,18 SCGN19,Personal
+DYNJO1349O,SCGN19,Defecation,NA,Toilet paper,Both,Gender neutral,Female,18 SCGN19,Cubicle
+DYNJO1349O,SCGN19,Defecation,NA,Clothing,Both,Gender neutral,Female,18 SCGN19,Personal
+DYNJO1349O,SCGN19,Defecation,NA,Flush button,Right,Gender neutral,Female,18 SCGN19,Cubicle
+DYNJO1349O,SCGN19,Defecation,NA,Tap,Right,Gender neutral,Female,18 SCGN19,Hygiene
+DYNJO1349O,SCGN19,Defecation,NA,Tap,Right,Gender neutral,Female,18 SCGN19,Hygiene
+DYNJO1349O,SCGN19,Defecation,NA,Soap dispenser,Right,Gender neutral,Female,18 SCGN19,Hygiene
+DYNJO1349O,SCGN19,Defecation,NA,Tap,Right,Gender neutral,Female,18 SCGN19,Hygiene
+DYNJO1349O,SCGN19,Defecation,NA,Bottle,Both,Gender neutral,Female,18 SCGN19,Personal
+DYNJO1349O,SCGN19,Defecation,NA,Tap,Right,Gender neutral,Female,18 SCGN19,Hygiene
+DYNJO1349O,SCGN19,Defecation,NA,Tap,Right,Gender neutral,Female,18 SCGN19,Hygiene
+DYNJO1349O,SCGN19,Defecation,NA,Soap dispenser,Right,Gender neutral,Female,18 SCGN19,Hygiene
+DYNJO1349O,SCGN19,Defecation,NA,Tap,Right,Gender neutral,Female,18 SCGN19,Hygiene
+DYNJO1349O,SCGN19,Defecation,NA,Tap,Right,Gender neutral,Female,18 SCGN19,Hygiene
+DYNJO1349O,SCGN19,Defecation,NA,Tap,Right,Gender neutral,Female,18 SCGN19,Hygiene
+DYNJO1349O,SCGN19,Defecation,NA,Toilet paper,Right,Gender neutral,Female,18 SCGN19,Cubicle
+DYNJO1349O,SCGN19,Defecation,NA,Door lock,Left,Gender neutral,Female,18 SCGN19,Door
+DYNJO1349O,SCGN19,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Female,18 SCGN19,CubicleOUT
+DYNJO1349O,SCGN19,Defecation,NA,Cubicle door handle outside,Right,Gender neutral,Female,18 SCGN19,CubicleIN
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Cubicle door handle outside,Right,Gender neutral,Female,19 SCGN19,CubicleIN
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Cubicle door handle inside,Left,Gender neutral,Female,19 SCGN19,CubicleOUT
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Door lock,Left,Gender neutral,Female,19 SCGN19,Door
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Tap,Right,Gender neutral,Female,19 SCGN19,Hygiene
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Tap,Right,Gender neutral,Female,19 SCGN19,Hygiene
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Tap,Right,Gender neutral,Female,19 SCGN19,Hygiene
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Clothing,Both,Gender neutral,Female,19 SCGN19,Personal
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Menstrual product,Right,Gender neutral,Female,19 SCGN19,MHM
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Skin,Both,Gender neutral,Female,19 SCGN19,Personal
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Clothing,Left,Gender neutral,Female,19 SCGN19,Personal
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Menstrual product,Right,Gender neutral,Female,19 SCGN19,MHM
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Clothing,Both,Gender neutral,Female,19 SCGN19,Personal
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Bottle,Right,Gender neutral,Female,19 SCGN19,Personal
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Skin,Right,Gender neutral,Female,19 SCGN19,Personal
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Bottle,Right,Gender neutral,Female,19 SCGN19,Personal
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Skin,Right,Gender neutral,Female,19 SCGN19,Personal
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Clothing,Left,Gender neutral,Female,19 SCGN19,Personal
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Bottle,Right,Gender neutral,Female,19 SCGN19,Personal
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Toilet paper,Both,Gender neutral,Female,19 SCGN19,Cubicle
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Skin,Right,Gender neutral,Female,19 SCGN19,Personal
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Flush button,Right,Gender neutral,Female,19 SCGN19,Cubicle
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Tap,Right,Gender neutral,Female,19 SCGN19,Hygiene
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Tap,Right,Gender neutral,Female,19 SCGN19,Hygiene
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Soap dispenser,Right,Gender neutral,Female,19 SCGN19,Hygiene
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Tap,Right,Gender neutral,Female,19 SCGN19,Hygiene
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Tap,Right,Gender neutral,Female,19 SCGN19,Hygiene
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Bottle,Right,Gender neutral,Female,19 SCGN19,Personal
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Bottle,Both,Gender neutral,Female,19 SCGN19,Personal
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Tap,Right,Gender neutral,Female,19 SCGN19,Hygiene
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Soap dispenser,Right,Gender neutral,Female,19 SCGN19,Hygiene
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Tap,Right,Gender neutral,Female,19 SCGN19,Hygiene
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Tap,Right,Gender neutral,Female,19 SCGN19,Hygiene
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Toilet paper,Right,Gender neutral,Female,19 SCGN19,Cubicle
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Door lock,Left,Gender neutral,Female,19 SCGN19,Door
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Cubicle door handle inside,Right,Gender neutral,Female,19 SCGN19,CubicleOUT
+XTJFP8510X,SCGN19,MHM,Sanitary pad,Door handle inside,Left,Gender neutral,Female,19 SCGN19,Exit
+QPQGY6516P,SCGN34,Urination,NA,Door handle outside,Both,Gender neutral,Female,22 SCGN34,Entry
+QPQGY6516P,SCGN34,Urination,NA,Cubicle door handle outside,Right,Gender neutral,Female,22 SCGN34,CubicleIN
+QPQGY6516P,SCGN34,Urination,NA,Cubicle door handle inside,Right,Gender neutral,Female,22 SCGN34,CubicleOUT
+QPQGY6516P,SCGN34,Urination,NA,Door lock,Right,Gender neutral,Female,22 SCGN34,Door
+QPQGY6516P,SCGN34,Urination,NA,Bag,Right,Gender neutral,Female,22 SCGN34,Personal
+QPQGY6516P,SCGN34,Urination,NA,Bag,Left,Gender neutral,Female,22 SCGN34,Personal
+QPQGY6516P,SCGN34,Urination,NA,Clothing,Both,Gender neutral,Female,22 SCGN34,Personal
+QPQGY6516P,SCGN34,Urination,NA,Hair,Both,Gender neutral,Female,22 SCGN34,Personal
+QPQGY6516P,SCGN34,Urination,NA,Toilet paper,Right,Gender neutral,Female,22 SCGN34,Cubicle
+QPQGY6516P,SCGN34,Urination,NA,Toilet paper,Both,Gender neutral,Female,22 SCGN34,Cubicle
+QPQGY6516P,SCGN34,Urination,NA,Clothing,Both,Gender neutral,Female,22 SCGN34,Personal
+QPQGY6516P,SCGN34,Urination,NA,Flush button,Right,Gender neutral,Female,22 SCGN34,Cubicle
+QPQGY6516P,SCGN34,Urination,NA,Tap,Right,Gender neutral,Female,22 SCGN34,Hygiene
+QPQGY6516P,SCGN34,Urination,NA,Tap,Right,Gender neutral,Female,22 SCGN34,Hygiene
+QPQGY6516P,SCGN34,Urination,NA,Soap dispenser,Right,Gender neutral,Female,22 SCGN34,Hygiene
+QPQGY6516P,SCGN34,Urination,NA,Tap,Left,Gender neutral,Female,22 SCGN34,Hygiene
+QPQGY6516P,SCGN34,Urination,NA,Tap,Right,Gender neutral,Female,22 SCGN34,Hygiene
+QPQGY6516P,SCGN34,Urination,NA,Clothing,Both,Gender neutral,Female,22 SCGN34,Personal
+QPQGY6516P,SCGN34,Urination,NA,Hair,Both,Gender neutral,Female,22 SCGN34,Personal
+QPQGY6516P,SCGN34,Urination,NA,Door lock,Left,Gender neutral,Female,22 SCGN34,Door
+QPQGY6516P,SCGN34,Urination,NA,Cubicle door handle inside,Right,Gender neutral,Female,22 SCGN34,CubicleOUT
+QPQGY6516P,SCGN34,Urination,NA,Door handle inside,Right,Gender neutral,Female,22 SCGN34,Exit
+RZIYE2941F,SCGN34,Defecation,NA,Door handle outside,Left,Gender neutral,Female,23 SCGN34,Entry
+RZIYE2941F,SCGN34,Defecation,NA,Cubicle door handle outside,Right,Gender neutral,Female,23 SCGN34,CubicleIN
+RZIYE2941F,SCGN34,Defecation,NA,Cubicle door handle inside,Right,Gender neutral,Female,23 SCGN34,CubicleOUT
+RZIYE2941F,SCGN34,Defecation,NA,Door lock,Right,Gender neutral,Female,23 SCGN34,Door
+RZIYE2941F,SCGN34,Defecation,NA,Bag,Right,Gender neutral,Female,23 SCGN34,Personal
+RZIYE2941F,SCGN34,Defecation,NA,Bag,Left,Gender neutral,Female,23 SCGN34,Personal
+RZIYE2941F,SCGN34,Defecation,NA,Clothing,Both,Gender neutral,Female,23 SCGN34,Personal
+RZIYE2941F,SCGN34,Defecation,NA,Hair,Both,Gender neutral,Female,23 SCGN34,Personal
+RZIYE2941F,SCGN34,Defecation,NA,Bag,Both,Gender neutral,Female,23 SCGN34,Personal
+RZIYE2941F,SCGN34,Defecation,NA,Phone,Left,Gender neutral,Female,23 SCGN34,Personal
+RZIYE2941F,SCGN34,Defecation,NA,Phone,Right,Gender neutral,Female,23 SCGN34,Personal
+RZIYE2941F,SCGN34,Defecation,NA,Clothing,Left,Gender neutral,Female,23 SCGN34,Personal
+RZIYE2941F,SCGN34,Defecation,NA,Toilet paper,Both,Gender neutral,Female,23 SCGN34,Cubicle
+RZIYE2941F,SCGN34,Defecation,NA,Clothing,Both,Gender neutral,Female,23 SCGN34,Personal
+RZIYE2941F,SCGN34,Defecation,NA,Hair,Left,Gender neutral,Female,23 SCGN34,Personal
+RZIYE2941F,SCGN34,Defecation,NA,Toilet paper,Both,Gender neutral,Female,23 SCGN34,Cubicle
+RZIYE2941F,SCGN34,Defecation,NA,Hair,Left,Gender neutral,Female,23 SCGN34,Personal
+RZIYE2941F,SCGN34,Defecation,NA,Toilet paper,Both,Gender neutral,Female,23 SCGN34,Cubicle
+RZIYE2941F,SCGN34,Defecation,NA,Soap dispenser,Right,Gender neutral,Female,23 SCGN34,Hygiene
+RZIYE2941F,SCGN34,Defecation,NA,Tap,Left,Gender neutral,Female,23 SCGN34,Hygiene
+RZIYE2941F,SCGN34,Defecation,NA,Clothing,Right,Gender neutral,Female,23 SCGN34,Personal
+RZIYE2941F,SCGN34,Defecation,NA,Tap,Right,Gender neutral,Female,23 SCGN34,Hygiene
+RZIYE2941F,SCGN34,Defecation,NA,Soap dispenser,Right,Gender neutral,Female,23 SCGN34,Hygiene
+RZIYE2941F,SCGN34,Defecation,NA,Tap,Left,Gender neutral,Female,23 SCGN34,Hygiene
+RZIYE2941F,SCGN34,Defecation,NA,Tap,Left,Gender neutral,Female,23 SCGN34,Hygiene
+RZIYE2941F,SCGN34,Defecation,NA,Bag,Both,Gender neutral,Female,23 SCGN34,Personal
+RZIYE2941F,SCGN34,Defecation,NA,Door lock,Left,Gender neutral,Female,23 SCGN34,Door
+RZIYE2941F,SCGN34,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Female,23 SCGN34,CubicleOUT
+RZIYE2941F,SCGN34,Defecation,NA,Door handle inside,Right,Gender neutral,Female,23 SCGN34,Exit
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Door handle outside,Left,Gender neutral,Female,24 SCGN34,Entry
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Cubicle door handle outside,Right,Gender neutral,Female,24 SCGN34,CubicleIN
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Cubicle door handle inside,Right,Gender neutral,Female,24 SCGN34,CubicleOUT
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Door lock,Right,Gender neutral,Female,24 SCGN34,Door
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Bag,Right,Gender neutral,Female,24 SCGN34,Personal
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Hair,Both,Gender neutral,Female,24 SCGN34,Personal
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Bag,Both,Gender neutral,Female,24 SCGN34,Personal
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Menstrual product,Both,Gender neutral,Female,24 SCGN34,MHM
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Bag,Left,Gender neutral,Female,24 SCGN34,Personal
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Hair,Both,Gender neutral,Female,24 SCGN34,Personal
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Toilet paper,Both,Gender neutral,Female,24 SCGN34,Cubicle
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Clothing,Both,Gender neutral,Female,24 SCGN34,Personal
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Skin,Right,Gender neutral,Female,24 SCGN34,Personal
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Hair,Left,Gender neutral,Female,24 SCGN34,Personal
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Menstrual product,Both,Gender neutral,Female,24 SCGN34,MHM
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Tap,Right,Gender neutral,Female,24 SCGN34,Hygiene
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Tap,Right,Gender neutral,Female,24 SCGN34,Hygiene
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,24 SCGN34,Hygiene
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,24 SCGN34,Hygiene
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Menstrual product,Right,Gender neutral,Female,24 SCGN34,MHM
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Menstrual product,Both,Gender neutral,Female,24 SCGN34,MHM
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Clothing,Right,Gender neutral,Female,24 SCGN34,Personal
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Skin,Right,Gender neutral,Female,24 SCGN34,Personal
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Clothing,Both,Gender neutral,Female,24 SCGN34,Personal
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Hair,Left,Gender neutral,Female,24 SCGN34,Personal
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Clothing,Both,Gender neutral,Female,24 SCGN34,Personal
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Flush button,Right,Gender neutral,Female,24 SCGN34,Cubicle
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,24 SCGN34,Hygiene
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Soap dispenser,Right,Gender neutral,Female,24 SCGN34,Hygiene
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,24 SCGN34,Hygiene
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Tap,Right,Gender neutral,Female,24 SCGN34,Hygiene
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,24 SCGN34,Hygiene
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,24 SCGN34,Hygiene
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Bag,Both,Gender neutral,Female,24 SCGN34,Personal
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Clothing,Both,Gender neutral,Female,24 SCGN34,Personal
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Hair,Both,Gender neutral,Female,24 SCGN34,Personal
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Bag,Both,Gender neutral,Female,24 SCGN34,Personal
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Door lock,Left,Gender neutral,Female,24 SCGN34,Door
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Cubicle door handle inside,Left,Gender neutral,Female,24 SCGN34,CubicleOUT
+QPKQP9473Z,SCGN34,MHM,Menstrual cup,Door handle inside,Left,Gender neutral,Female,24 SCGN34,Exit
+MZKSN3800V,SCGN44,Urination,NA,Door handle outside,Right,Gender neutral,Female,35 SCGN44,Entry
+MZKSN3800V,SCGN44,Urination,NA,Cubicle door handle outside,Right,Gender neutral,Female,35 SCGN44,CubicleIN
+MZKSN3800V,SCGN44,Urination,NA,Cubicle door handle inside,Right,Gender neutral,Female,35 SCGN44,CubicleOUT
+MZKSN3800V,SCGN44,Urination,NA,Bottle,Left,Gender neutral,Female,35 SCGN44,Personal
+MZKSN3800V,SCGN44,Urination,NA,Tap,Right,Gender neutral,Female,35 SCGN44,Hygiene
+MZKSN3800V,SCGN44,Urination,NA,Clothing,Both,Gender neutral,Female,35 SCGN44,Personal
+MZKSN3800V,SCGN44,Urination,NA,Bottle,Both,Gender neutral,Female,35 SCGN44,Personal
+MZKSN3800V,SCGN44,Urination,NA,Clothing,Right,Gender neutral,Female,35 SCGN44,Personal
+MZKSN3800V,SCGN44,Urination,NA,Toilet paper,Right,Gender neutral,Female,35 SCGN44,Cubicle
+MZKSN3800V,SCGN44,Urination,NA,Bin outside the cubicle,Left,Gender neutral,Female,35 SCGN44,Hygiene
+MZKSN3800V,SCGN44,Urination,NA,Toilet paper,Right,Gender neutral,Female,35 SCGN44,Cubicle
+MZKSN3800V,SCGN44,Urination,NA,Toilet paper,Both,Gender neutral,Female,35 SCGN44,Cubicle
+MZKSN3800V,SCGN44,Urination,NA,Bottle,Both,Gender neutral,Female,35 SCGN44,Personal
+MZKSN3800V,SCGN44,Urination,NA,Bin outside the cubicle,Left,Gender neutral,Female,35 SCGN44,Hygiene
+MZKSN3800V,SCGN44,Urination,NA,Clothing,Both,Gender neutral,Female,35 SCGN44,Personal
+MZKSN3800V,SCGN44,Urination,NA,Bottle,Left,Gender neutral,Female,35 SCGN44,Personal
+MZKSN3800V,SCGN44,Urination,NA,Tap,Right,Gender neutral,Female,35 SCGN44,Hygiene
+MZKSN3800V,SCGN44,Urination,NA,Tap,Right,Gender neutral,Female,35 SCGN44,Hygiene
+MZKSN3800V,SCGN44,Urination,NA,Bottle,Right,Gender neutral,Female,35 SCGN44,Personal
+MZKSN3800V,SCGN44,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Female,35 SCGN44,CubicleOUT
+MZKSN3800V,SCGN44,Urination,NA,Door handle inside,Left,Gender neutral,Female,35 SCGN44,Exit
+MHNQS9049I,SCGN44,Defecation,NA,Door handle outside,Right,Gender neutral,Female,36 SCGN44,Entry
+MHNQS9049I,SCGN44,Defecation,NA,Cubicle door handle outside,Right,Gender neutral,Female,36 SCGN44,CubicleIN
+MHNQS9049I,SCGN44,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Female,36 SCGN44,CubicleOUT
+MHNQS9049I,SCGN44,Defecation,NA,Bottle,Left,Gender neutral,Female,36 SCGN44,Personal
+MHNQS9049I,SCGN44,Defecation,NA,Tap,Right,Gender neutral,Female,36 SCGN44,Hygiene
+MHNQS9049I,SCGN44,Defecation,NA,Tap,Right,Gender neutral,Female,36 SCGN44,Hygiene
+MHNQS9049I,SCGN44,Defecation,NA,Tap,Right,Gender neutral,Female,36 SCGN44,Hygiene
+MHNQS9049I,SCGN44,Defecation,NA,Bottle,Both,Gender neutral,Female,36 SCGN44,Personal
+MHNQS9049I,SCGN44,Defecation,NA,Tap,Right,Gender neutral,Female,36 SCGN44,Hygiene
+MHNQS9049I,SCGN44,Defecation,NA,Bottle,Right,Gender neutral,Female,36 SCGN44,Personal
+MHNQS9049I,SCGN44,Defecation,NA,Toilet paper,Both,Gender neutral,Female,36 SCGN44,Cubicle
+MHNQS9049I,SCGN44,Defecation,NA,Clothing,Both,Gender neutral,Female,36 SCGN44,Personal
+MHNQS9049I,SCGN44,Defecation,NA,Toilet paper,Both,Gender neutral,Female,36 SCGN44,Cubicle
+MHNQS9049I,SCGN44,Defecation,NA,Bottle,Right,Gender neutral,Female,36 SCGN44,Personal
+MHNQS9049I,SCGN44,Defecation,NA,Bin outside the cubicle,Left,Gender neutral,Female,36 SCGN44,Hygiene
+MHNQS9049I,SCGN44,Defecation,NA,Bottle,Both,Gender neutral,Female,36 SCGN44,Personal
+MHNQS9049I,SCGN44,Defecation,NA,Tap,Right,Gender neutral,Female,36 SCGN44,Hygiene
+MHNQS9049I,SCGN44,Defecation,NA,Tap,Right,Gender neutral,Female,36 SCGN44,Hygiene
+MHNQS9049I,SCGN44,Defecation,NA,Bottle,Right,Gender neutral,Female,36 SCGN44,Personal
+MHNQS9049I,SCGN44,Defecation,NA,Bottle,Both,Gender neutral,Female,36 SCGN44,Personal
+MHNQS9049I,SCGN44,Defecation,NA,Tap,Right,Gender neutral,Female,36 SCGN44,Hygiene
+MHNQS9049I,SCGN44,Defecation,NA,Tap,Right,Gender neutral,Female,36 SCGN44,Hygiene
+MHNQS9049I,SCGN44,Defecation,NA,Bottle,Right,Gender neutral,Female,36 SCGN44,Personal
+MHNQS9049I,SCGN44,Defecation,NA,Bottle,Both,Gender neutral,Female,36 SCGN44,Personal
+MHNQS9049I,SCGN44,Defecation,NA,Tap,Right,Gender neutral,Female,36 SCGN44,Hygiene
+MHNQS9049I,SCGN44,Defecation,NA,Tap,Right,Gender neutral,Female,36 SCGN44,Hygiene
+MHNQS9049I,SCGN44,Defecation,NA,Bottle,Both,Gender neutral,Female,36 SCGN44,Personal
+MHNQS9049I,SCGN44,Defecation,NA,Toilet paper,Both,Gender neutral,Female,36 SCGN44,Cubicle
+MHNQS9049I,SCGN44,Defecation,NA,Bin outside the cubicle,Left,Gender neutral,Female,36 SCGN44,Hygiene
+MHNQS9049I,SCGN44,Defecation,NA,Tap,Right,Gender neutral,Female,36 SCGN44,Hygiene
+MHNQS9049I,SCGN44,Defecation,NA,Tap,Right,Gender neutral,Female,36 SCGN44,Hygiene
+MHNQS9049I,SCGN44,Defecation,NA,Flush button,Right,Gender neutral,Female,36 SCGN44,Cubicle
+MHNQS9049I,SCGN44,Defecation,NA,Tap,Left,Gender neutral,Female,36 SCGN44,Hygiene
+MHNQS9049I,SCGN44,Defecation,NA,Tap,Right,Gender neutral,Female,36 SCGN44,Hygiene
+MHNQS9049I,SCGN44,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Female,36 SCGN44,CubicleOUT
+MHNQS9049I,SCGN44,Defecation,NA,Door handle inside,Left,Gender neutral,Female,36 SCGN44,Exit
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Door handle outside,Right,Gender neutral,Female,37 SCGN44,Entry
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Cubicle door handle outside,Right,Gender neutral,Female,37 SCGN44,CubicleIN
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Cubicle door handle inside,Right,Gender neutral,Female,37 SCGN44,CubicleOUT
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Bottle,Both,Gender neutral,Female,37 SCGN44,Personal
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Menstrual product,Both,Gender neutral,Female,37 SCGN44,MHM
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Clothing,Both,Gender neutral,Female,37 SCGN44,Personal
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Menstrual product,Both,Gender neutral,Female,37 SCGN44,MHM
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Tap,Right,Gender neutral,Female,37 SCGN44,Hygiene
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Tap,Right,Gender neutral,Female,37 SCGN44,Hygiene
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Toilet paper,Right,Gender neutral,Female,37 SCGN44,Cubicle
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Menstrual product,Both,Gender neutral,Female,37 SCGN44,MHM
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Bin outside the cubicle,Right,Gender neutral,Female,37 SCGN44,Hygiene
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Menstrual product,Both,Gender neutral,Female,37 SCGN44,MHM
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Clothing,Both,Gender neutral,Female,37 SCGN44,Personal
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Toilet paper,Right,Gender neutral,Female,37 SCGN44,Cubicle
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Toilet paper,Both,Gender neutral,Female,37 SCGN44,Cubicle
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Bin outside the cubicle,Left,Gender neutral,Female,37 SCGN44,Hygiene
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Tap,Left,Gender neutral,Female,37 SCGN44,Hygiene
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Tap,Right,Gender neutral,Female,37 SCGN44,Hygiene
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Bottle,Left,Gender neutral,Female,37 SCGN44,Personal
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Tap,Left,Gender neutral,Female,37 SCGN44,Hygiene
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Bottle,Both,Gender neutral,Female,37 SCGN44,Personal
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Tap,Right,Gender neutral,Female,37 SCGN44,Hygiene
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Toilet paper,Left,Gender neutral,Female,37 SCGN44,Cubicle
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Bin outside the cubicle,Left,Gender neutral,Female,37 SCGN44,Hygiene
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Tap,Right,Gender neutral,Female,37 SCGN44,Hygiene
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Tap,Right,Gender neutral,Female,37 SCGN44,Hygiene
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Flush button,Right,Gender neutral,Female,37 SCGN44,Cubicle
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Tap,Left,Gender neutral,Female,37 SCGN44,Hygiene
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Tap,Left,Gender neutral,Female,37 SCGN44,Hygiene
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Cubicle door handle inside,Left,Gender neutral,Female,37 SCGN44,CubicleOUT
+HJZHQ0810H,SCGN44,MHM,Sanitary pad,Door handle inside,Left,Gender neutral,Female,37 SCGN44,Exit
+KEXNQ0817S,SCGN45,Urination,NA,Door handle inside,Left,Gender neutral,Female,5 SCGN45,Exit
+KEXNQ0817S,SCGN45,Urination,NA,Cubicle door handle outside,Right,Gender neutral,Female,5 SCGN45,CubicleIN
+KEXNQ0817S,SCGN45,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Female,5 SCGN45,CubicleOUT
+KEXNQ0817S,SCGN45,Urination,NA,Door lock,Right,Gender neutral,Female,5 SCGN45,Door
+KEXNQ0817S,SCGN45,Urination,NA,Toilet paper,Right,Gender neutral,Female,5 SCGN45,Cubicle
+KEXNQ0817S,SCGN45,Urination,NA,Toilet paper,Left,Gender neutral,Female,5 SCGN45,Cubicle
+KEXNQ0817S,SCGN45,Urination,NA,Phone,Left,Gender neutral,Female,5 SCGN45,Personal
+KEXNQ0817S,SCGN45,Urination,NA,Clothing,Both,Gender neutral,Female,5 SCGN45,Personal
+KEXNQ0817S,SCGN45,Urination,NA,Phone,Left,Gender neutral,Female,5 SCGN45,Personal
+KEXNQ0817S,SCGN45,Urination,NA,Toilet paper,Right,Gender neutral,Female,5 SCGN45,Cubicle
+KEXNQ0817S,SCGN45,Urination,NA,Toilet paper,Left,Gender neutral,Female,5 SCGN45,Cubicle
+KEXNQ0817S,SCGN45,Urination,NA,Skin,Right,Gender neutral,Female,5 SCGN45,Personal
+KEXNQ0817S,SCGN45,Urination,NA,Clothing,Both,Gender neutral,Female,5 SCGN45,Personal
+KEXNQ0817S,SCGN45,Urination,NA,Flush button,Right,Gender neutral,Female,5 SCGN45,Cubicle
+KEXNQ0817S,SCGN45,Urination,NA,Phone,Left,Gender neutral,Female,5 SCGN45,Personal
+KEXNQ0817S,SCGN45,Urination,NA,Clothing,Right,Gender neutral,Female,5 SCGN45,Personal
+KEXNQ0817S,SCGN45,Urination,NA,Tap,Right,Gender neutral,Female,5 SCGN45,Hygiene
+KEXNQ0817S,SCGN45,Urination,NA,Soap dispenser,Right,Gender neutral,Female,5 SCGN45,Hygiene
+KEXNQ0817S,SCGN45,Urination,NA,Tap,Right,Gender neutral,Female,5 SCGN45,Hygiene
+KEXNQ0817S,SCGN45,Urination,NA,Tap,Right,Gender neutral,Female,5 SCGN45,Hygiene
+KEXNQ0817S,SCGN45,Urination,NA,Door lock,Right,Gender neutral,Female,5 SCGN45,Door
+KEXNQ0817S,SCGN45,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Female,5 SCGN45,CubicleOUT
+KEXNQ0817S,SCGN45,Urination,NA,Door handle inside,Left,Gender neutral,Female,5 SCGN45,Exit
+DLOKN7118K,SCGN45,Defecation,NA,Door handle outside,Right,Gender neutral,Female,6 SCGN45,Entry
+DLOKN7118K,SCGN45,Defecation,NA,Cubicle door handle outside,Right,Gender neutral,Female,6 SCGN45,CubicleIN
+DLOKN7118K,SCGN45,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Female,6 SCGN45,CubicleOUT
+DLOKN7118K,SCGN45,Defecation,NA,Cubicle door handle inside,Right,Gender neutral,Female,6 SCGN45,CubicleOUT
+DLOKN7118K,SCGN45,Defecation,NA,Door lock,Left,Gender neutral,Female,6 SCGN45,Door
+DLOKN7118K,SCGN45,Defecation,NA,Toilet paper,Right,Gender neutral,Female,6 SCGN45,Cubicle
+DLOKN7118K,SCGN45,Defecation,NA,Toilet paper,Left,Gender neutral,Female,6 SCGN45,Cubicle
+DLOKN7118K,SCGN45,Defecation,NA,Clothing,Both,Gender neutral,Female,6 SCGN45,Personal
+DLOKN7118K,SCGN45,Defecation,NA,Phone,Right,Gender neutral,Female,6 SCGN45,Personal
+DLOKN7118K,SCGN45,Defecation,NA,Clothing,Both,Gender neutral,Female,6 SCGN45,Personal
+DLOKN7118K,SCGN45,Defecation,NA,Clothing,Right,Gender neutral,Female,6 SCGN45,Personal
+DLOKN7118K,SCGN45,Defecation,NA,Clothing,Left,Gender neutral,Female,6 SCGN45,Personal
+DLOKN7118K,SCGN45,Defecation,NA,Toilet paper,Right,Gender neutral,Female,6 SCGN45,Cubicle
+DLOKN7118K,SCGN45,Defecation,NA,Toilet paper,Left,Gender neutral,Female,6 SCGN45,Cubicle
+DLOKN7118K,SCGN45,Defecation,NA,Flush button,Right,Gender neutral,Female,6 SCGN45,Cubicle
+DLOKN7118K,SCGN45,Defecation,NA,Clothing,Left,Gender neutral,Female,6 SCGN45,Personal
+DLOKN7118K,SCGN45,Defecation,NA,Tap,Right,Gender neutral,Female,6 SCGN45,Hygiene
+DLOKN7118K,SCGN45,Defecation,NA,Tap,Right,Gender neutral,Female,6 SCGN45,Hygiene
+DLOKN7118K,SCGN45,Defecation,NA,Soap dispenser,Right,Gender neutral,Female,6 SCGN45,Hygiene
+DLOKN7118K,SCGN45,Defecation,NA,Tap,Right,Gender neutral,Female,6 SCGN45,Hygiene
+DLOKN7118K,SCGN45,Defecation,NA,Tap,Right,Gender neutral,Female,6 SCGN45,Hygiene
+DLOKN7118K,SCGN45,Defecation,NA,Clothing,Right,Gender neutral,Female,6 SCGN45,Personal
+DLOKN7118K,SCGN45,Defecation,NA,Door lock,Left,Gender neutral,Female,6 SCGN45,Door
+DLOKN7118K,SCGN45,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Female,6 SCGN45,CubicleOUT
+DLOKN7118K,SCGN45,Defecation,NA,Door handle inside,Left,Gender neutral,Female,6 SCGN45,Exit
+BHDEJ9157M,SCGN45,MHM,tampons,Door handle outside,Right,Gender neutral,Female,7 SCGN45,Entry
+BHDEJ9157M,SCGN45,MHM,tampons,Cubicle door handle outside,Right,Gender neutral,Female,7 SCGN45,CubicleIN
+BHDEJ9157M,SCGN45,MHM,tampons,Cubicle door handle inside,Right,Gender neutral,Female,7 SCGN45,CubicleOUT
+BHDEJ9157M,SCGN45,MHM,tampons,Door lock,Right,Gender neutral,Female,7 SCGN45,Door
+BHDEJ9157M,SCGN45,MHM,tampons,Phone,Left,Gender neutral,Female,7 SCGN45,Personal
+BHDEJ9157M,SCGN45,MHM,tampons,Clothing,Left,Gender neutral,Female,7 SCGN45,Personal
+BHDEJ9157M,SCGN45,MHM,tampons,Toilet paper,Right,Gender neutral,Female,7 SCGN45,Cubicle
+BHDEJ9157M,SCGN45,MHM,tampons,Toilet paper,Left,Gender neutral,Female,7 SCGN45,Cubicle
+BHDEJ9157M,SCGN45,MHM,tampons,Toilet paper,Right,Gender neutral,Female,7 SCGN45,Cubicle
+BHDEJ9157M,SCGN45,MHM,tampons,Clothing,Both,Gender neutral,Female,7 SCGN45,Personal
+BHDEJ9157M,SCGN45,MHM,tampons,Menstrual product,Both,Gender neutral,Female,7 SCGN45,MHM
+BHDEJ9157M,SCGN45,MHM,tampons,Skin,Right,Gender neutral,Female,7 SCGN45,Personal
+BHDEJ9157M,SCGN45,MHM,tampons,Menstrual product,Both,Gender neutral,Female,7 SCGN45,MHM
+BHDEJ9157M,SCGN45,MHM,tampons,Bin outside the cubicle,Right,Gender neutral,Female,7 SCGN45,Hygiene
+BHDEJ9157M,SCGN45,MHM,tampons,Clothing,Both,Gender neutral,Female,7 SCGN45,Personal
+BHDEJ9157M,SCGN45,MHM,tampons,Flush button,Right,Gender neutral,Female,7 SCGN45,Cubicle
+BHDEJ9157M,SCGN45,MHM,tampons,Tap,Right,Gender neutral,Female,7 SCGN45,Hygiene
+BHDEJ9157M,SCGN45,MHM,tampons,Tap,Right,Gender neutral,Female,7 SCGN45,Hygiene
+BHDEJ9157M,SCGN45,MHM,tampons,Soap dispenser,Right,Gender neutral,Female,7 SCGN45,Hygiene
+BHDEJ9157M,SCGN45,MHM,tampons,Tap,Right,Gender neutral,Female,7 SCGN45,Hygiene
+BHDEJ9157M,SCGN45,MHM,tampons,Tap,Right,Gender neutral,Female,7 SCGN45,Hygiene
+BHDEJ9157M,SCGN45,MHM,tampons,Phone,Right,Gender neutral,Female,7 SCGN45,Personal
+BHDEJ9157M,SCGN45,MHM,tampons,Clothing,Right,Gender neutral,Female,7 SCGN45,Personal
+BHDEJ9157M,SCGN45,MHM,tampons,Door lock,Left,Gender neutral,Female,7 SCGN45,Door
+BHDEJ9157M,SCGN45,MHM,tampons,Cubicle door handle inside,Left,Gender neutral,Female,7 SCGN45,CubicleOUT
+BHDEJ9157M,SCGN45,MHM,tampons,Cubicle door handle outside,Left,Gender neutral,Female,7 SCGN45,CubicleIN
+BHDEJ9157M,SCGN45,MHM,tampons,Door handle inside,Left,Gender neutral,Female,7 SCGN45,Exit
+ZIASC8807S,SCGN46,Urination,NA,Door handle outside,Left,Gender neutral,Male,28 SCGN46,Entry
+ZIASC8807S,SCGN46,Urination,NA,Cubicle door handle outside,Right,Gender neutral,Male,28 SCGN46,CubicleIN
+ZIASC8807S,SCGN46,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Male,28 SCGN46,CubicleOUT
+ZIASC8807S,SCGN46,Urination,NA,Toilet paper,Right,Gender neutral,Male,28 SCGN46,Cubicle
+ZIASC8807S,SCGN46,Urination,NA,Toilet paper,Both,Gender neutral,Male,28 SCGN46,Cubicle
+ZIASC8807S,SCGN46,Urination,NA,Clothing,Both,Gender neutral,Male,28 SCGN46,Personal
+ZIASC8807S,SCGN46,Urination,NA,Skin,Both,Gender neutral,Male,28 SCGN46,Personal
+ZIASC8807S,SCGN46,Urination,NA,Clothing,Both,Gender neutral,Male,28 SCGN46,Personal
+ZIASC8807S,SCGN46,Urination,NA,Toilet paper,Right,Gender neutral,Male,28 SCGN46,Cubicle
+ZIASC8807S,SCGN46,Urination,NA,Toilet paper,Both,Gender neutral,Male,28 SCGN46,Cubicle
+ZIASC8807S,SCGN46,Urination,NA,Flush button,Right,Gender neutral,Male,28 SCGN46,Cubicle
+ZIASC8807S,SCGN46,Urination,NA,Tap,Right,Gender neutral,Male,28 SCGN46,Hygiene
+ZIASC8807S,SCGN46,Urination,NA,Soap dispenser,Right,Gender neutral,Male,28 SCGN46,Hygiene
+ZIASC8807S,SCGN46,Urination,NA,Tap,Right,Gender neutral,Male,28 SCGN46,Hygiene
+ZIASC8807S,SCGN46,Urination,NA,Door handle inside,Left,Gender neutral,Male,28 SCGN46,Exit
+MPVEO3968A,SCGN46,Defecation,NA,Door handle outside,Right,Gender neutral,Male,29 SCGN46,Entry
+MPVEO3968A,SCGN46,Defecation,NA,Cubicle door handle outside,Right,Gender neutral,Male,29 SCGN46,CubicleIN
+MPVEO3968A,SCGN46,Defecation,NA,Clothing,Both,Gender neutral,Male,29 SCGN46,Personal
+MPVEO3968A,SCGN46,Defecation,NA,Skin,Right,Gender neutral,Male,29 SCGN46,Personal
+MPVEO3968A,SCGN46,Defecation,NA,Toilet paper,Both,Gender neutral,Male,29 SCGN46,Cubicle
+MPVEO3968A,SCGN46,Defecation,NA,Toilet surface,Both,Gender neutral,Male,29 SCGN46,Cubicle
+MPVEO3968A,SCGN46,Defecation,NA,Toilet paper,Both,Gender neutral,Male,29 SCGN46,Cubicle
+MPVEO3968A,SCGN46,Defecation,NA,Toilet paper,Both,Gender neutral,Male,29 SCGN46,Cubicle
+MPVEO3968A,SCGN46,Defecation,NA,Toilet paper,Both,Gender neutral,Male,29 SCGN46,Cubicle
+MPVEO3968A,SCGN46,Defecation,NA,Clothing,Right,Gender neutral,Male,29 SCGN46,Personal
+MPVEO3968A,SCGN46,Defecation,NA,Phone,Right,Gender neutral,Male,29 SCGN46,Personal
+MPVEO3968A,SCGN46,Defecation,NA,Phone,Both,Gender neutral,Male,29 SCGN46,Personal
+MPVEO3968A,SCGN46,Defecation,NA,Phone,Right,Gender neutral,Male,29 SCGN46,Personal
+MPVEO3968A,SCGN46,Defecation,NA,Clothing,Both,Gender neutral,Male,29 SCGN46,Personal
+MPVEO3968A,SCGN46,Defecation,NA,Toilet paper,Both,Gender neutral,Male,29 SCGN46,Cubicle
+MPVEO3968A,SCGN46,Defecation,NA,Skin,Right,Gender neutral,Male,29 SCGN46,Personal
+MPVEO3968A,SCGN46,Defecation,NA,Toilet paper,Right,Gender neutral,Male,29 SCGN46,Cubicle
+MPVEO3968A,SCGN46,Defecation,NA,Toilet paper,Both,Gender neutral,Male,29 SCGN46,Cubicle
+MPVEO3968A,SCGN46,Defecation,NA,Skin,Right,Gender neutral,Male,29 SCGN46,Personal
+MPVEO3968A,SCGN46,Defecation,NA,Toilet paper,Right,Gender neutral,Male,29 SCGN46,Cubicle
+MPVEO3968A,SCGN46,Defecation,NA,Toilet paper,Right,Gender neutral,Male,29 SCGN46,Cubicle
+MPVEO3968A,SCGN46,Defecation,NA,Flush button,Right,Gender neutral,Male,29 SCGN46,Cubicle
+MPVEO3968A,SCGN46,Defecation,NA,Tap,Left,Gender neutral,Male,29 SCGN46,Hygiene
+MPVEO3968A,SCGN46,Defecation,NA,Soap dispenser,Right,Gender neutral,Male,29 SCGN46,Hygiene
+MPVEO3968A,SCGN46,Defecation,NA,Soap dispenser,Right,Gender neutral,Male,29 SCGN46,Hygiene
+MPVEO3968A,SCGN46,Defecation,NA,Tap,Left,Gender neutral,Male,29 SCGN46,Hygiene
+MPVEO3968A,SCGN46,Defecation,NA,Flush button,Right,Gender neutral,Male,29 SCGN46,Cubicle
+MPVEO3968A,SCGN46,Defecation,NA,Tap,Left,Gender neutral,Male,29 SCGN46,Hygiene
+MPVEO3968A,SCGN46,Defecation,NA,Soap dispenser,Right,Gender neutral,Male,29 SCGN46,Hygiene
+MPVEO3968A,SCGN46,Defecation,NA,Tap,Right,Gender neutral,Male,29 SCGN46,Hygiene
+MPVEO3968A,SCGN46,Defecation,NA,Door handle inside,Left,Gender neutral,Male,29 SCGN46,Exit
+SXNZK2286Y,SCGN47,Urination,NA,Door handle outside,Left,Gender neutral,Male,38 SCGN47,Entry
+SXNZK2286Y,SCGN47,Urination,NA,Cubicle door handle outside,Right,Gender neutral,Male,38 SCGN47,CubicleIN
+SXNZK2286Y,SCGN47,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Male,38 SCGN47,CubicleOUT
+SXNZK2286Y,SCGN47,Urination,NA,Clothing,Both,Gender neutral,Male,38 SCGN47,Personal
+SXNZK2286Y,SCGN47,Urination,NA,Skin,Right,Gender neutral,Male,38 SCGN47,Personal
+SXNZK2286Y,SCGN47,Urination,NA,Toilet paper,Right,Gender neutral,Male,38 SCGN47,Cubicle
+SXNZK2286Y,SCGN47,Urination,NA,Toilet paper,Both,Gender neutral,Male,38 SCGN47,Cubicle
+SXNZK2286Y,SCGN47,Urination,NA,Clothing,Both,Gender neutral,Male,38 SCGN47,Personal
+SXNZK2286Y,SCGN47,Urination,NA,Flush button,Right,Gender neutral,Male,38 SCGN47,Cubicle
+SXNZK2286Y,SCGN47,Urination,NA,Tap,Left,Gender neutral,Male,38 SCGN47,Hygiene
+SXNZK2286Y,SCGN47,Urination,NA,Tap,Left,Gender neutral,Male,38 SCGN47,Hygiene
+SXNZK2286Y,SCGN47,Urination,NA,Soap dispenser,Right,Gender neutral,Male,38 SCGN47,Hygiene
+SXNZK2286Y,SCGN47,Urination,NA,Tap,Left,Gender neutral,Male,38 SCGN47,Hygiene
+SXNZK2286Y,SCGN47,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Male,38 SCGN47,CubicleOUT
+SXNZK2286Y,SCGN47,Urination,NA,Door handle inside,Left,Gender neutral,Male,38 SCGN47,Exit
+QJBGN6442H,SCGN47,Defecation,NA,Door handle outside,Both,Gender neutral,Male,39 SCGN47,Entry
+QJBGN6442H,SCGN47,Defecation,NA,Cubicle door handle outside,Right,Gender neutral,Male,39 SCGN47,CubicleIN
+QJBGN6442H,SCGN47,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Male,39 SCGN47,CubicleOUT
+QJBGN6442H,SCGN47,Defecation,NA,Clothing,Both,Gender neutral,Male,39 SCGN47,Personal
+QJBGN6442H,SCGN47,Defecation,NA,Toilet paper,Both,Gender neutral,Male,39 SCGN47,Cubicle
+QJBGN6442H,SCGN47,Defecation,NA,Clothing,Both,Gender neutral,Male,39 SCGN47,Personal
+QJBGN6442H,SCGN47,Defecation,NA,Flush button,Right,Gender neutral,Male,39 SCGN47,Cubicle
+QJBGN6442H,SCGN47,Defecation,NA,Tap,Left,Gender neutral,Male,39 SCGN47,Hygiene
+QJBGN6442H,SCGN47,Defecation,NA,Tap,Left,Gender neutral,Male,39 SCGN47,Hygiene
+QJBGN6442H,SCGN47,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Male,39 SCGN47,CubicleOUT
+QJBGN6442H,SCGN47,Defecation,NA,Door handle inside,Left,Gender neutral,Male,39 SCGN47,Exit
+DINUO0423U,SCGN48,Urination,NA,Door handle outside,Left,Gender neutral,Male,40 SCGN48,Entry
+DINUO0423U,SCGN48,Urination,NA,Cubicle door handle outside,Right,Gender neutral,Male,40 SCGN48,CubicleIN
+DINUO0423U,SCGN48,Urination,NA,Tap,Left,Gender neutral,Male,40 SCGN48,Hygiene
+DINUO0423U,SCGN48,Urination,NA,Soap dispenser,Right,Gender neutral,Male,40 SCGN48,Hygiene
+DINUO0423U,SCGN48,Urination,NA,Tap,Left,Gender neutral,Male,40 SCGN48,Hygiene
+DINUO0423U,SCGN48,Urination,NA,Tap,Left,Gender neutral,Male,40 SCGN48,Hygiene
+DINUO0423U,SCGN48,Urination,NA,Toilet paper,Both,Gender neutral,Male,40 SCGN48,Cubicle
+DINUO0423U,SCGN48,Urination,NA,Clothing,Both,Gender neutral,Male,40 SCGN48,Personal
+DINUO0423U,SCGN48,Urination,NA,Bin outside the cubicle,Right,Gender neutral,Male,40 SCGN48,Hygiene
+DINUO0423U,SCGN48,Urination,NA,Clothing,Both,Gender neutral,Male,40 SCGN48,Personal
+DINUO0423U,SCGN48,Urination,NA,Toilet paper,Left,Gender neutral,Male,40 SCGN48,Cubicle
+DINUO0423U,SCGN48,Urination,NA,Tap,Left,Gender neutral,Male,40 SCGN48,Hygiene
+DINUO0423U,SCGN48,Urination,NA,Tap,Left,Gender neutral,Male,40 SCGN48,Hygiene
+DINUO0423U,SCGN48,Urination,NA,Tap,Left,Gender neutral,Male,40 SCGN48,Hygiene
+DINUO0423U,SCGN48,Urination,NA,Tap,Left,Gender neutral,Male,40 SCGN48,Hygiene
+DINUO0423U,SCGN48,Urination,NA,Soap dispenser,Right,Gender neutral,Male,40 SCGN48,Hygiene
+DINUO0423U,SCGN48,Urination,NA,Tap,Left,Gender neutral,Male,40 SCGN48,Hygiene
+DINUO0423U,SCGN48,Urination,NA,Tap,Left,Gender neutral,Male,40 SCGN48,Hygiene
+DINUO0423U,SCGN48,Urination,NA,Tap,Left,Gender neutral,Male,40 SCGN48,Hygiene
+DINUO0423U,SCGN48,Urination,NA,Hair,Right,Gender neutral,Male,40 SCGN48,Personal
+DINUO0423U,SCGN48,Urination,NA,Toilet paper,Right,Gender neutral,Male,40 SCGN48,Cubicle
+DINUO0423U,SCGN48,Urination,NA,Toilet paper,Both,Gender neutral,Male,40 SCGN48,Cubicle
+DINUO0423U,SCGN48,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Male,40 SCGN48,CubicleOUT
+DINUO0423U,SCGN48,Urination,NA,Door handle inside,Left,Gender neutral,Male,40 SCGN48,Exit
+WEZER2472X,SCGN48,Defecation,NA,Door handle outside,Both,Gender neutral,Male,41 SCGN48,Entry
+WEZER2472X,SCGN48,Defecation,NA,Cubicle door handle outside,Right,Gender neutral,Male,41 SCGN48,CubicleIN
+WEZER2472X,SCGN48,Defecation,NA,Tap,Left,Gender neutral,Male,41 SCGN48,Hygiene
+WEZER2472X,SCGN48,Defecation,NA,Soap dispenser,Right,Gender neutral,Male,41 SCGN48,Hygiene
+WEZER2472X,SCGN48,Defecation,NA,Tap,Left,Gender neutral,Male,41 SCGN48,Hygiene
+WEZER2472X,SCGN48,Defecation,NA,Toilet paper,Right,Gender neutral,Male,41 SCGN48,Cubicle
+WEZER2472X,SCGN48,Defecation,NA,Toilet paper,Both,Gender neutral,Male,41 SCGN48,Cubicle
+WEZER2472X,SCGN48,Defecation,NA,Toilet paper,Right,Gender neutral,Male,41 SCGN48,Cubicle
+WEZER2472X,SCGN48,Defecation,NA,Toilet paper,Right,Gender neutral,Male,41 SCGN48,Cubicle
+WEZER2472X,SCGN48,Defecation,NA,Toilet paper,Both,Gender neutral,Male,41 SCGN48,Cubicle
+WEZER2472X,SCGN48,Defecation,NA,Clothing,Both,Gender neutral,Male,41 SCGN48,Personal
+WEZER2472X,SCGN48,Defecation,NA,Phone,Both,Gender neutral,Male,41 SCGN48,Personal
+WEZER2472X,SCGN48,Defecation,NA,Hair,Right,Gender neutral,Male,41 SCGN48,Personal
+WEZER2472X,SCGN48,Defecation,NA,Phone,Both,Gender neutral,Male,41 SCGN48,Personal
+WEZER2472X,SCGN48,Defecation,NA,Clothing,Left,Gender neutral,Male,41 SCGN48,Personal
+WEZER2472X,SCGN48,Defecation,NA,Phone,Right,Gender neutral,Male,41 SCGN48,Personal
+WEZER2472X,SCGN48,Defecation,NA,Clothing,Right,Gender neutral,Male,41 SCGN48,Personal
+WEZER2472X,SCGN48,Defecation,NA,Clothing,Both,Gender neutral,Male,41 SCGN48,Personal
+WEZER2472X,SCGN48,Defecation,NA,Skin,Left,Gender neutral,Male,41 SCGN48,Personal
+WEZER2472X,SCGN48,Defecation,NA,Clothing,Left,Gender neutral,Male,41 SCGN48,Personal
+WEZER2472X,SCGN48,Defecation,NA,Hair,Left,Gender neutral,Male,41 SCGN48,Personal
+WEZER2472X,SCGN48,Defecation,NA,Clothing,Left,Gender neutral,Male,41 SCGN48,Personal
+WEZER2472X,SCGN48,Defecation,NA,Skin,Left,Gender neutral,Male,41 SCGN48,Personal
+WEZER2472X,SCGN48,Defecation,NA,Phone,Right,Gender neutral,Male,41 SCGN48,Personal
+WEZER2472X,SCGN48,Defecation,NA,Tap,Left,Gender neutral,Male,41 SCGN48,Hygiene
+WEZER2472X,SCGN48,Defecation,NA,Soap dispenser,Right,Gender neutral,Male,41 SCGN48,Hygiene
+WEZER2472X,SCGN48,Defecation,NA,Tap,Left,Gender neutral,Male,41 SCGN48,Hygiene
+WEZER2472X,SCGN48,Defecation,NA,Tap,Left,Gender neutral,Male,41 SCGN48,Hygiene
+WEZER2472X,SCGN48,Defecation,NA,Toilet paper,Both,Gender neutral,Male,41 SCGN48,Cubicle
+WEZER2472X,SCGN48,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Male,41 SCGN48,CubicleOUT
+WEZER2472X,SCGN48,Defecation,NA,Door handle inside,Left,Gender neutral,Male,41 SCGN48,Exit
+MWZMQ2971G,SCGN50,Urination,NA,Door handle outside,Right,Gender neutral,Female,25 SCGN50,Entry
+MWZMQ2971G,SCGN50,Urination,NA,Cubicle door handle outside,Right,Gender neutral,Female,25 SCGN50,CubicleIN
+MWZMQ2971G,SCGN50,Urination,NA,Cubicle door handle inside,Right,Gender neutral,Female,25 SCGN50,CubicleOUT
+MWZMQ2971G,SCGN50,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Female,25 SCGN50,CubicleOUT
+MWZMQ2971G,SCGN50,Urination,NA,Door lock,Right,Gender neutral,Female,25 SCGN50,Door
+MWZMQ2971G,SCGN50,Urination,NA,Clothing,Both,Gender neutral,Female,25 SCGN50,Personal
+MWZMQ2971G,SCGN50,Urination,NA,Toilet paper,Both,Gender neutral,Female,25 SCGN50,Cubicle
+MWZMQ2971G,SCGN50,Urination,NA,Skin,Left,Gender neutral,Female,25 SCGN50,Personal
+MWZMQ2971G,SCGN50,Urination,NA,Soap dispenser,Right,Gender neutral,Female,25 SCGN50,Hygiene
+MWZMQ2971G,SCGN50,Urination,NA,Tap,Left,Gender neutral,Female,25 SCGN50,Hygiene
+MWZMQ2971G,SCGN50,Urination,NA,Tap,Right,Gender neutral,Female,25 SCGN50,Hygiene
+MWZMQ2971G,SCGN50,Urination,NA,Clothing,Both,Gender neutral,Female,25 SCGN50,Personal
+MWZMQ2971G,SCGN50,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Female,25 SCGN50,CubicleOUT
+MWZMQ2971G,SCGN50,Urination,NA,Door lock,Right,Gender neutral,Female,25 SCGN50,Door
+MWZMQ2971G,SCGN50,Urination,NA,Door handle inside,Left,Gender neutral,Female,25 SCGN50,Exit
+PMOKV6686V,SCGN50,Defecation,NA,Door handle outside,Right,Gender neutral,Female,26 SCGN50,Entry
+PMOKV6686V,SCGN50,Defecation,NA,Clothing,Right,Gender neutral,Female,26 SCGN50,Personal
+PMOKV6686V,SCGN50,Defecation,NA,Cubicle door handle outside,Right,Gender neutral,Female,26 SCGN50,CubicleIN
+PMOKV6686V,SCGN50,Defecation,NA,Cubicle door handle inside,Right,Gender neutral,Female,26 SCGN50,CubicleOUT
+PMOKV6686V,SCGN50,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Female,26 SCGN50,CubicleOUT
+PMOKV6686V,SCGN50,Defecation,NA,Door lock,Right,Gender neutral,Female,26 SCGN50,Door
+PMOKV6686V,SCGN50,Defecation,NA,Clothing,Both,Gender neutral,Female,26 SCGN50,Personal
+PMOKV6686V,SCGN50,Defecation,NA,Toilet paper,Right,Gender neutral,Female,26 SCGN50,Cubicle
+PMOKV6686V,SCGN50,Defecation,NA,Toilet paper,Both,Gender neutral,Female,26 SCGN50,Cubicle
+PMOKV6686V,SCGN50,Defecation,NA,Clothing,Both,Gender neutral,Female,26 SCGN50,Personal
+PMOKV6686V,SCGN50,Defecation,NA,Hair,Right,Gender neutral,Female,26 SCGN50,Personal
+PMOKV6686V,SCGN50,Defecation,NA,Clothing,Both,Gender neutral,Female,26 SCGN50,Personal
+PMOKV6686V,SCGN50,Defecation,NA,Toilet paper,Right,Gender neutral,Female,26 SCGN50,Cubicle
+PMOKV6686V,SCGN50,Defecation,NA,Toilet paper,Both,Gender neutral,Female,26 SCGN50,Cubicle
+PMOKV6686V,SCGN50,Defecation,NA,Flush button,Right,Gender neutral,Female,26 SCGN50,Cubicle
+PMOKV6686V,SCGN50,Defecation,NA,Soap dispenser,Right,Gender neutral,Female,26 SCGN50,Hygiene
+PMOKV6686V,SCGN50,Defecation,NA,Tap,Left,Gender neutral,Female,26 SCGN50,Hygiene
+PMOKV6686V,SCGN50,Defecation,NA,Tap,Left,Gender neutral,Female,26 SCGN50,Hygiene
+PMOKV6686V,SCGN50,Defecation,NA,Clothing,Both,Gender neutral,Female,26 SCGN50,Personal
+PMOKV6686V,SCGN50,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Female,26 SCGN50,CubicleOUT
+PMOKV6686V,SCGN50,Defecation,NA,Door lock,Right,Gender neutral,Female,26 SCGN50,Door
+PMOKV6686V,SCGN50,Defecation,NA,Door handle inside,Left,Gender neutral,Female,26 SCGN50,Exit
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Door handle outside,Right,Gender neutral,Female,27 SCGN50,Entry
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Clothing,Right,Gender neutral,Female,27 SCGN50,Personal
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Menstrual product,Right,Gender neutral,Female,27 SCGN50,MHM
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Cubicle door handle outside,Right,Gender neutral,Female,27 SCGN50,CubicleIN
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Cubicle door handle inside,Right,Gender neutral,Female,27 SCGN50,CubicleOUT
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Cubicle door handle inside,Left,Gender neutral,Female,27 SCGN50,CubicleOUT
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Door lock,Right,Gender neutral,Female,27 SCGN50,Door
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Clothing,Right,Gender neutral,Female,27 SCGN50,Personal
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Menstrual product,Right,Gender neutral,Female,27 SCGN50,MHM
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Clothing,Both,Gender neutral,Female,27 SCGN50,Personal
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Menstrual product,Both,Gender neutral,Female,27 SCGN50,MHM
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Clothing,Both,Gender neutral,Female,27 SCGN50,Personal
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Skin,Right,Gender neutral,Female,27 SCGN50,Personal
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Toilet paper,Right,Gender neutral,Female,27 SCGN50,Cubicle
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Toilet paper,Both,Gender neutral,Female,27 SCGN50,Cubicle
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Toilet paper,Right,Gender neutral,Female,27 SCGN50,Cubicle
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Skin,Left,Gender neutral,Female,27 SCGN50,Personal
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Toilet paper,Both,Gender neutral,Female,27 SCGN50,Cubicle
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Clothing,Both,Gender neutral,Female,27 SCGN50,Personal
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Toilet paper,Right,Gender neutral,Female,27 SCGN50,Cubicle
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Toilet paper,Both,Gender neutral,Female,27 SCGN50,Cubicle
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Flush button,Right,Gender neutral,Female,27 SCGN50,Cubicle
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Soap dispenser,Right,Gender neutral,Female,27 SCGN50,Hygiene
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Tap,Right,Gender neutral,Female,27 SCGN50,Hygiene
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Tap,Right,Gender neutral,Female,27 SCGN50,Hygiene
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Clothing,Both,Gender neutral,Female,27 SCGN50,Personal
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Cubicle door handle inside,Left,Gender neutral,Female,27 SCGN50,CubicleOUT
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Door lock,Right,Gender neutral,Female,27 SCGN50,Door
+LLVHY6671F,SCGN50,MHM,Sanitary pad,Door handle inside,Left,Gender neutral,Female,27 SCGN50,Exit
+DGZNB8100H,SCGN52,Urination,NA,Door handle outside,Both,Gender neutral,Female,8 SCGN52,Entry
+DGZNB8100H,SCGN52,Urination,NA,Cubicle door handle outside,Right,Gender neutral,Female,8 SCGN52,CubicleIN
+DGZNB8100H,SCGN52,Urination,NA,Cubicle door handle inside,Right,Gender neutral,Female,8 SCGN52,CubicleOUT
+DGZNB8100H,SCGN52,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Female,8 SCGN52,CubicleOUT
+DGZNB8100H,SCGN52,Urination,NA,Door lock,Right,Gender neutral,Female,8 SCGN52,Door
+DGZNB8100H,SCGN52,Urination,NA,Bag,Both,Gender neutral,Female,8 SCGN52,Personal
+DGZNB8100H,SCGN52,Urination,NA,Clothing,Both,Gender neutral,Female,8 SCGN52,Personal
+DGZNB8100H,SCGN52,Urination,NA,Clothing,Both,Gender neutral,Female,8 SCGN52,Personal
+DGZNB8100H,SCGN52,Urination,NA,Toilet paper,Right,Gender neutral,Female,8 SCGN52,Cubicle
+DGZNB8100H,SCGN52,Urination,NA,Toilet paper,Left,Gender neutral,Female,8 SCGN52,Cubicle
+DGZNB8100H,SCGN52,Urination,NA,Clothing,Both,Gender neutral,Female,8 SCGN52,Personal
+DGZNB8100H,SCGN52,Urination,NA,Flush button,Right,Gender neutral,Female,8 SCGN52,Cubicle
+DGZNB8100H,SCGN52,Urination,NA,Soap dispenser,Right,Gender neutral,Female,8 SCGN52,Hygiene
+DGZNB8100H,SCGN52,Urination,NA,Tap,Right,Gender neutral,Female,8 SCGN52,Hygiene
+DGZNB8100H,SCGN52,Urination,NA,Tap,Right,Gender neutral,Female,8 SCGN52,Hygiene
+DGZNB8100H,SCGN52,Urination,NA,Bag,Both,Gender neutral,Female,8 SCGN52,Personal
+DGZNB8100H,SCGN52,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Female,8 SCGN52,CubicleOUT
+DGZNB8100H,SCGN52,Urination,NA,Door lock,Right,Gender neutral,Female,8 SCGN52,Door
+DGZNB8100H,SCGN52,Urination,NA,Door handle inside,Left,Gender neutral,Female,8 SCGN52,Exit
+QWDJJ1190O,SCGN52,Defecation,NA,Door handle outside,Right,Gender neutral,Female,9 SCGN52,Entry
+QWDJJ1190O,SCGN52,Defecation,NA,Cubicle door handle outside,Right,Gender neutral,Female,9 SCGN52,CubicleIN
+QWDJJ1190O,SCGN52,Defecation,NA,Cubicle door handle inside,Right,Gender neutral,Female,9 SCGN52,CubicleOUT
+QWDJJ1190O,SCGN52,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Female,9 SCGN52,CubicleOUT
+QWDJJ1190O,SCGN52,Defecation,NA,Door lock,Right,Gender neutral,Female,9 SCGN52,Door
+QWDJJ1190O,SCGN52,Defecation,NA,Bag,Both,Gender neutral,Female,9 SCGN52,Personal
+QWDJJ1190O,SCGN52,Defecation,NA,Clothing,Both,Gender neutral,Female,9 SCGN52,Personal
+QWDJJ1190O,SCGN52,Defecation,NA,Clothing,Both,Gender neutral,Female,9 SCGN52,Personal
+QWDJJ1190O,SCGN52,Defecation,NA,Toilet paper,Right,Gender neutral,Female,9 SCGN52,Cubicle
+QWDJJ1190O,SCGN52,Defecation,NA,Toilet paper,Left,Gender neutral,Female,9 SCGN52,Cubicle
+QWDJJ1190O,SCGN52,Defecation,NA,Clothing,Both,Gender neutral,Female,9 SCGN52,Personal
+QWDJJ1190O,SCGN52,Defecation,NA,Clothing,Both,Gender neutral,Female,9 SCGN52,Personal
+QWDJJ1190O,SCGN52,Defecation,NA,Toilet paper,Right,Gender neutral,Female,9 SCGN52,Cubicle
+QWDJJ1190O,SCGN52,Defecation,NA,Toilet paper,Left,Gender neutral,Female,9 SCGN52,Cubicle
+QWDJJ1190O,SCGN52,Defecation,NA,Skin,Right,Gender neutral,Female,9 SCGN52,Personal
+QWDJJ1190O,SCGN52,Defecation,NA,Clothing,Both,Gender neutral,Female,9 SCGN52,Personal
+QWDJJ1190O,SCGN52,Defecation,NA,Flush button,Right,Gender neutral,Female,9 SCGN52,Cubicle
+QWDJJ1190O,SCGN52,Defecation,NA,Soap dispenser,Right,Gender neutral,Female,9 SCGN52,Hygiene
+QWDJJ1190O,SCGN52,Defecation,NA,Tap,Right,Gender neutral,Female,9 SCGN52,Hygiene
+QWDJJ1190O,SCGN52,Defecation,NA,Tap,Right,Gender neutral,Female,9 SCGN52,Hygiene
+QWDJJ1190O,SCGN52,Defecation,NA,Bag,Both,Gender neutral,Female,9 SCGN52,Personal
+QWDJJ1190O,SCGN52,Defecation,NA,Door lock,Right,Gender neutral,Female,9 SCGN52,Door
+QWDJJ1190O,SCGN52,Defecation,NA,Door handle inside,Left,Gender neutral,Female,9 SCGN52,Exit
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Door handle outside,Right,Gender neutral,Female,10 SCGN52,Entry
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Cubicle door handle outside,Right,Gender neutral,Female,10 SCGN52,CubicleIN
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Cubicle door handle inside,Left,Gender neutral,Female,10 SCGN52,CubicleOUT
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Cubicle door handle inside,Left,Gender neutral,Female,10 SCGN52,CubicleOUT
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Door lock,Right,Gender neutral,Female,10 SCGN52,Door
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Bag,Both,Gender neutral,Female,10 SCGN52,Personal
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Menstrual product,Right,Gender neutral,Female,10 SCGN52,MHM
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Menstrual product,Both,Gender neutral,Female,10 SCGN52,MHM
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Clothing,Both,Gender neutral,Female,10 SCGN52,Personal
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Menstrual product,Left,Gender neutral,Female,10 SCGN52,MHM
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Menstrual product,Right,Gender neutral,Female,10 SCGN52,MHM
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Menstrual product,Both,Gender neutral,Female,10 SCGN52,MHM
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Toilet paper,Right,Gender neutral,Female,10 SCGN52,Cubicle
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Toilet paper,Left,Gender neutral,Female,10 SCGN52,Cubicle
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Menstrual product,Both,Gender neutral,Female,10 SCGN52,MHM
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Skin,Right,Gender neutral,Female,10 SCGN52,Personal
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Menstrual product,Left,Gender neutral,Female,10 SCGN52,MHM
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Clothing,Both,Gender neutral,Female,10 SCGN52,Personal
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Flush button,Right,Gender neutral,Female,10 SCGN52,Cubicle
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Soap dispenser,Right,Gender neutral,Female,10 SCGN52,Hygiene
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Tap,Left,Gender neutral,Female,10 SCGN52,Hygiene
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Tap,Right,Gender neutral,Female,10 SCGN52,Hygiene
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Tap,Left,Gender neutral,Female,10 SCGN52,Hygiene
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Bag,Both,Gender neutral,Female,10 SCGN52,Personal
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Door lock,Right,Gender neutral,Female,10 SCGN52,Door
+OZEOC2061L,SCGN52,MHM,Sanitary pad,Door handle inside,Left,Gender neutral,Female,10 SCGN52,Exit
+OFIDX8283D,SCGN53,Urination,NA,Door handle outside,Both,Gender neutral,Female,46 SCGN53,Entry
+OFIDX8283D,SCGN53,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Female,46 SCGN53,CubicleOUT
+OFIDX8283D,SCGN53,Urination,NA,Cubicle door handle inside,Right,Gender neutral,Female,46 SCGN53,CubicleOUT
+OFIDX8283D,SCGN53,Urination,NA,Bag,Both,Gender neutral,Female,46 SCGN53,Personal
+OFIDX8283D,SCGN53,Urination,NA,Clothing,Both,Gender neutral,Female,46 SCGN53,Personal
+OFIDX8283D,SCGN53,Urination,NA,Toilet paper,Both,Gender neutral,Female,46 SCGN53,Cubicle
+OFIDX8283D,SCGN53,Urination,NA,Clothing,Both,Gender neutral,Female,46 SCGN53,Personal
+OFIDX8283D,SCGN53,Urination,NA,Flush button,Right,Gender neutral,Female,46 SCGN53,Cubicle
+OFIDX8283D,SCGN53,Urination,NA,Tap,Left,Gender neutral,Female,46 SCGN53,Hygiene
+OFIDX8283D,SCGN53,Urination,NA,Tap,Left,Gender neutral,Female,46 SCGN53,Hygiene
+OFIDX8283D,SCGN53,Urination,NA,Bag,Both,Gender neutral,Female,46 SCGN53,Personal
+OFIDX8283D,SCGN53,Urination,NA,Cubicle door handle inside,Right,Gender neutral,Female,46 SCGN53,CubicleOUT
+OFIDX8283D,SCGN53,Urination,NA,Door handle inside,Right,Gender neutral,Female,46 SCGN53,Exit
+LAPGN1333Z,SCGN53,Defecation,NA,Door handle outside,Left,Gender neutral,Female,47 SCGN53,Entry
+LAPGN1333Z,SCGN53,Defecation,NA,Cubicle door handle outside,Right,Gender neutral,Female,47 SCGN53,CubicleIN
+LAPGN1333Z,SCGN53,Defecation,NA,Bag,Both,Gender neutral,Female,47 SCGN53,Personal
+LAPGN1333Z,SCGN53,Defecation,NA,Clothing,Both,Gender neutral,Female,47 SCGN53,Personal
+LAPGN1333Z,SCGN53,Defecation,NA,Clothing,Both,Gender neutral,Female,47 SCGN53,Personal
+LAPGN1333Z,SCGN53,Defecation,NA,Phone,Left,Gender neutral,Female,47 SCGN53,Personal
+LAPGN1333Z,SCGN53,Defecation,NA,Phone,Both,Gender neutral,Female,47 SCGN53,Personal
+LAPGN1333Z,SCGN53,Defecation,NA,Hair,Left,Gender neutral,Female,47 SCGN53,Personal
+LAPGN1333Z,SCGN53,Defecation,NA,Phone,Both,Gender neutral,Female,47 SCGN53,Personal
+LAPGN1333Z,SCGN53,Defecation,NA,Clothing,Both,Gender neutral,Female,47 SCGN53,Personal
+LAPGN1333Z,SCGN53,Defecation,NA,Toilet paper,Both,Gender neutral,Female,47 SCGN53,Cubicle
+LAPGN1333Z,SCGN53,Defecation,NA,Clothing,Left,Gender neutral,Female,47 SCGN53,Personal
+LAPGN1333Z,SCGN53,Defecation,NA,Toilet paper,Both,Gender neutral,Female,47 SCGN53,Cubicle
+LAPGN1333Z,SCGN53,Defecation,NA,Clothing,Left,Gender neutral,Female,47 SCGN53,Personal
+LAPGN1333Z,SCGN53,Defecation,NA,Toilet paper,Both,Gender neutral,Female,47 SCGN53,Cubicle
+LAPGN1333Z,SCGN53,Defecation,NA,Clothing,Left,Gender neutral,Female,47 SCGN53,Personal
+LAPGN1333Z,SCGN53,Defecation,NA,Toilet paper,Both,Gender neutral,Female,47 SCGN53,Cubicle
+LAPGN1333Z,SCGN53,Defecation,NA,Toilet paper,Right,Gender neutral,Female,47 SCGN53,Cubicle
+LAPGN1333Z,SCGN53,Defecation,NA,Clothing,Both,Gender neutral,Female,47 SCGN53,Personal
+LAPGN1333Z,SCGN53,Defecation,NA,Flush button,Right,Gender neutral,Female,47 SCGN53,Cubicle
+LAPGN1333Z,SCGN53,Defecation,NA,Clothing,Both,Gender neutral,Female,47 SCGN53,Personal
+LAPGN1333Z,SCGN53,Defecation,NA,Tap,Left,Gender neutral,Female,47 SCGN53,Hygiene
+LAPGN1333Z,SCGN53,Defecation,NA,Tap,Left,Gender neutral,Female,47 SCGN53,Hygiene
+LAPGN1333Z,SCGN53,Defecation,NA,Bag,Both,Gender neutral,Female,47 SCGN53,Personal
+LAPGN1333Z,SCGN53,Defecation,NA,Cubicle door handle inside,Right,Gender neutral,Female,47 SCGN53,CubicleOUT
+LAPGN1333Z,SCGN53,Defecation,NA,Door handle inside,Right,Gender neutral,Female,47 SCGN53,Exit
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Door handle outside,Right,Gender neutral,Female,48 SCGN53,Entry
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Cubicle door handle outside,Right,Gender neutral,Female,48 SCGN53,CubicleIN
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Bag,Both,Gender neutral,Female,48 SCGN53,Personal
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,48 SCGN53,Hygiene
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,48 SCGN53,Hygiene
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,48 SCGN53,Hygiene
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,48 SCGN53,Hygiene
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Clothing,Both,Gender neutral,Female,48 SCGN53,Personal
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Menstrual product,Right,Gender neutral,Female,48 SCGN53,MHM
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Menstrual product,Both,Gender neutral,Female,48 SCGN53,MHM
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,48 SCGN53,Hygiene
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,48 SCGN53,Hygiene
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Toilet paper,Right,Gender neutral,Female,48 SCGN53,Cubicle
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Menstrual product,Right,Gender neutral,Female,48 SCGN53,MHM
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Skin,Right,Gender neutral,Female,48 SCGN53,Personal
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Toilet paper,Both,Gender neutral,Female,48 SCGN53,Cubicle
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Clothing,Both,Gender neutral,Female,48 SCGN53,Personal
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Flush button,Right,Gender neutral,Female,48 SCGN53,Cubicle
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,48 SCGN53,Hygiene
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,48 SCGN53,Hygiene
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Soap dispenser,Right,Gender neutral,Female,48 SCGN53,Hygiene
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,48 SCGN53,Hygiene
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Tap,Left,Gender neutral,Female,48 SCGN53,Hygiene
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Bag,Both,Gender neutral,Female,48 SCGN53,Personal
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Cubicle door handle inside,Right,Gender neutral,Female,48 SCGN53,CubicleOUT
+CMXRD5829M,SCGN53,MHM,Menstrual cup,Door handle inside,Right,Gender neutral,Female,48 SCGN53,Exit
+PQNXE9910C,SCGN54,Urination,NA,Door handle outside,Left,Gender neutral,Male,30 SCGN54,Entry
+PQNXE9910C,SCGN54,Urination,NA,Cubicle door handle outside,Right,Gender neutral,Male,30 SCGN54,CubicleIN
+PQNXE9910C,SCGN54,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Male,30 SCGN54,CubicleOUT
+PQNXE9910C,SCGN54,Urination,NA,Toilet surface,Right,Gender neutral,Male,30 SCGN54,Cubicle
+PQNXE9910C,SCGN54,Urination,NA,Clothing,Both,Gender neutral,Male,30 SCGN54,Personal
+PQNXE9910C,SCGN54,Urination,NA,Skin,Both,Gender neutral,Male,30 SCGN54,Personal
+PQNXE9910C,SCGN54,Urination,NA,Clothing,Both,Gender neutral,Male,30 SCGN54,Personal
+PQNXE9910C,SCGN54,Urination,NA,Flush button,Right,Gender neutral,Male,30 SCGN54,Cubicle
+PQNXE9910C,SCGN54,Urination,NA,Soap dispenser,Right,Gender neutral,Male,30 SCGN54,Hygiene
+PQNXE9910C,SCGN54,Urination,NA,Tap,Left,Gender neutral,Male,30 SCGN54,Hygiene
+PQNXE9910C,SCGN54,Urination,NA,Tap,Right,Gender neutral,Male,30 SCGN54,Hygiene
+PQNXE9910C,SCGN54,Urination,NA,Cubicle door handle inside,Left,Gender neutral,Male,30 SCGN54,CubicleOUT
+PQNXE9910C,SCGN54,Urination,NA,Door handle inside,Right,Gender neutral,Male,30 SCGN54,Exit
+PQNXE9910C,SCGN54,Urination,NA,Door handle inside,Left,Gender neutral,Male,30 SCGN54,Exit
+DOSRQ4394R,SCGN54,Defecation,NA,Door handle outside,Left,Gender neutral,Male,31 SCGN54,Entry
+DOSRQ4394R,SCGN54,Defecation,NA,Cubicle door handle outside,Right,Gender neutral,Male,31 SCGN54,CubicleIN
+DOSRQ4394R,SCGN54,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Male,31 SCGN54,CubicleOUT
+DOSRQ4394R,SCGN54,Defecation,NA,Toilet paper,Right,Gender neutral,Male,31 SCGN54,Cubicle
+DOSRQ4394R,SCGN54,Defecation,NA,Toilet paper,Both,Gender neutral,Male,31 SCGN54,Cubicle
+DOSRQ4394R,SCGN54,Defecation,NA,Clothing,Right,Gender neutral,Male,31 SCGN54,Personal
+DOSRQ4394R,SCGN54,Defecation,NA,Phone,Right,Gender neutral,Male,31 SCGN54,Personal
+DOSRQ4394R,SCGN54,Defecation,NA,Phone,Both,Gender neutral,Male,31 SCGN54,Personal
+DOSRQ4394R,SCGN54,Defecation,NA,Clothing,Both,Gender neutral,Male,31 SCGN54,Personal
+DOSRQ4394R,SCGN54,Defecation,NA,Phone,Right,Gender neutral,Male,31 SCGN54,Personal
+DOSRQ4394R,SCGN54,Defecation,NA,Toilet paper,Both,Gender neutral,Male,31 SCGN54,Cubicle
+DOSRQ4394R,SCGN54,Defecation,NA,Clothing,Left,Gender neutral,Male,31 SCGN54,Personal
+DOSRQ4394R,SCGN54,Defecation,NA,Toilet paper,Both,Gender neutral,Male,31 SCGN54,Cubicle
+DOSRQ4394R,SCGN54,Defecation,NA,Clothing,Both,Gender neutral,Male,31 SCGN54,Personal
+DOSRQ4394R,SCGN54,Defecation,NA,Flush button,Right,Gender neutral,Male,31 SCGN54,Cubicle
+DOSRQ4394R,SCGN54,Defecation,NA,Soap dispenser,Right,Gender neutral,Male,31 SCGN54,Hygiene
+DOSRQ4394R,SCGN54,Defecation,NA,Tap,Left,Gender neutral,Male,31 SCGN54,Hygiene
+DOSRQ4394R,SCGN54,Defecation,NA,Toilet paper,Right,Gender neutral,Male,31 SCGN54,Cubicle
+DOSRQ4394R,SCGN54,Defecation,NA,Phone,Right,Gender neutral,Male,31 SCGN54,Personal
+DOSRQ4394R,SCGN54,Defecation,NA,Phone,Left,Gender neutral,Male,31 SCGN54,Personal
+DOSRQ4394R,SCGN54,Defecation,NA,Clothing,Left,Gender neutral,Male,31 SCGN54,Personal
+DOSRQ4394R,SCGN54,Defecation,NA,Cubicle door handle inside,Left,Gender neutral,Male,31 SCGN54,CubicleOUT
+DOSRQ4394R,SCGN54,Defecation,NA,Door handle inside,Left,Gender neutral,Male,31 SCGN54,Exit
+WWKSI8921X,CEM004,Urination,NA,Door handle outside,Left,Men,Male,13 CEM004,Entry
+WWKSI8921X,CEM004,Urination,NA,Clothing,Both,Men,Male,13 CEM004,Personal
+WWKSI8921X,CEM004,Urination,NA,Skin,Both,Men,Male,13 CEM004,Personal
+WWKSI8921X,CEM004,Urination,NA,Clothing,Both,Men,Male,13 CEM004,Personal
+WWKSI8921X,CEM004,Urination,NA,Tap,Right,Men,Male,13 CEM004,Hygiene
+WWKSI8921X,CEM004,Urination,NA,Tap,Right,Men,Male,13 CEM004,Hygiene
+WWKSI8921X,CEM004,Urination,NA,Tap,Right,Men,Male,13 CEM004,Hygiene
+WWKSI8921X,CEM004,Urination,NA,Soap dispenser,Left,Men,Male,13 CEM004,Hygiene
+WWKSI8921X,CEM004,Urination,NA,Tap,Right,Men,Male,13 CEM004,Hygiene
+WWKSI8921X,CEM004,Urination,NA,Door handle inside,Left,Men,Male,13 CEM004,Exit
+AQGEC3083D,CEM004,Defecation,NA,Door handle outside,Right,Men,Male,14 CEM004,Entry
+AQGEC3083D,CEM004,Defecation,NA,Cubicle door handle outside,Right,Men,Male,14 CEM004,CubicleIN
+AQGEC3083D,CEM004,Defecation,NA,Cubicle door handle inside,Right,Men,Male,14 CEM004,CubicleOUT
+AQGEC3083D,CEM004,Defecation,NA,Toilet surface,Left,Men,Male,14 CEM004,Cubicle
+AQGEC3083D,CEM004,Defecation,NA,Phone,Left,Men,Male,14 CEM004,Personal
+AQGEC3083D,CEM004,Defecation,NA,Phone,Both,Men,Male,14 CEM004,Personal
+AQGEC3083D,CEM004,Defecation,NA,Face,Left,Men,Male,14 CEM004,Personal
+AQGEC3083D,CEM004,Defecation,NA,Phone,Left,Men,Male,14 CEM004,Personal
+AQGEC3083D,CEM004,Defecation,NA,Clothing,Both,Men,Male,14 CEM004,Personal
+AQGEC3083D,CEM004,Defecation,NA,Toilet paper,Both,Men,Male,14 CEM004,Cubicle
+AQGEC3083D,CEM004,Defecation,NA,Toilet surface,Right,Men,Male,14 CEM004,Cubicle
+AQGEC3083D,CEM004,Defecation,NA,Flush button,Right,Men,Male,14 CEM004,Cubicle
+AQGEC3083D,CEM004,Defecation,NA,Cubicle door handle inside,Right,Men,Male,14 CEM004,CubicleOUT
+AQGEC3083D,CEM004,Defecation,NA,Tap,Right,Men,Male,14 CEM004,Hygiene
+AQGEC3083D,CEM004,Defecation,NA,Soap dispenser,Right,Men,Male,14 CEM004,Hygiene
+AQGEC3083D,CEM004,Defecation,NA,Door handle inside,Left,Men,Male,14 CEM004,Exit
+YFCSC9838V,CEM012,Urination,NA,Door handle outside,Both,Men,Male,3 CEM012,Entry
+YFCSC9838V,CEM012,Urination,NA,Clothing,Both,Men,Male,3 CEM012,Personal
+YFCSC9838V,CEM012,Urination,NA,Skin,Both,Men,Male,3 CEM012,Personal
+YFCSC9838V,CEM012,Urination,NA,Clothing,Both,Men,Male,3 CEM012,Personal
+YFCSC9838V,CEM012,Urination,NA,Tap,Left,Men,Male,3 CEM012,Hygiene
+YFCSC9838V,CEM012,Urination,NA,Tap,Left,Men,Male,3 CEM012,Hygiene
+YFCSC9838V,CEM012,Urination,NA,Tap,Left,Men,Male,3 CEM012,Hygiene
+YFCSC9838V,CEM012,Urination,NA,Soap dispenser,NA,Men,Male,3 CEM012,Hygiene
+YFCSC9838V,CEM012,Urination,NA,Tap,Left,Men,Male,3 CEM012,Hygiene
+YFCSC9838V,CEM012,Urination,NA,Tap,Left,Men,Male,3 CEM012,Hygiene
+YFCSC9838V,CEM012,Urination,NA,Door handle inside,Left,Men,Male,3 CEM012,Exit
+YLJIF8792Z,CEM012,Defecation,NA,Door handle outside,Right,Men,Male,4 CEM012,Entry
+YLJIF8792Z,CEM012,Defecation,NA,Cubicle door handle outside,Left,Men,Male,4 CEM012,CubicleIN
+YLJIF8792Z,CEM012,Defecation,NA,Cubicle door handle inside,Right,Men,Male,4 CEM012,CubicleOUT
+YLJIF8792Z,CEM012,Defecation,NA,Toilet surface,Right,Men,Male,4 CEM012,Cubicle
+YLJIF8792Z,CEM012,Defecation,NA,Clothing,Right,Men,Male,4 CEM012,Personal
+YLJIF8792Z,CEM012,Defecation,NA,Phone,Right,Men,Male,4 CEM012,Personal
+YLJIF8792Z,CEM012,Defecation,NA,Clothing,Both,Men,Male,4 CEM012,Personal
+YLJIF8792Z,CEM012,Defecation,NA,Toilet paper,Right,Men,Male,4 CEM012,Cubicle
+YLJIF8792Z,CEM012,Defecation,NA,Toilet paper,Both,Men,Male,4 CEM012,Cubicle
+YLJIF8792Z,CEM012,Defecation,NA,Flush button,Right,Men,Male,4 CEM012,Cubicle
+YLJIF8792Z,CEM012,Defecation,NA,Toilet surface,Right,Men,Male,4 CEM012,Cubicle
+YLJIF8792Z,CEM012,Defecation,NA,Cubicle door handle inside,Right,Men,Male,4 CEM012,CubicleOUT
+YLJIF8792Z,CEM012,Defecation,NA,Tap,Left,Men,Male,4 CEM012,Hygiene
+YLJIF8792Z,CEM012,Defecation,NA,Soap dispenser,Left,Men,Male,4 CEM012,Hygiene
+YLJIF8792Z,CEM012,Defecation,NA,Tap,Left,Men,Male,4 CEM012,Hygiene
+YLJIF8792Z,CEM012,Defecation,NA,Tap,Left,Men,Male,4 CEM012,Hygiene
+YLJIF8792Z,CEM012,Defecation,NA,Door handle inside,Left,Men,Male,4 CEM012,Exit
+GVAAY6962U,CEM030,Urination,NA,Door handle outside,Right,Men,Male,7 CEM030,Entry
+GVAAY6962U,CEM030,Urination,NA,Clothing,Both,Men,Male,7 CEM030,Personal
+GVAAY6962U,CEM030,Urination,NA,Skin,Both,Men,Male,7 CEM030,Personal
+GVAAY6962U,CEM030,Urination,NA,Clothing,Both,Men,Male,7 CEM030,Personal
+GVAAY6962U,CEM030,Urination,NA,Tap,Right,Men,Male,7 CEM030,Hygiene
+GVAAY6962U,CEM030,Urination,NA,Tap,Left,Men,Male,7 CEM030,Hygiene
+GVAAY6962U,CEM030,Urination,NA,Tap,Left,Men,Male,7 CEM030,Hygiene
+GVAAY6962U,CEM030,Urination,NA,Clothing,Both,Men,Male,7 CEM030,Personal
+GVAAY6962U,CEM030,Urination,NA,Door handle inside,Left,Men,Male,7 CEM030,Exit
+WLNEL6185R,CEM030,Defecation,NA,Door handle outside,Right,Men,Male,8 CEM030,Entry
+WLNEL6185R,CEM030,Defecation,NA,Cubicle door handle outside,Left,Men,Male,8 CEM030,CubicleIN
+WLNEL6185R,CEM030,Defecation,NA,Cubicle door handle inside,Left,Men,Male,8 CEM030,CubicleOUT
+WLNEL6185R,CEM030,Defecation,NA,Bag,Left,Men,Male,8 CEM030,Personal
+WLNEL6185R,CEM030,Defecation,NA,Clothing,Both,Men,Male,8 CEM030,Personal
+WLNEL6185R,CEM030,Defecation,NA,Toilet surface,Right,Men,Male,8 CEM030,Cubicle
+WLNEL6185R,CEM030,Defecation,NA,Clothing,Both,Men,Male,8 CEM030,Personal
+WLNEL6185R,CEM030,Defecation,NA,Phone,Left,Men,Male,8 CEM030,Personal
+WLNEL6185R,CEM030,Defecation,NA,Clothing,Both,Men,Male,8 CEM030,Personal
+WLNEL6185R,CEM030,Defecation,NA,Face,Left,Men,Male,8 CEM030,Personal
+WLNEL6185R,CEM030,Defecation,NA,Toilet paper,Left,Men,Male,8 CEM030,Cubicle
+WLNEL6185R,CEM030,Defecation,NA,Toilet paper,Both,Men,Male,8 CEM030,Cubicle
+WLNEL6185R,CEM030,Defecation,NA,Skin,Left,Men,Male,8 CEM030,Personal
+WLNEL6185R,CEM030,Defecation,NA,Toilet paper,Left,Men,Male,8 CEM030,Cubicle
+WLNEL6185R,CEM030,Defecation,NA,Toilet paper,Both,Men,Male,8 CEM030,Cubicle
+WLNEL6185R,CEM030,Defecation,NA,Clothing,Both,Men,Male,8 CEM030,Personal
+WLNEL6185R,CEM030,Defecation,NA,Phone,Left,Men,Male,8 CEM030,Personal
+WLNEL6185R,CEM030,Defecation,NA,Flush button,Right,Men,Male,8 CEM030,Cubicle
+WLNEL6185R,CEM030,Defecation,NA,Bag,Both,Men,Male,8 CEM030,Personal
+WLNEL6185R,CEM030,Defecation,NA,Cubicle door handle inside,Right,Men,Male,8 CEM030,CubicleOUT
+WLNEL6185R,CEM030,Defecation,NA,Tap,Right,Men,Male,8 CEM030,Hygiene
+WLNEL6185R,CEM030,Defecation,NA,Tap,Left,Men,Male,8 CEM030,Hygiene
+WLNEL6185R,CEM030,Defecation,NA,Tap,Left,Men,Male,8 CEM030,Hygiene
+WLNEL6185R,CEM030,Defecation,NA,Soap dispenser,Left,Men,Male,8 CEM030,Hygiene
+WLNEL6185R,CEM030,Defecation,NA,Tap,Right,Men,Male,8 CEM030,Hygiene
+WLNEL6185R,CEM030,Defecation,NA,Tap,Left,Men,Male,8 CEM030,Hygiene
+WLNEL6185R,CEM030,Defecation,NA,Tap,Right,Men,Male,8 CEM030,Hygiene
+WLNEL6185R,CEM030,Defecation,NA,Tap,Left,Men,Male,8 CEM030,Hygiene
+WLNEL6185R,CEM030,Defecation,NA,Door handle inside,Left,Men,Male,8 CEM030,Exit
+MKJLK1002K,CEM036,Urination,NA,Door handle outside,Right,Men,Male,5 CEM036,Entry
+MKJLK1002K,CEM036,Urination,NA,Clothing,Both,Men,Male,5 CEM036,Personal
+MKJLK1002K,CEM036,Urination,NA,Skin,Both,Men,Male,5 CEM036,Personal
+MKJLK1002K,CEM036,Urination,NA,Clothing,Both,Men,Male,5 CEM036,Personal
+MKJLK1002K,CEM036,Urination,NA,Soap dispenser,Left,Men,Male,5 CEM036,Hygiene
+MKJLK1002K,CEM036,Urination,NA,Tap,Left,Men,Male,5 CEM036,Hygiene
+MKJLK1002K,CEM036,Urination,NA,Tap,Left,Men,Male,5 CEM036,Hygiene
+MKJLK1002K,CEM036,Urination,NA,Door handle inside,Left,Men,Male,5 CEM036,Exit
+KXVQO9154M,CEM036,Defecation,NA,Door handle outside,Right,Men,Male,6 CEM036,Entry
+KXVQO9154M,CEM036,Defecation,NA,Bottle,Right,Men,Male,6 CEM036,Personal
+KXVQO9154M,CEM036,Defecation,NA,Tap,Left,Men,Male,6 CEM036,Hygiene
+KXVQO9154M,CEM036,Defecation,NA,Tap,Left,Men,Male,6 CEM036,Hygiene
+KXVQO9154M,CEM036,Defecation,NA,Flush button,Right,Men,Male,6 CEM036,Cubicle
+KXVQO9154M,CEM036,Defecation,NA,Cubicle door handle inside,Right,Men,Male,6 CEM036,CubicleOUT
+KXVQO9154M,CEM036,Defecation,NA,Toilet surface,Right,Men,Male,6 CEM036,Cubicle
+KXVQO9154M,CEM036,Defecation,NA,Clothing,Right,Men,Male,6 CEM036,Personal
+KXVQO9154M,CEM036,Defecation,NA,Phone,Right,Men,Male,6 CEM036,Personal
+KXVQO9154M,CEM036,Defecation,NA,Toilet paper,Both,Men,Male,6 CEM036,Cubicle
+KXVQO9154M,CEM036,Defecation,NA,Clothing,Right,Men,Male,6 CEM036,Personal
+KXVQO9154M,CEM036,Defecation,NA,Tap,Left,Men,Male,6 CEM036,Hygiene
+KXVQO9154M,CEM036,Defecation,NA,Bottle,Left,Men,Male,6 CEM036,Personal
+KXVQO9154M,CEM036,Defecation,NA,Soap dispenser,Left,Men,Male,6 CEM036,Hygiene
+KXVQO9154M,CEM036,Defecation,NA,Soap dispenser,Left,Men,Male,6 CEM036,Hygiene
+KXVQO9154M,CEM036,Defecation,NA,Tap,Left,Men,Male,6 CEM036,Hygiene
+KXVQO9154M,CEM036,Defecation,NA,Tap,Left,Men,Male,6 CEM036,Hygiene
+KXVQO9154M,CEM036,Defecation,NA,Tap,Left,Men,Male,6 CEM036,Hygiene
+KXVQO9154M,CEM036,Defecation,NA,Tap,Left,Men,Male,6 CEM036,Hygiene
+KXVQO9154M,CEM036,Defecation,NA,Door handle inside,Left,Men,Male,6 CEM036,Exit
+RGVRJ4816I,CEM037,Urination,NA,Door handle outside,Right,Men,Male,1 CEM037,Entry
+RGVRJ4816I,CEM037,Urination,NA,Clothing,Both,Men,Male,1 CEM037,Personal
+RGVRJ4816I,CEM037,Urination,NA,Skin,Both,Men,Male,1 CEM037,Personal
+RGVRJ4816I,CEM037,Urination,NA,Clothing,Both,Men,Male,1 CEM037,Personal
+RGVRJ4816I,CEM037,Urination,NA,Tap,Left,Men,Male,1 CEM037,Hygiene
+RGVRJ4816I,CEM037,Urination,NA,Tap,Right,Men,Male,1 CEM037,Hygiene
+RGVRJ4816I,CEM037,Urination,NA,Soap dispenser,Right,Men,Male,1 CEM037,Hygiene
+RGVRJ4816I,CEM037,Urination,NA,Tap,Left,Men,Male,1 CEM037,Hygiene
+RGVRJ4816I,CEM037,Urination,NA,Tap,Right,Men,Male,1 CEM037,Hygiene
+RGVRJ4816I,CEM037,Urination,NA,Tap,Left,Men,Male,1 CEM037,Hygiene
+RGVRJ4816I,CEM037,Urination,NA,Tap,Right,Men,Male,1 CEM037,Hygiene
+RGVRJ4816I,CEM037,Urination,NA,Door handle inside,Right,Men,Male,1 CEM037,Exit
+YPEMG6969P,CEM037,Defecation,NA,Door handle outside,Right,Men,Male,2 CEM037,Entry
+YPEMG6969P,CEM037,Defecation,NA,Cubicle door handle outside,Left,Men,Male,2 CEM037,CubicleIN
+YPEMG6969P,CEM037,Defecation,NA,Cubicle door handle inside,Right,Men,Male,2 CEM037,CubicleOUT
+YPEMG6969P,CEM037,Defecation,NA,Toilet surface,Right,Men,Male,2 CEM037,Cubicle
+YPEMG6969P,CEM037,Defecation,NA,Clothing,Both,Men,Male,2 CEM037,Personal
+YPEMG6969P,CEM037,Defecation,NA,Phone,Right,Men,Male,2 CEM037,Personal
+YPEMG6969P,CEM037,Defecation,NA,Phone,Both,Men,Male,2 CEM037,Personal
+YPEMG6969P,CEM037,Defecation,NA,Clothing,Both,Men,Male,2 CEM037,Personal
+YPEMG6969P,CEM037,Defecation,NA,Toilet paper,Right,Men,Male,2 CEM037,Cubicle
+YPEMG6969P,CEM037,Defecation,NA,Toilet paper,Both,Men,Male,2 CEM037,Cubicle
+YPEMG6969P,CEM037,Defecation,NA,Toilet surface,Right,Men,Male,2 CEM037,Cubicle
+YPEMG6969P,CEM037,Defecation,NA,Tap,Left,Men,Male,2 CEM037,Hygiene
+YPEMG6969P,CEM037,Defecation,NA,Tap,Right,Men,Male,2 CEM037,Hygiene
+YPEMG6969P,CEM037,Defecation,NA,Soap dispenser,Right,Men,Male,2 CEM037,Hygiene
+YPEMG6969P,CEM037,Defecation,NA,Tap,Left,Men,Male,2 CEM037,Hygiene
+YPEMG6969P,CEM037,Defecation,NA,Tap,Right,Men,Male,2 CEM037,Hygiene
+YPEMG6969P,CEM037,Defecation,NA,Bottle,Right,Men,Male,2 CEM037,Personal
+YPEMG6969P,CEM037,Defecation,NA,Bottle,Left,Men,Male,2 CEM037,Personal
+YPEMG6969P,CEM037,Defecation,NA,Door handle inside,Left,Men,Male,2 CEM037,Exit
+SAZVN4801R,CEM039,Urination,NA,Door handle outside,Right,Men,Male,9 CEM039,Entry
+SAZVN4801R,CEM039,Urination,NA,Clothing,Both,Men,Male,9 CEM039,Personal
+SAZVN4801R,CEM039,Urination,NA,Skin,Both,Men,Male,9 CEM039,Personal
+SAZVN4801R,CEM039,Urination,NA,Clothing,Both,Men,Male,9 CEM039,Personal
+SAZVN4801R,CEM039,Urination,NA,Phone,Right,Men,Male,9 CEM039,Personal
+SAZVN4801R,CEM039,Urination,NA,Tap,Left,Men,Male,9 CEM039,Hygiene
+SAZVN4801R,CEM039,Urination,NA,Tap,Left,Men,Male,9 CEM039,Hygiene
+SAZVN4801R,CEM039,Urination,NA,Door handle inside,Left,Men,Male,9 CEM039,Exit
+AOIIZ4309O,CEM039,Defecation,NA,Door handle outside,Right,Men,Male,10 CEM039,Entry
+AOIIZ4309O,CEM039,Defecation,NA,Cubicle door handle outside,Left,Men,Male,10 CEM039,CubicleIN
+AOIIZ4309O,CEM039,Defecation,NA,Cubicle door handle inside,Right,Men,Male,10 CEM039,CubicleOUT
+AOIIZ4309O,CEM039,Defecation,NA,Clothing,Both,Men,Male,10 CEM039,Personal
+AOIIZ4309O,CEM039,Defecation,NA,Toilet surface,Right,Men,Male,10 CEM039,Cubicle
+AOIIZ4309O,CEM039,Defecation,NA,Toilet paper,Right,Men,Male,10 CEM039,Cubicle
+AOIIZ4309O,CEM039,Defecation,NA,Toilet paper,Both,Men,Male,10 CEM039,Cubicle
+AOIIZ4309O,CEM039,Defecation,NA,Flush button,Right,Men,Male,10 CEM039,Cubicle
+AOIIZ4309O,CEM039,Defecation,NA,Clothing,Both,Men,Male,10 CEM039,Personal
+AOIIZ4309O,CEM039,Defecation,NA,Cubicle door handle inside,Right,Men,Male,10 CEM039,CubicleOUT
+AOIIZ4309O,CEM039,Defecation,NA,Soap dispenser,Left,Men,Male,10 CEM039,Hygiene
+AOIIZ4309O,CEM039,Defecation,NA,Tap,Left,Men,Male,10 CEM039,Hygiene
+AOIIZ4309O,CEM039,Defecation,NA,Tap,Right,Men,Male,10 CEM039,Hygiene
+AOIIZ4309O,CEM039,Defecation,NA,Tap,Left,Men,Male,10 CEM039,Hygiene
+AOIIZ4309O,CEM039,Defecation,NA,Tap,Left,Men,Male,10 CEM039,Hygiene
+AOIIZ4309O,CEM039,Defecation,NA,Tap,Right,Men,Male,10 CEM039,Hygiene
+AOIIZ4309O,CEM039,Defecation,NA,Cubicle door handle inside,Right,Men,Male,10 CEM039,CubicleOUT
+AOIIZ4309O,CEM039,Defecation,NA,Soap dispenser,Left,Men,Male,10 CEM039,Hygiene
+AOIIZ4309O,CEM039,Defecation,NA,Tap,Left,Men,Male,10 CEM039,Hygiene
+AOIIZ4309O,CEM039,Defecation,NA,Tap,Right,Men,Male,10 CEM039,Hygiene
+AOIIZ4309O,CEM039,Defecation,NA,Tap,Left,Men,Male,10 CEM039,Hygiene
+AOIIZ4309O,CEM039,Defecation,NA,Tap,Left,Men,Male,10 CEM039,Hygiene
+AOIIZ4309O,CEM039,Defecation,NA,Tap,Left,Men,Male,10 CEM039,Hygiene
+AOIIZ4309O,CEM039,Defecation,NA,Door handle inside,Left,Men,Male,10 CEM039,Exit
+OITXE1951B,CEM041,Urination,NA,Door handle outside,Right,Men,Male,15 CEM041,Entry
+OITXE1951B,CEM041,Urination,NA,Clothing,Both,Men,Male,15 CEM041,Personal
+OITXE1951B,CEM041,Urination,NA,Skin,Both,Men,Male,15 CEM041,Personal
+OITXE1951B,CEM041,Urination,NA,Clothing,Both,Men,Male,15 CEM041,Personal
+OITXE1951B,CEM041,Urination,NA,Soap dispenser,Left,Men,Male,15 CEM041,Hygiene
+OITXE1951B,CEM041,Urination,NA,Soap dispenser,Left,Men,Male,15 CEM041,Hygiene
+OITXE1951B,CEM041,Urination,NA,Tap,Right,Men,Male,15 CEM041,Hygiene
+OITXE1951B,CEM041,Urination,NA,Tap,Right,Men,Male,15 CEM041,Hygiene
+OITXE1951B,CEM041,Urination,NA,Tap,Right,Men,Male,15 CEM041,Hygiene
+OITXE1951B,CEM041,Urination,NA,Face,Left,Men,Male,15 CEM041,Personal
+OITXE1951B,CEM041,Urination,NA,Door handle inside,Left,Men,Male,15 CEM041,Exit
+VUSDO0655V,CEM041,Defecation,NA,Door handle outside,Left,Men,Male,16 CEM041,Entry
+VUSDO0655V,CEM041,Defecation,NA,Clothing,Right,Men,Male,16 CEM041,Personal
+VUSDO0655V,CEM041,Defecation,NA,Cubicle door handle outside,Left,Men,Male,16 CEM041,CubicleIN
+VUSDO0655V,CEM041,Defecation,NA,Cubicle door handle inside,Right,Men,Male,16 CEM041,CubicleOUT
+VUSDO0655V,CEM041,Defecation,NA,Toilet surface,Right,Men,Male,16 CEM041,Cubicle
+VUSDO0655V,CEM041,Defecation,NA,Toilet paper,Left,Men,Male,16 CEM041,Cubicle
+VUSDO0655V,CEM041,Defecation,NA,Toilet paper,Both,Men,Male,16 CEM041,Cubicle
+VUSDO0655V,CEM041,Defecation,NA,Flush button,Right,Men,Male,16 CEM041,Cubicle
+VUSDO0655V,CEM041,Defecation,NA,Cubicle door handle inside,Right,Men,Male,16 CEM041,CubicleOUT
+VUSDO0655V,CEM041,Defecation,NA,Soap dispenser,Right,Men,Male,16 CEM041,Hygiene
+VUSDO0655V,CEM041,Defecation,NA,Tap,Right,Men,Male,16 CEM041,Hygiene
+VUSDO0655V,CEM041,Defecation,NA,Tap,Left,Men,Male,16 CEM041,Hygiene
+VUSDO0655V,CEM041,Defecation,NA,Tap,Right,Men,Male,16 CEM041,Hygiene
+VUSDO0655V,CEM041,Defecation,NA,Tap,Left,Men,Male,16 CEM041,Hygiene
+VUSDO0655V,CEM041,Defecation,NA,Tap,Right,Men,Male,16 CEM041,Hygiene
+VUSDO0655V,CEM041,Defecation,NA,Soap dispenser,Left,Men,Male,16 CEM041,Hygiene
+VUSDO0655V,CEM041,Defecation,NA,Tap,Right,Men,Male,16 CEM041,Hygiene
+VUSDO0655V,CEM041,Defecation,NA,Tap,Left,Men,Male,16 CEM041,Hygiene
+VUSDO0655V,CEM041,Defecation,NA,Tap,Right,Men,Male,16 CEM041,Hygiene
+VUSDO0655V,CEM041,Defecation,NA,Door handle inside,Left,Men,Male,16 CEM041,Exit
+OTTXE1060Z,CEM010,Urination,NA,Door handle outside,Both,Men,Male,23 CEM010,Entry
+OTTXE1060Z,CEM010,Urination,NA,Clothing,Both,Men,Male,23 CEM010,Personal
+OTTXE1060Z,CEM010,Urination,NA,Skin,Both,Men,Male,23 CEM010,Personal
+OTTXE1060Z,CEM010,Urination,NA,Clothing,Both,Men,Male,23 CEM010,Personal
+OTTXE1060Z,CEM010,Urination,NA,Door handle inside,NA,Men,Male,23 CEM010,Exit
+OTTXE1060Z,CEM010,Urination,NA,Tap,Right,Men,Male,23 CEM010,Hygiene
+OTTXE1060Z,CEM010,Urination,NA,Tap,Left,Men,Male,23 CEM010,Hygiene
+OTTXE1060Z,CEM010,Urination,NA,Soap dispenser,Left,Men,Male,23 CEM010,Hygiene
+OTTXE1060Z,CEM010,Urination,NA,Tap,Right,Men,Male,23 CEM010,Hygiene
+OTTXE1060Z,CEM010,Urination,NA,Tap,Left,Men,Male,23 CEM010,Hygiene
+OTTXE1060Z,CEM010,Urination,NA,Tap,Right,Men,Male,23 CEM010,Hygiene
+OTTXE1060Z,CEM010,Urination,NA,Tap,Left,Men,Male,23 CEM010,Hygiene
+OTTXE1060Z,CEM010,Urination,NA,Door handle inside,Left,Men,Male,23 CEM010,Exit
+BNAKY1170W,CEM010,Defecation,NA,Door handle outside,Right,Men,Male,24 CEM010,Entry
+BNAKY1170W,CEM010,Defecation,NA,Cubicle door handle outside,Left,Men,Male,24 CEM010,CubicleIN
+BNAKY1170W,CEM010,Defecation,NA,Cubicle door handle inside,Right,Men,Male,24 CEM010,CubicleOUT
+BNAKY1170W,CEM010,Defecation,NA,Bag,Both,Men,Male,24 CEM010,Personal
+BNAKY1170W,CEM010,Defecation,NA,Clothing,Both,Men,Male,24 CEM010,Personal
+BNAKY1170W,CEM010,Defecation,NA,Phone,Both,Men,Male,24 CEM010,Personal
+BNAKY1170W,CEM010,Defecation,NA,Phone,Right,Men,Male,24 CEM010,Personal
+BNAKY1170W,CEM010,Defecation,NA,Clothing,Both,Men,Male,24 CEM010,Personal
+BNAKY1170W,CEM010,Defecation,NA,Toilet paper,Right,Men,Male,24 CEM010,Cubicle
+BNAKY1170W,CEM010,Defecation,NA,Toilet paper,Both,Men,Male,24 CEM010,Cubicle
+BNAKY1170W,CEM010,Defecation,NA,Bag,Left,Men,Male,24 CEM010,Personal
+BNAKY1170W,CEM010,Defecation,NA,Flush button,Right,Men,Male,24 CEM010,Cubicle
+BNAKY1170W,CEM010,Defecation,NA,Cubicle door handle inside,Right,Men,Male,24 CEM010,CubicleOUT
+BNAKY1170W,CEM010,Defecation,NA,Clothing,Both,Men,Male,24 CEM010,Personal
+BNAKY1170W,CEM010,Defecation,NA,Tap,Left,Men,Male,24 CEM010,Hygiene
+BNAKY1170W,CEM010,Defecation,NA,Tap,Right,Men,Male,24 CEM010,Hygiene
+BNAKY1170W,CEM010,Defecation,NA,Soap dispenser,Left,Men,Male,24 CEM010,Hygiene
+BNAKY1170W,CEM010,Defecation,NA,Tap,Right,Men,Male,24 CEM010,Hygiene
+BNAKY1170W,CEM010,Defecation,NA,Tap,Left,Men,Male,24 CEM010,Hygiene
+BNAKY1170W,CEM010,Defecation,NA,Tap,Right,Men,Male,24 CEM010,Hygiene
+BNAKY1170W,CEM010,Defecation,NA,Tap,Left,Men,Male,24 CEM010,Hygiene
+BNAKY1170W,CEM010,Defecation,NA,Door handle inside,Left,Men,Male,24 CEM010,Exit
+ISXGU1494Q,SCGN13,Urination,NA,Door handle outside,Right,Men,Male,19 SCGN13,Entry
+ISXGU1494Q,SCGN13,Urination,NA,Clothing,Both,Men,Male,19 SCGN13,Personal
+ISXGU1494Q,SCGN13,Urination,NA,Skin,Both,Men,Male,19 SCGN13,Personal
+ISXGU1494Q,SCGN13,Urination,NA,Clothing,Both,Men,Male,19 SCGN13,Personal
+ISXGU1494Q,SCGN13,Urination,NA,Soap dispenser,Right,Men,Male,19 SCGN13,Hygiene
+ISXGU1494Q,SCGN13,Urination,NA,Tap,Right,Men,Male,19 SCGN13,Hygiene
+ISXGU1494Q,SCGN13,Urination,NA,Face,Both,Men,Male,19 SCGN13,Personal
+ISXGU1494Q,SCGN13,Urination,NA,Tap,Right,Men,Male,19 SCGN13,Hygiene
+ISXGU1494Q,SCGN13,Urination,NA,Toilet paper,Both,Men,Male,19 SCGN13,Cubicle
+ISXGU1494Q,SCGN13,Urination,NA,Soap dispenser,Right,Men,Male,19 SCGN13,Hygiene
+ISXGU1494Q,SCGN13,Urination,NA,Tap,Right,Men,Male,19 SCGN13,Hygiene
+ISXGU1494Q,SCGN13,Urination,NA,Tap,Right,Men,Male,19 SCGN13,Hygiene
+ISXGU1494Q,SCGN13,Urination,NA,Toilet paper,Right,Men,Male,19 SCGN13,Cubicle
+ISXGU1494Q,SCGN13,Urination,NA,Door handle inside,Left,Men,Male,19 SCGN13,Exit
+YBLLK6521R,SCGN13,Defecation,NA,Door handle outside,Both,Men,Male,20 SCGN13,Entry
+YBLLK6521R,SCGN13,Defecation,NA,Cubicle door handle outside,Left,Men,Male,20 SCGN13,CubicleIN
+YBLLK6521R,SCGN13,Defecation,NA,Cubicle door handle inside,Left,Men,Male,20 SCGN13,CubicleOUT
+YBLLK6521R,SCGN13,Defecation,NA,Toilet paper,Right,Men,Male,20 SCGN13,Cubicle
+YBLLK6521R,SCGN13,Defecation,NA,Toilet paper,Both,Men,Male,20 SCGN13,Cubicle
+YBLLK6521R,SCGN13,Defecation,NA,Toilet surface,Left,Men,Male,20 SCGN13,Cubicle
+YBLLK6521R,SCGN13,Defecation,NA,Face,Left,Men,Male,20 SCGN13,Personal
+YBLLK6521R,SCGN13,Defecation,NA,Clothing,Both,Men,Male,20 SCGN13,Personal
+YBLLK6521R,SCGN13,Defecation,NA,Phone,Both,Men,Male,20 SCGN13,Personal
+YBLLK6521R,SCGN13,Defecation,NA,Face,Left,Men,Male,20 SCGN13,Personal
+YBLLK6521R,SCGN13,Defecation,NA,Toilet paper,Right,Men,Male,20 SCGN13,Cubicle
+YBLLK6521R,SCGN13,Defecation,NA,Clothing,Both,Men,Male,20 SCGN13,Personal
+YBLLK6521R,SCGN13,Defecation,NA,Toilet surface,Left,Men,Male,20 SCGN13,Cubicle
+YBLLK6521R,SCGN13,Defecation,NA,Flush button,Right,Men,Male,20 SCGN13,Cubicle
+YBLLK6521R,SCGN13,Defecation,NA,Cubicle door handle inside,Left,Men,Male,20 SCGN13,CubicleOUT
+YBLLK6521R,SCGN13,Defecation,NA,Soap dispenser,Right,Men,Male,20 SCGN13,Hygiene
+YBLLK6521R,SCGN13,Defecation,NA,Tap,Right,Men,Male,20 SCGN13,Hygiene
+YBLLK6521R,SCGN13,Defecation,NA,Tap,Right,Men,Male,20 SCGN13,Hygiene
+YBLLK6521R,SCGN13,Defecation,NA,Face,Left,Men,Male,20 SCGN13,Personal
+YBLLK6521R,SCGN13,Defecation,NA,Tap,Right,Men,Male,20 SCGN13,Hygiene
+YBLLK6521R,SCGN13,Defecation,NA,Toilet paper,Right,Men,Male,20 SCGN13,Cubicle
+YBLLK6521R,SCGN13,Defecation,NA,Door handle inside,Left,Men,Male,20 SCGN13,Exit
+BCMZI8747F,SCGN13,Urination,NA,Door handle outside,Left,Men,Male,11 SCGN13,Entry
+BCMZI8747F,SCGN13,Urination,NA,Bottle,Left,Men,Male,11 SCGN13,Personal
+BCMZI8747F,SCGN13,Urination,NA,Bottle,Both,Men,Male,11 SCGN13,Personal
+BCMZI8747F,SCGN13,Urination,NA,Clothing,Both,Men,Male,11 SCGN13,Personal
+BCMZI8747F,SCGN13,Urination,NA,Skin,Both,Men,Male,11 SCGN13,Personal
+BCMZI8747F,SCGN13,Urination,NA,Clothing,Both,Men,Male,11 SCGN13,Personal
+BCMZI8747F,SCGN13,Urination,NA,Soap dispenser,Right,Men,Male,11 SCGN13,Hygiene
+BCMZI8747F,SCGN13,Urination,NA,Tap,Right,Men,Male,11 SCGN13,Hygiene
+BCMZI8747F,SCGN13,Urination,NA,Tap,Right,Men,Male,11 SCGN13,Hygiene
+BCMZI8747F,SCGN13,Urination,NA,Toilet paper,Right,Men,Male,11 SCGN13,Cubicle
+BCMZI8747F,SCGN13,Urination,NA,Bottle,Right,Men,Male,11 SCGN13,Personal
+BCMZI8747F,SCGN13,Urination,NA,Door handle inside,Left,Men,Male,11 SCGN13,Exit
+VMPHO7743R,SCGN13,Defecation,NA,Door handle outside,Right,Men,Male,12 SCGN13,Entry
+VMPHO7743R,SCGN13,Defecation,NA,Bottle,Left,Men,Male,12 SCGN13,Personal
+VMPHO7743R,SCGN13,Defecation,NA,Bottle,Both,Men,Male,12 SCGN13,Personal
+VMPHO7743R,SCGN13,Defecation,NA,Cubicle door handle outside,Left,Men,Male,12 SCGN13,CubicleIN
+VMPHO7743R,SCGN13,Defecation,NA,Cubicle door handle inside,Right,Men,Male,12 SCGN13,CubicleOUT
+VMPHO7743R,SCGN13,Defecation,NA,Toilet surface,Right,Men,Male,12 SCGN13,Cubicle
+VMPHO7743R,SCGN13,Defecation,NA,Toilet paper,Right,Men,Male,12 SCGN13,Cubicle
+VMPHO7743R,SCGN13,Defecation,NA,Toilet paper,Both,Men,Male,12 SCGN13,Cubicle
+VMPHO7743R,SCGN13,Defecation,NA,Toilet paper,Right,Men,Male,12 SCGN13,Cubicle
+VMPHO7743R,SCGN13,Defecation,NA,Toilet paper,Both,Men,Male,12 SCGN13,Cubicle
+VMPHO7743R,SCGN13,Defecation,NA,Toilet paper,Right,Men,Male,12 SCGN13,Cubicle
+VMPHO7743R,SCGN13,Defecation,NA,Toilet paper,Right,Men,Male,12 SCGN13,Cubicle
+VMPHO7743R,SCGN13,Defecation,NA,Clothing,Both,Men,Male,12 SCGN13,Personal
+VMPHO7743R,SCGN13,Defecation,NA,Phone,Both,Men,Male,12 SCGN13,Personal
+VMPHO7743R,SCGN13,Defecation,NA,Clothing,Left,Men,Male,12 SCGN13,Personal
+VMPHO7743R,SCGN13,Defecation,NA,Toilet paper,Right,Men,Male,12 SCGN13,Cubicle
+VMPHO7743R,SCGN13,Defecation,NA,Flush button,Right,Men,Male,12 SCGN13,Cubicle
+VMPHO7743R,SCGN13,Defecation,NA,Toilet paper,Both,Men,Male,12 SCGN13,Cubicle
+VMPHO7743R,SCGN13,Defecation,NA,Toilet surface,Right,Men,Male,12 SCGN13,Cubicle
+VMPHO7743R,SCGN13,Defecation,NA,Flush button,Right,Men,Male,12 SCGN13,Cubicle
+VMPHO7743R,SCGN13,Defecation,NA,Bottle,Right,Men,Male,12 SCGN13,Personal
+VMPHO7743R,SCGN13,Defecation,NA,Cubicle door handle inside,Right,Men,Male,12 SCGN13,CubicleOUT
+VMPHO7743R,SCGN13,Defecation,NA,Soap dispenser,Right,Men,Male,12 SCGN13,Hygiene
+VMPHO7743R,SCGN13,Defecation,NA,Tap,Right,Men,Male,12 SCGN13,Hygiene
+VMPHO7743R,SCGN13,Defecation,NA,Tap,Left,Men,Male,12 SCGN13,Hygiene
+VMPHO7743R,SCGN13,Defecation,NA,Tap,Right,Men,Male,12 SCGN13,Hygiene
+VMPHO7743R,SCGN13,Defecation,NA,Toilet paper,Right,Men,Male,12 SCGN13,Cubicle
+VMPHO7743R,SCGN13,Defecation,NA,Bottle,Right,Men,Male,12 SCGN13,Personal
+VMPHO7743R,SCGN13,Defecation,NA,Door handle inside,Left,Men,Male,12 SCGN13,Exit
+PFKMS2902T,SCGN28,Urination,NA,Door handle outside,Right,Men,Male,21 SCGN28,Entry
+PFKMS2902T,SCGN28,Urination,NA,Clothing,Both,Men,Male,21 SCGN28,Personal
+PFKMS2902T,SCGN28,Urination,NA,Skin,Both,Men,Male,21 SCGN28,Personal
+PFKMS2902T,SCGN28,Urination,NA,Clothing,Both,Men,Male,21 SCGN28,Personal
+PFKMS2902T,SCGN28,Urination,NA,Soap dispenser,Left,Men,Male,21 SCGN28,Hygiene
+PFKMS2902T,SCGN28,Urination,NA,Tap,Left,Men,Male,21 SCGN28,Hygiene
+PFKMS2902T,SCGN28,Urination,NA,Tap,Left,Men,Male,21 SCGN28,Hygiene
+PFKMS2902T,SCGN28,Urination,NA,Tap,Left,Men,Male,21 SCGN28,Hygiene
+PFKMS2902T,SCGN28,Urination,NA,Clothing,Both,Men,Male,21 SCGN28,Personal
+PFKMS2902T,SCGN28,Urination,NA,Door handle inside,Left,Men,Male,21 SCGN28,Exit
+QPCAK1435O,SCGN28,Defecation,NA,Door handle outside,Right,Men,Male,22 SCGN28,Entry
+QPCAK1435O,SCGN28,Defecation,NA,Door handle inside,Right,Men,Male,22 SCGN28,Exit
+QPCAK1435O,SCGN28,Defecation,NA,Cubicle door handle outside,Left,Men,Male,22 SCGN28,CubicleIN
+QPCAK1435O,SCGN28,Defecation,NA,Cubicle door handle inside,Right,Men,Male,22 SCGN28,CubicleOUT
+QPCAK1435O,SCGN28,Defecation,NA,Toilet paper,Both,Men,Male,22 SCGN28,Cubicle
+QPCAK1435O,SCGN28,Defecation,NA,Toilet surface,Left,Men,Male,22 SCGN28,Cubicle
+QPCAK1435O,SCGN28,Defecation,NA,Toilet surface,Right,Men,Male,22 SCGN28,Cubicle
+QPCAK1435O,SCGN28,Defecation,NA,Clothing,Both,Men,Male,22 SCGN28,Personal
+QPCAK1435O,SCGN28,Defecation,NA,Toilet paper,Both,Men,Male,22 SCGN28,Cubicle
+QPCAK1435O,SCGN28,Defecation,NA,Clothing,Both,Men,Male,22 SCGN28,Personal
+QPCAK1435O,SCGN28,Defecation,NA,Flush button,Left,Men,Male,22 SCGN28,Cubicle
+QPCAK1435O,SCGN28,Defecation,NA,Cubicle door handle inside,Right,Men,Male,22 SCGN28,CubicleOUT
+QPCAK1435O,SCGN28,Defecation,NA,Soap dispenser,Left,Men,Male,22 SCGN28,Hygiene
+QPCAK1435O,SCGN28,Defecation,NA,Tap,Left,Men,Male,22 SCGN28,Hygiene
+QPCAK1435O,SCGN28,Defecation,NA,Tap,Left,Men,Male,22 SCGN28,Hygiene
+QPCAK1435O,SCGN28,Defecation,NA,Tap,Left,Men,Male,22 SCGN28,Hygiene
+QPCAK1435O,SCGN28,Defecation,NA,Clothing,Both,Men,Male,22 SCGN28,Personal
+QPCAK1435O,SCGN28,Defecation,NA,Door handle inside,Left,Men,Male,22 SCGN28,Exit
+BHJSA2848E,SCGN42,Urination,NA,Door handle outside,Left,Men,Male,17 SCGN42,Entry
+BHJSA2848E,SCGN42,Urination,NA,Clothing,Both,Men,Male,17 SCGN42,Personal
+BHJSA2848E,SCGN42,Urination,NA,Skin,Both,Men,Male,17 SCGN42,Personal
+BHJSA2848E,SCGN42,Urination,NA,Clothing,Both,Men,Male,17 SCGN42,Personal
+BHJSA2848E,SCGN42,Urination,NA,Tap,Right,Men,Male,17 SCGN42,Hygiene
+BHJSA2848E,SCGN42,Urination,NA,Tap,Left,Men,Male,17 SCGN42,Hygiene
+BHJSA2848E,SCGN42,Urination,NA,Tap,Right,Men,Male,17 SCGN42,Hygiene
+BHJSA2848E,SCGN42,Urination,NA,Door handle inside,Left,Men,Male,17 SCGN42,Exit
+MZCEY4126N,SCGN42,Defecation,NA,Door handle outside,Right,Men,Male,18 SCGN42,Entry
+MZCEY4126N,SCGN42,Defecation,NA,Bottle,Right,Men,Male,18 SCGN42,Personal
+MZCEY4126N,SCGN42,Defecation,NA,Cubicle door handle outside,Left,Men,Male,18 SCGN42,CubicleIN
+MZCEY4126N,SCGN42,Defecation,NA,Cubicle door handle inside,Right,Men,Male,18 SCGN42,CubicleOUT
+MZCEY4126N,SCGN42,Defecation,NA,Toilet surface,Left,Men,Male,18 SCGN42,Cubicle
+MZCEY4126N,SCGN42,Defecation,NA,Clothing,Both,Men,Male,18 SCGN42,Personal
+MZCEY4126N,SCGN42,Defecation,NA,Phone,Both,Men,Male,18 SCGN42,Personal
+MZCEY4126N,SCGN42,Defecation,NA,Clothing,Both,Men,Male,18 SCGN42,Personal
+MZCEY4126N,SCGN42,Defecation,NA,Face,Right,Men,Male,18 SCGN42,Personal
+MZCEY4126N,SCGN42,Defecation,NA,Toilet paper,Left,Men,Male,18 SCGN42,Cubicle
+MZCEY4126N,SCGN42,Defecation,NA,Toilet paper,Both,Men,Male,18 SCGN42,Cubicle
+MZCEY4126N,SCGN42,Defecation,NA,Flush button,Right,Men,Male,18 SCGN42,Cubicle
+MZCEY4126N,SCGN42,Defecation,NA,Cubicle door handle inside,Left,Men,Male,18 SCGN42,CubicleOUT
+MZCEY4126N,SCGN42,Defecation,NA,Tap,Right,Men,Male,18 SCGN42,Hygiene
+MZCEY4126N,SCGN42,Defecation,NA,Tap,Right,Men,Male,18 SCGN42,Hygiene
+MZCEY4126N,SCGN42,Defecation,NA,Bottle,Right,Men,Male,18 SCGN42,Personal
+MZCEY4126N,SCGN42,Defecation,NA,Door handle inside,Left,Men,Male,18 SCGN42,Exit

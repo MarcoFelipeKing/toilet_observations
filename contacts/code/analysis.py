@@ -7,7 +7,8 @@ import numpy as np
 import networkx as nx
 import os
 import math
-
+import os
+print(os.getcwd())
 # Ensure output directories exist
 os.makedirs("scenario_transition_matrices", exist_ok=True)
 
